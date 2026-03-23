@@ -1,0 +1,33 @@
+idea:
+  title: Instruct-StoryMix
+  domain: nlp
+  hypothesis: 'Large language models can be used to decompose stories into components,
+    generate synthetic data from these components, and improve controllability in
+    story generation, despite current limitations in LLM story writing ability.
+
+    '
+  background:
+    description: 'Instruct-SkillMix (https://arxiv.org/abs/2408.14774) shows that
+      we could use LLMs in order to decompose tasks into skills and then use those
+      skills to construct synthetic data that would allow us to actually make good
+      instruction tuning data. And I wonder can we do the same thing with stories?
+      Can we have models describe components of stories and then use that to construct
+      synthetic data and then somehow make a model that can actually control its own
+      story generation better. The key problem here of course being that models are
+      naturally very very bad at writing stories but I still wonder if there''s some
+      kind of arbitrage there.
+
+      '
+    papers:
+    - description: '"Instruct-SkillMix: Decomposing Tasks into Skills for Synthetic
+        Instruction Tuning Data." Ari Holtzman, [other authors if present in the paper]
+        (2024). arXiv:2408.14774.'
+  metadata:
+    author: Ari Holtzman
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/tST3gDok2hZeZKAJv43u
+    idea_id: instruct_storymix_20260323_152345_6e4b896c
+    created_at: '2026-03-23T15:23:45.596280'
+    status: submitted
+    github_repo_name: instruct-story-mix-claude
+    github_repo_url: https://github.com/Hypogenic-AI/instruct-story-mix-claude
