@@ -1,0 +1,60 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{The Constraint-Quality Tradeoff}
+\label{sec:tradeoff}
+
+Our central finding is a \emph{constraint-quality tradeoff}: as more structural constraints are imposed, the model follows them faithfully but produces less creative, less linguistically polished output.
+Qualitative examination reveals the mechanism.
+Baseline stories use vivid imagery, sensory language, and unexpected turns---the model invests its generation capacity in expressive writing.
+Component-controlled stories read more like competent plot summaries, hitting all specification points but with flatter prose.
+The model appears to allocate its generation ``bandwidth'' between two competing objectives: (1) satisfying constraints and (2) producing expressive writing.
+More constraints leave less room for creative expression.
+
+This tradeoff has a natural interpretation in terms of conditional generation difficulty.
+The unconstrained model samples from $p(\text{story} \mid \text{theme})$, a broad distribution with many high-quality modes.
+The constrained model samples from $p(\text{story} \mid \text{setting}, \text{character}, \text{conflict}, \text{theme}, \text{arc}, \text{tone})$, a much narrower distribution where the model must navigate a smaller space of acceptable outputs.
+The constraint-quality tradeoff reflects the difficulty of finding outputs that simultaneously satisfy all constraints \emph{and} exhibit high linguistic quality.
+
+\subsection{Implications for the Arbitrage Hypothesis}
+
+Our results refute the quality arbitrage hypothesis (H4) for single-pass generation: models that write mediocre stories do \emph{not} write better stories when given explicit structural specifications.
+However, the arbitrage may exist in a \emph{two-stage} pipeline.
+If the component specification stage provides the structural backbone and a subsequent unconstrained refinement stage polishes the prose, the combined system could achieve both controllability and quality.
+This echoes findings from DSR~\cite{dsr2025}, where separating narrative creation from format conversion yielded 82.7\% of human-level quality, and from Agents' Room~\cite{huot2024agentsroom}, where multi-agent decomposition outperformed single-model approaches.
+
+\subsection{Implications for Synthetic Data Generation}
+
+Despite the quality penalty, our pipeline has clear value for synthetic data generation.
+The extracted component taxonomy provides a structured vocabulary for creating diverse training specifications.
+The near-perfect controllability (4.96/5.0) means the generated stories reliably exhibit the specified characteristics, making them suitable for training smaller models to follow narrative specifications via distillation.
+The quality penalty may be acceptable for training data---the structural diversity of the data matters more than the polish of individual examples, especially if the student model is separately trained on quality.
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+\para{Same-model evaluation.}
+We use \gptfour for both generation and evaluation, creating potential self-preference bias.
+While this bias affects all conditions equally and should not change relative rankings, the absolute scores may be inflated.
+GPT-4-as-judge shows moderate correlation with human judgments ($\rho \approx 0.4$--$0.6$ per the literature~\cite{huot2024agentsroom,xie2024weaver}), and the high absolute scores (rarely below 3/5) suggest the judge may lack discriminative power.
+
+\para{Short story format.}
+\rocstories consists of five-sentence stories averaging 43 words.
+This format may not reveal benefits of component-based control that emerge at longer scales, where planning and structural coherence become more important~\cite{yang2023doc,huot2024agentsroom}.
+The ceiling effect on coherence (all conditions achieve 5.0/5.0) further suggests that this format is too easy to test the full value of structural control.
+
+\para{No fine-tuning.}
+We test zero-shot component-controlled generation.
+The \skillmix paradigm's full potential requires training on synthetic component data, which we did not test due to scope constraints.
+The observed quality penalty might diminish or reverse after fine-tuning.
+
+\para{Single model.}
+All experiments use \gptfour.
+Results may differ with other models, especially smaller models where controllability is harder to achieve and where the benefits of structural guidance may be larger.
+
+\para{Automatic evaluation only.}
+No human evaluation was conducted.
+Human judges might disagree with the \gptfour judge's relative rankings, particularly on subjective dimensions like creativity and language quality.
+
+\para{Limited taxonomy.}
+The narrative technique dimension collapsed to a single value (linear) due to \rocstories' short format, reducing the effective component space from seven to six dimensions.

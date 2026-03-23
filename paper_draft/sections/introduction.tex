@@ -1,0 +1,32 @@
+\section{Introduction}
+\label{sec:intro}
+
+Large language models can write grammatically flawless prose, yet their creative stories are remarkably formulaic: predictable arcs, shallow characters, and repetitive language patterns that readers quickly learn to spot~\cite{chakrabarty2023art}.
+This ``formulaic ceiling'' persists even as models scale, suggesting that simply generating more tokens does not produce more creative ones.
+A natural question arises: if LLMs struggle with \emph{holistic} story generation, can we decompose the task into manageable components and recombine them to unlock better controllability---or even better quality?
+
+{\bf Why decomposition?}
+The \skillmix framework~\cite{allenzhu2024instructskillmix} demonstrated that decomposing instruction-following into discrete skills, creating combinatorial synthetic data from novel skill mixtures, and training on this data significantly improves model capabilities.
+Concurrently, decomposition-based story generation systems---DOC~\cite{yang2023doc}, Agents' Room~\cite{huot2024agentsroom}, and DSR~\cite{dsr2025}---have shown that separating planning from writing yields more coherent, relevant narratives.
+These findings suggest an intriguing \emph{arbitrage} hypothesis: even if an LLM writes mediocre stories end-to-end, it might produce better stories when given explicit control over narrative dimensions, because the model's limited generation ``bandwidth'' is freed from having to simultaneously discover \emph{and} execute good structural choices.
+
+{\bf The gap.}
+Despite the success of both paradigms, no prior work has applied the \skillmix approach of systematic component enumeration, combinatorial synthesis, and controlled evaluation to creative writing.
+Existing decomposition systems use ad-hoc structures tailored to specific generation pipelines~\cite{yang2023doc,huot2024agentsroom}; none treat story components as a first-class composable vocabulary analogous to instruction-following skills.
+
+{\bf Our approach.}
+We introduce \methodname, a pipeline that: (1) extracts a structured taxonomy of narrative components from existing stories, (2) creates novel specifications by mixing components from different source stories, and (3) generates stories conditioned on these multi-dimensional specifications.
+We evaluate on \rocstories~\cite{mostafazadeh2016corpus} using \gptfour for extraction, generation, and evaluation across three conditions: \compcontrolled (full 7-component specification), \titleonly (theme only), and \prompted (theme + setting).
+
+{\bf Key findings.}
+Component-controlled generation achieves near-perfect specification adherence (4.96/5.0 overall) but suffers a significant quality penalty: overall quality drops by 0.40 points ($d{=}{-}0.80$, $p{=}0.002$) compared to \titleonly baselines, with the largest degradation in language quality ($d{=}{-}0.83$).
+Rather than the hypothesized arbitrage, we observe a \emph{constraint-quality tradeoff}: the model faithfully follows all specifications but produces flatter, less creative prose in the process.
+Diversity metrics show modest improvements (26\% larger vocabulary), and a supplementary experiment reveals that the quality penalty stems from the \emph{number} of constraints, not from component incoherence---mixed specifications perform as well as coherent ones.
+
+Our contributions are:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We apply the \skillmix paradigm to creative story generation, introducing a pipeline for extracting, combining, and evaluating narrative components as composable units.
+    \item We demonstrate near-perfect controllability (4.96/5.0) for multi-dimensional story specifications, establishing that LLMs can reliably follow complex narrative constraints.
+    \item We identify a constraint-quality tradeoff in which specification adherence competes with creative expression, refuting the quality arbitrage hypothesis for single-pass generation.
+    \item We provide evidence that a two-stage approach---structural specification followed by unconstrained refinement---is needed to realize the benefits of component-based story generation.
+\end{itemize}

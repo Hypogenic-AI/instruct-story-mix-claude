@@ -1,0 +1,402 @@
+[
+  {
+    "text": "Marta spent hours embroidering a tiny bluebird onto her handkerchief, each feather stitched with meticulous care. On the day of the parade, judges inspected every entry, passing quickly over the larger, more lavish banners. When they reached Marta\u2019s modest display, one judge leaned in, eyes widening at the lifelike shimmer of the bird\u2019s wings. The judge recognized his late grandmother\u2019s signature stitch\u2014an almost invisible X along the tail. Tears welled in his eyes as he pinned the first prize ribbon beside Marta\u2019s quiet masterpiece.",
+    "specification": {
+      "theme": "attention to detail"
+    },
+    "condition": "baseline_title",
+    "index": 0
+  },
+  {
+    "text": "Every Saturday morning, Mrs. Rivera arrived at the neglected park, her arms loaded with garbage bags and wildflower seeds. At first, only the neighborhood crows watched her clear litter and plant color where weeds once ruled. By the third week, two children joined her, their laughter carrying through the crisp air as they dug holes and picked up scraps. Soon, others followed, bringing snacks, paint, and new ideas\u2014turning the forgotten park into a living mural of hope. When the mayor finally visited, he found a buzzing garden and a community blooming with pride.",
+    "specification": {
+      "theme": "community service"
+    },
+    "condition": "baseline_title",
+    "index": 1
+  },
+  {
+    "text": "Every morning, Mr. Patel left a bowl of water for the stray cats outside his bakery, even though others complained they were a nuisance. When a young girl approached, hesitating with a broken toy in her hand, he set aside his work and listened patiently to her story. With gentle hands, he fixed the toy, asking her about school and her favorite teacher as he worked. The girl returned each week, bringing stories and laughter, eventually helping him feed the strays. In the heart of the bustling city, kindness and empathy became the secret ingredients that made his bakery the warmest place in town.",
+    "specification": {
+      "theme": "kindness, empathy"
+    },
+    "condition": "baseline_title",
+    "index": 2
+  },
+  {
+    "text": "Every morning, Mara traced her finger along the cracks in her tiny apartment wall, counting dreams instead of worries. Despite rejection letters piling up like autumn leaves, she pressed on, writing stories by candlelight after long shifts at the bakery. When the electricity was cut, she finished her latest tale by scribbling in the faint glow of streetlights. Weeks later, a letter arrived with the promise of publication and a fresh start. Mara smiled, knowing the light she needed was never from outside\u2014it had always burned within her.",
+    "specification": {
+      "theme": "hope and perseverance"
+    },
+    "condition": "baseline_title",
+    "index": 3
+  },
+  {
+    "text": "Under the flickering streetlamp, Lena stared at the silver locket glinting on the empty sidewalk, uncertain whether to pocket it or walk away. The engraved initials caught her eye, conjuring images of lost love and desperate searches. She glanced around\u2014no one watched, yet her heart hammered with invisible judgment. With a trembling hand, she picked it up and turned it in to the nearby caf\u00e9, where a tearful woman reclaimed it moments later. Walking home, Lena felt lighter, as if she\u2019d chosen something greater than gold.",
+    "specification": {
+      "theme": "temptation and choice"
+    },
+    "condition": "baseline_title",
+    "index": 4
+  },
+  {
+    "text": "Luca grinned as he revved his motorcycle, ignoring the pelting rain and the shouts of his friends. The world blurred into streaks of neon as he sped through the city, heart pounding with a delicious sense of invincibility. One sharp turn, too fast, and the tires lost their grip, sending metal and flesh tumbling into unforgiving asphalt. The hospital lights were sterile and silent, his body broken and tethered to machines. As rain tapped the window, Luca realized too late that thrills are fleeting, but consequences linger.",
+    "specification": {
+      "theme": "recklessness and consequence"
+    },
+    "condition": "baseline_title",
+    "index": 5
+  },
+  {
+    "text": "In a forgotten garden, a single sunflower seed landed between two heavy stones. Each day, it strained upward, pushing through darkness, undeterred by the weight above. Rainwater barely reached it, and sunlight was just a promise filtered through cracks. Yet, inch by inch, it broke free, greeting the world with golden petals brighter than any in the field. Against all odds, the sunflower stood tall, a living testament to persistence and hope.",
+    "specification": {
+      "theme": "growth and perseverance"
+    },
+    "condition": "baseline_title",
+    "index": 6
+  },
+  {
+    "text": "Every morning, Mira laced up her battered sneakers and ran along the cracked sidewalk, rain or shine. Her legs ached and her breath came in ragged bursts, but she kept her eyes fixed on the distant hilltop. Neighbors shook their heads, doubting she\u2019d ever conquer that last, steep climb. One golden dawn, legs trembling but spirit unbroken, Mira reached the summit and watched the world unfold beneath her. She grinned, the struggle woven into every triumphant heartbeat.",
+    "specification": {
+      "theme": "perseverance"
+    },
+    "condition": "baseline_title",
+    "index": 7
+  },
+  {
+    "text": "Nina always came in second place, watching Alex hoist every trophy with a grin that sparkled under the gym lights. Each loss stung, but she kept racing, her heart pounding out rhythms of hope and frustration. One evening, Alex found her sitting on the bleachers, wiping away silent tears, and quietly handed her his newest medal. \u201cYou push me to be better,\u201d he said, \u201cand that makes us both winners.\u201d In that moment, Nina realized true acceptance wasn't in the applause, but in the mutual respect born from relentless competition.",
+    "specification": {
+      "theme": "acceptance, competition"
+    },
+    "condition": "baseline_title",
+    "index": 8
+  },
+  {
+    "text": "Mara balanced on the rooftop\u2019s edge, city lights flickering beneath her trembling feet. One step forward promised flight\u2014a chance to prove her new wings worked, though she\u2019d only tested them with paper models in her garage. She inhaled, leapt, and for a glorious moment soared above the world, wind screaming victory in her ears. Then her wings shuddered, bolts snapping like brittle twigs, and gravity claimed her triumph. As she fell, Mara wondered if dreaming big was always worth the plummet.",
+    "specification": {
+      "theme": "risk and consequence"
+    },
+    "condition": "baseline_title",
+    "index": 9
+  },
+  {
+    "text": "At the crowded bus stop, Maya noticed an elderly man drop his wallet, its contents scattering unnoticed at his feet. Without hesitation, she knelt to gather the cards and coins, pressing them gently into his trembling hands. His eyes glistened with relief, and he offered her a smile warmer than the morning sun. As the bus pulled away, the others who had watched in silence began to see strangers with new eyes. That evening, Maya found a note slipped into her bag: \u201cThank you for reminding us that kindness can be seen\u2014and recognized.\u201d",
+    "specification": {
+      "theme": "recognition, kindness"
+    },
+    "condition": "baseline_title",
+    "index": 10
+  },
+  {
+    "text": "In the quiet bakery at midnight, Mara stared at the forbidden silver cake, its frosting whispering secrets only she could hear. She knew one bite would erase the memory of every heartbreak, but it would also erase the faces she loved. The scent of sugar and longing tugged at her heart, making her hands tremble above the pastry box. With a deep breath, she closed the lid and slid the cake back onto the highest shelf. As dawn painted hope across the windows, Mara chose to remember\u2014pain and all.",
+    "specification": {
+      "theme": "temptation and choice"
+    },
+    "condition": "baseline_title",
+    "index": 11
+  },
+  {
+    "text": "Evelyn spent months rehearsing her valedictorian speech, scribbling notes and reciting lines to her reflection late into restless nights. The moment her name echoed through the auditorium, her palms grew slick, and every carefully prepared word vanished like mist. She stood frozen, the weight of unspoken dreams pressing against her chest as hundreds of expectant faces blurred before her. When she finally mumbled a hasty thank you and fled the stage, her regret carved itself deeper than any failed exam. Later, alone, she realized that all her preparation could not erase the one thing she hadn\u2019t practiced: forgiving her own imperfections.",
+    "specification": {
+      "theme": "regret, preparation"
+    },
+    "condition": "baseline_title",
+    "index": 12
+  },
+  {
+    "text": "On Saturday morning, Maya reluctantly joined her neighbors to repaint the old community center, grumbling about lost sleep. As bright colors replaced peeling walls, laughter and music started to fill the air, washing away her annoyance. An elderly man taught her how to hold a brush steady, sharing stories of dances once held in the main hall. By sunset, the center gleamed, and Maya realized she\u2019d made friends she\u2019d never known before. When she finally walked home, her heart felt as fresh as the newly painted walls.",
+    "specification": {
+      "theme": "community service"
+    },
+    "condition": "baseline_title",
+    "index": 13
+  },
+  {
+    "text": "Every morning before dawn, Hana laced her battered sneakers and ran through the fog, her legs burning with each relentless step. Her dream of joining the national track team seemed as distant as the finish line she chased in her mind. When others slept, she tied her hair back and whispered promises to herself with every stride. Seasons shifted, and so did her pace\u2014faster, stronger\u2014until the day her name echoed across the stadium speakers. As she crossed the real finish line, triumph blooming in her chest, she knew her perseverance had carried her farther than her feet ever could.",
+    "specification": {
+      "theme": "perseverance"
+    },
+    "condition": "baseline_title",
+    "index": 14
+  },
+  {
+    "text": "Every night, Lena promised her reflection it would be the last glass, but dawn always found the bottle empty. Her laughter became rarer, replaced by apologies she could no longer remember making. Friends drifted away like leaves in autumn, unable to weather the storm she brewed within herself. One morning, sunlight crept across an eviction notice on her kitchen table and the echo of her mother\u2019s voice on the unanswered phone. Alone at rock bottom, Lena realized that recovery would demand more courage than surrender ever had.",
+    "specification": {
+      "theme": "consequences of addiction"
+    },
+    "condition": "baseline_title",
+    "index": 15
+  },
+  {
+    "text": "Clara painted a yellow sun on the neighbor\u2019s white fence, believing she was making the world brighter. Mrs. Jenkins emerged with a frown, hands on hips, her voice sharp as thunder. Clara\u2019s small hands trembled, her masterpiece now a symbol of trouble rather than joy. Tears welled as she tried to explain, the words tangled between guilt and hope. Mrs. Jenkins listened, then knelt beside her, and together they finished the sun, laughter coloring forgiveness between brushstrokes.",
+    "specification": {
+      "theme": "innocence and misunderstanding"
+    },
+    "condition": "baseline_title",
+    "index": 16
+  },
+  {
+    "text": "Ellie found the broken vase in the hallway, its shards glittering like puzzle pieces in the afternoon sun. Wanting to help, she carefully swept the pieces into her tiny hands and placed them on the kitchen table. When her mother returned, she saw the mess and Ellie standing beside it, hands streaked with dust. Tears welled in Ellie\u2019s eyes as she tried to explain, but her mother, seeing only the evidence, scolded her for her carelessness. Only later, when her older brother confessed to the accident, did her mother realize the pure intentions behind Ellie\u2019s misunderstood actions.",
+    "specification": {
+      "theme": "innocence and misunderstanding"
+    },
+    "condition": "baseline_title",
+    "index": 17
+  },
+  {
+    "text": "When Joshua opened his bakery at dawn, he found that every bag of flour had been chewed open by mice, leaving a fine white dust like snow across the floor. Heart sinking, he considered closing for the day, but a steady stream of loyal customers arrived, offering extra ingredients and helping hands. Together, they baked loaves using borrowed flour, oats, and even mashed potatoes, laughing at their unconventional recipes. By noon, the bakery smelled sweeter than ever, filled with warmth and camaraderie. Joshua realized that sometimes, adversity is just the beginning of a new recipe.",
+    "specification": {
+      "theme": "unexpected adversity"
+    },
+    "condition": "baseline_title",
+    "index": 18
+  },
+  {
+    "text": "Evelyn always watered her sunflowers at dawn, believing nothing bad could happen under the soft pink sky. One morning, her foot caught on a root she\u2019d never seen before, sending her tumbling and scattering seeds everywhere. As she sat up, rubbing her bruised knee, a passing dog gleefully rolled in the spilled seeds, tracking them down the street. Weeks later, sunflowers sprouted in the most unlikely places: from sidewalk cracks and in neighbors\u2019 lawns. Though she limped for days, Evelyn smiled at the golden blooms, grateful for beauty born out of clumsy misfortune.",
+    "specification": {
+      "theme": "unexpected misfortune"
+    },
+    "condition": "baseline_title",
+    "index": 19
+  },
+  {
+    "text": "Eloise stood at the edge of the old stone bridge, clutching the folded letter that could unravel her carefully arranged life. The moonlight shimmered on the river below, whispering promises of new beginnings if only she dared. With a trembling breath, she tossed the letter into the current, watching it spin and vanish downstream. The weight in her chest lifted, replaced by a fluttering hope she hadn't felt in years. Smiling through tears, she turned away from the water, ready to chase whatever waited on the other side.",
+    "specification": {
+      "theme": "taking chances"
+    },
+    "condition": "baseline_title",
+    "index": 20
+  },
+  {
+    "text": "Each morning, Mara traced the scar on her wrist, its memory pulsing with regret and hope. Time, her grandmother once whispered, heals wounds, but only if you let it. Seasons spun by, and with every fallen leaf, Mara found laughter slower but lighter, her shadow less heavy. One spring, she planted sunflowers in the yard, their faces always turning toward the sun. When the first golden blooms unfurled, she finally understood: healing blooms when you\u2019re ready, not when you\u2019re told.",
+    "specification": {
+      "theme": "healing and timing"
+    },
+    "condition": "baseline_title",
+    "index": 21
+  },
+  {
+    "text": "Every afternoon, Mia practiced her violin in the park, hoping the old women on the benches might nod in approval. She watched the other children play tag, their laughter ringing easily through the air, while her music trembled on uncertain notes. One rainy day, she played beneath the trees anyway, letting her melody blend with the rhythm of falling drops. A girl with muddy shoes stopped and listened, her eyes bright with curiosity. When the girl offered a shy smile and sat beside her, Mia realized she\u2019d finally played the right song.",
+    "specification": {
+      "theme": "desire for acceptance"
+    },
+    "condition": "baseline_title",
+    "index": 22
+  },
+  {
+    "text": "Every morning before sunrise, Mira laced her worn sneakers and ran past the sleeping houses, her breath visible in the cold. The temptation to stay in bed was a heavy hand on her shoulder, but she shrugged it off with practiced resolve. With each mile, her doubts fell away, replaced by the steady rhythm of her heart and feet. She wasn\u2019t the fastest or the strongest, but she always finished, her discipline her silent victory. In the quiet dawn, Mira realized she was not just running\u2014she was becoming.",
+    "specification": {
+      "theme": "self-discipline"
+    },
+    "condition": "baseline_title",
+    "index": 23
+  },
+  {
+    "text": "Mina set out at dawn to deliver her grandmother\u2019s medicine, imagining only the hush of pine needles underfoot. Halfway down the forest path, a sudden burst of rain turned the ground to slick, sucking mud, trapping her boots. As she wrestled her feet free, a low growl echoed nearby\u2014the wolf she\u2019d always thought a fairy tale. Heart pounding, she remembered the crust of bread in her pocket and tossed it into the shadows, buying herself a precious escape. Breathless but triumphant, Mina finally reached her grandmother\u2019s door, mud-streaked and wiser than before.",
+    "specification": {
+      "theme": "unexpected obstacles"
+    },
+    "condition": "baseline_title",
+    "index": 24
+  },
+  {
+    "text": "Each morning, Mira traced the cracked lines of her violin, fingers sore from the night\u2019s relentless practice. The notes wavered at first, trembling like fledgling wings, but she played through the ache and the silence of an empty room. On the eve of her tenth audition, she nearly faltered, hearing only echoes of failure. Yet, as the curtain rose, she drew her bow with steady resolve, the music blooming at last. When applause thundered, it was the sound of every stubborn sunrise she\u2019d greeted alone.",
+    "specification": {
+      "theme": "perseverance"
+    },
+    "condition": "baseline_title",
+    "index": 25
+  },
+  {
+    "text": "On the morning after the storm, Maya stepped onto her porch and breathed in air that felt scrubbed clean by thunder. The old willow tree, once drooping and frail, now stood split but alive, green shoots already curving toward sunlight. Clutching her suitcase, she glanced back at the house she\u2019d known her whole life, its windows sparkling with rain\u2019s memory. She smiled, not at what she was leaving behind, but at the winding road ahead glittering with promise. With one last look, Maya locked the door and walked forward into a world reborn.",
+    "specification": {
+      "theme": "new beginnings"
+    },
+    "condition": "baseline_title",
+    "index": 26
+  },
+  {
+    "text": "Shivering beneath the ancient oak, Maya watched the shadows flicker as dusk crept in. Every night for weeks, she\u2019d tried to make it to the far side of the forest, where laughter and lanterns promised belonging. Tonight, her feet refused to freeze, and she whispered her fears to the wind. With each brave step, the darkness melted like mist, revealing a path lined with tiny, glowing beetles. At the clearing\u2019s edge, Maya realized the monsters were only memories\u2014and she\u2019d left them behind.",
+    "specification": {
+      "theme": "overcoming fear"
+    },
+    "condition": "baseline_title",
+    "index": 27
+  },
+  {
+    "text": "Mira stood at the edge of the rooftop, clutching her homemade paper wings, heart pounding like thunder. Below, the city pulsed with possibility and fear, daring her to leap or retreat. She closed her eyes, remembering every night spent dreaming of flight instead of simply surviving. With a breath that tasted like freedom, she ran and jumped, the world rushing up to meet her. Against all odds, the wings caught the wind, and for the first time, Mira soared.",
+    "specification": {
+      "theme": "taking chances"
+    },
+    "condition": "baseline_title",
+    "index": 28
+  },
+  {
+    "text": "Every night, Mara watched the flickering light in her neighbor\u2019s attic, convinced it signaled a secret she had to uncover. The more she wondered, the more her thoughts tangled into endless possibilities\u2014hidden treasures, forbidden experiments, lost souls. Curiosity devoured her sleep, so one stormy evening she crept across the lawn and pressed her palm to the attic window. Inside, she saw only a dusty mirror reflecting her wide, hungry eyes and trembling hands. Mara realized the attic was empty, except for the obsession she herself had filled it with.",
+    "specification": {
+      "theme": "obsession and curiosity"
+    },
+    "condition": "baseline_title",
+    "index": 29
+  },
+  {
+    "text": "Lena traced the old scar on her wrist, remembering the night when pain had seemed endless and time a cruel, indifferent force. Years later, she found herself planting wildflower seeds behind her small cottage, her hands steady and hopeful. Each morning, she watered them, patient as the empty earth slowly transformed. One golden afternoon, the first bloom unfurled\u2014timid, bright, and wholly unexpected. Lena smiled, realizing that both wounds and gardens needed the same gentle gift: time.",
+    "specification": {
+      "theme": "healing and timing"
+    },
+    "condition": "baseline_title",
+    "index": 30
+  },
+  {
+    "text": "Each night, Miriam whispered prophecies into her followers\u2019 ears, painting herself as the only guide through a world on fire. Their devotion grew feverish, eclipsing family and reason until all that remained was Miriam\u2019s voice echoing in the hollow places of their minds. She instructed them to burn their bridges\u2014sometimes literally, sometimes with words sharp as razors. When one disciple hesitated, Miriam wept, claiming betrayal by the heavens themselves. By morning, the doubter was gone, and Miriam\u2019s flock sang louder to drown the silence.",
+    "specification": {
+      "theme": "manipulation and fanaticism"
+    },
+    "condition": "baseline_title",
+    "index": 31
+  },
+  {
+    "text": "Eva found her sister\u2019s favorite mug shattered on the kitchen floor, guilt prickling her skin. Instead of anger, her sister knelt and gently started gathering the broken pieces. \u201cIt\u2019s only a mug,\u201d she said, her smile soft and eyes kind, \u201cbut you are irreplaceable.\u201d Tears blurred Eva\u2019s vision as warmth filled the space between them. In that moment, forgiveness became the glue that mended more than just porcelain.",
+    "specification": {
+      "theme": "forgiveness, kindness"
+    },
+    "condition": "baseline_title",
+    "index": 32
+  },
+  {
+    "text": "Elena stared at the open window, the city lights flickering like promises in the night, while her father locked the door behind her, as he did every evening. She knew each bolt and bar meant protection, but also a cage\u2014her youthful heart ached for both the thrill and the risk of the unknown. One night, when the world was quiet, she found the key he\u2019d forgotten on the kitchen table. Her footsteps on the fire escape felt both treacherous and holy, each rung a prayer for possibility. She disappeared into the city\u2019s arms, uncertain and unguarded, but at last, truly alive.",
+    "specification": {
+      "theme": "freedom vs. safety"
+    },
+    "condition": "baseline_title",
+    "index": 33
+  },
+  {
+    "text": "Every morning, Clara wrote down one thing she wished she could do but was afraid to try. The list grew long\u2014public speaking, learning to swim, painting a self-portrait\u2014but every week she picked one and gave it her best shot. Some days, her hands shook and her voice trembled, but she showed up anyway, surprising herself with newfound courage. Friends started calling her brave, but she knew she was just getting comfortable with the feeling of being uncomfortable. By the year\u2019s end, her list was shorter, and her confidence, immeasurably longer.",
+    "specification": {
+      "theme": "self-improvement"
+    },
+    "condition": "baseline_title",
+    "index": 34
+  },
+  {
+    "text": "Under the ancient oak, Clara found the torn letter her sister had written but never sent, apologies inked in trembling script. Rage simmered in her chest until she imagined her sister\u2019s loneliness folding the letter shut. Choosing kindness over anger, Clara knocked gently on her sister\u2019s door, forgiveness blooming in her heart. They wept together, words unnecessary as hands entwined. The oak outside listened, its leaves whispering blessings for second chances.",
+    "specification": {
+      "theme": "forgiveness, kindness"
+    },
+    "condition": "baseline_title",
+    "index": 35
+  },
+  {
+    "text": "Maya texted her roommate, \"Don't forget to feed the cat,\" as she rushed out for her night shift. Half-awake, Emma read the message and, in her daze, fed Maya's sourdough starter instead. The next morning, Maya found her cat yowling and her starter bubbling over, smelling faintly of tuna. Confused, Emma defended herself, claiming she followed instructions exactly. Maya sighed, beginning a new message: \"Let's clarify\u2014cat means whiskers, dough means bread.\"",
+    "specification": {
+      "theme": "miscommunication"
+    },
+    "condition": "baseline_title",
+    "index": 36
+  },
+  {
+    "text": "Every morning, Mrs. Alvarez left a steaming cup of coffee on the janitor\u2019s cart, her only thanks for his quiet, unseen work. Today, as she fumbled through her tote for her keys, she found a small handwritten note tucked inside: \u201cThank you for noticing me.\u201d She looked up and caught the janitor\u2019s shy smile from down the hall, his face usually hidden by a cap and early shadows. Warmth spread through her chest; sometimes the smallest gestures echo the loudest. From that day on, they exchanged smiles, knowing kindness had made them both visible.",
+    "specification": {
+      "theme": "recognition, kindness"
+    },
+    "condition": "baseline_title",
+    "index": 37
+  },
+  {
+    "text": "On a rainy afternoon, Emma found the worn-out mixtape tucked inside her old denim jacket, its label smudged but unmistakably in Mark\u2019s handwriting. She hesitated, heart thrumming with memories, then dusted off her cassette player and pressed play. The familiar melody filled her tiny apartment, conjuring late-night drives and laughter echoing from a time when everything seemed possible. As the last song faded, her phone buzzed with a message from Mark: \u201cThinking about you today\u2014do you remember our mixtape?\u201d Smiling through tears, Emma replied, \u201cI just listened, and yes, I remember everything.\u201d",
+    "specification": {
+      "theme": "reconnection, nostalgia"
+    },
+    "condition": "baseline_title",
+    "index": 38
+  },
+  {
+    "text": "Elena set out at dawn, determined to climb the old bell tower before noon. Halfway up, a flock of pigeons burst from the rafters, swirling chaos around her head. Clutching the cold stone, she pressed on, only to find the rope ladder had rotted clean through. Undeterred, she fashioned a lifeline from her scarf and boots, inching upward despite shaking limbs. At the top, she watched the sunrise, triumphant\u2014wings and weathered wood no match for her resolve.",
+    "specification": {
+      "theme": "unexpected obstacles"
+    },
+    "condition": "baseline_title",
+    "index": 39
+  },
+  {
+    "text": "Maya always thought her life was meant to follow the map her parents drew. One rainy evening, she lost her way in a forgotten part of the city, the streetlights shimmering like distant stars on wet pavement. There, in the hush of unfamiliar places, she listened to the music of her own heartbeat for the first time. She realized she wasn\u2019t lost at all\u2014just finally off the map. Smiling, Maya stepped forward, ready to chart a path only she could create.",
+    "specification": {
+      "theme": "self-discovery"
+    },
+    "condition": "baseline_title",
+    "index": 40
+  },
+  {
+    "text": "Ava stood trembling at the edge of the diving board, the water below shimmering like a secret she wasn\u2019t sure she wanted to know. Her friends cheered, their voices distant through the roar of her heartbeat in her ears. She closed her eyes, breathed in the scent of chlorine and hope, and remembered how she\u2019d always wanted to fly. With a leap, she surrendered to the air, fear unraveling behind her like a discarded shadow. When she surfaced, laughter bubbled from her lips\u2014bold and new, the shape of triumph.",
+    "specification": {
+      "theme": "overcoming fear"
+    },
+    "condition": "baseline_title",
+    "index": 41
+  },
+  {
+    "text": "Every morning, Marjorie greeted her kitchen as if it were a polite but unpredictable stranger. Today, the fridge blinked a demand for her fingerprint, and the coffee machine wanted her Wi-Fi password. She missed the days when her appliances required only a gentle touch or a twist of the wrist. As the oven recited its terms and conditions in a synthetic voice, Marjorie wondered if toast was worth the trouble. In the end, she spread cold butter on bread and opened the window, savoring the silence.",
+    "specification": {
+      "theme": "discomfort with technology"
+    },
+    "condition": "baseline_title",
+    "index": 42
+  },
+  {
+    "text": "Every morning, Sophia climbed the steep hill behind her house, stumbling over roots and rocks but refusing to turn back. Her legs ached and her breath came in gasps, yet each day she reached a little higher than before. One rainy afternoon, halfway up, she slipped and slid into the mud, tears mixing with the rain. But Sophia stood, wiped her face, and pressed onward, heart pounding with stubborn hope. When she finally reached the summit, the shimmering sunrise made every bruise and ache a badge of victory.",
+    "specification": {
+      "theme": "perseverance"
+    },
+    "condition": "baseline_title",
+    "index": 43
+  },
+  {
+    "text": "Every morning, Maya laced her battered sneakers and ran before sunrise, her breath forming clouds in the chill air. The hill at the end of her route always seemed steeper, a silent dare from the earth itself. One rainy Thursday, her muscles burning, she stumbled, knees scraping gravel, but she stood and kept climbing. At the top, soaked and trembling, she laughed at the city lights blinking awake beneath her. The victory was small and quiet, but it was entirely her own.",
+    "specification": {
+      "theme": "perseverance"
+    },
+    "condition": "baseline_title",
+    "index": 44
+  },
+  {
+    "text": "On a sun-dappled afternoon, Mira wandered into the old record shop, its scent of dust and vinyl instantly whisking her back to childhood summers with her brother. She ran her fingers over album covers they once argued over, smiling as the memory of his laughter echoed in her mind. Just as she considered leaving, a familiar voice behind her whispered, \"Still a Bowie fan, huh?\" She turned to see him, older but unmistakably her brother, holding out their favorite album as if no years had passed. With silent grins and watery eyes, they queued up at the register\u2014two melodies finally finding their harmony again.",
+    "specification": {
+      "theme": "reconnection, nostalgia"
+    },
+    "condition": "baseline_title",
+    "index": 45
+  },
+  {
+    "text": "Ava had never watered a plant before, but her teacher handed her a tiny sprout and called it \"the class responsibility.\" Each morning, she whispered stories to the green shoot, careful to measure just the right amount of water. When the leaves sagged, she researched sunlight angles and rotated the pot accordingly. By spring, the once-fragile stem had blossomed into a burst of orange flowers. The class cheered, but Ava simply smiled, already searching for the next seed to care for.",
+    "specification": {
+      "theme": "responsibility"
+    },
+    "condition": "baseline_title",
+    "index": 46
+  },
+  {
+    "text": "Buried beneath the old willow tree, Mira\u2019s spade struck something hard\u2014a tarnished tin box, sealed tight with rust. Heart pounding, she pried it open to find a faded photograph of a smiling family, a locket, and a brittle, handwritten note: \u201cFor the one who finds this, may your kindness echo.\u201d Curious, Mira posted the photo online, hoping someone would recognize the faces. Within days, an elderly woman reached out, tears of gratitude in her voice\u2014her long-lost family heirloom had been returned. The next morning, Mira awoke to a basket of fresh croissants and a simple note: \u201cThank you for restoring a memory.\u201d",
+    "specification": {
+      "theme": "discovery and reward"
+    },
+    "condition": "baseline_title",
+    "index": 47
+  },
+  {
+    "text": "Every morning before sunrise, Maya laced her worn sneakers and ran laps around the silent park, her breath misting in the cold air. She stumbled often, knees scraped and spirit battered by doubts that whispered she would never finish a marathon. Yet, each fall became a lesson, each ache a reminder of how far she\u2019d come. On race day, with tired legs and a hopeful heart, she crossed the finish line long after the crowd had thinned. Alone but triumphant, Maya smiled, knowing perseverance had carried her every step.",
+    "specification": {
+      "theme": "perseverance"
+    },
+    "condition": "baseline_title",
+    "index": 48
+  },
+  {
+    "text": "At the town\u2019s annual baking contest, Nora placed her pie on the table, its golden crust gleaming under the lights. When the judges called her name as the winner, applause filled the hall, but Nora\u2019s smile wavered. She stepped forward and quietly confessed that her sister had helped her perfect the secret recipe. The judges listened, then thanked Nora for her honesty and awarded both sisters the prize. As they walked home together, their laughter tasted sweeter than any victory.",
+    "specification": {
+      "theme": "honesty"
+    },
+    "condition": "baseline_title",
+    "index": 49
+  }
+]

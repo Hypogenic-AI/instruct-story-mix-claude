@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "model": "gpt-4.1",
+  "eval_model": "gpt-4.1",
+  "n_stories_extract": 100,
+  "n_stories_generate": 50,
+  "timestamp": "2026-03-23T16:15:21.643960",
+  "completion_time": "2026-03-23T16:33:37.591700"
+}

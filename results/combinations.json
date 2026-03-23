@@ -1,0 +1,802 @@
+[
+  {
+    "setting": "A modern high school classroom during a typical school day.",
+    "protagonist": "John, a diligent and responsible student.",
+    "conflict_type": "person_vs_society",
+    "theme": "attention to detail",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      95,
+      74,
+      54,
+      51,
+      46
+    ]
+  },
+  {
+    "setting": "The story takes place in an unspecified location during a lecture or sermon.",
+    "protagonist": "Tom, a young man out socializing with friends.",
+    "conflict_type": "person_vs_self",
+    "theme": "community service",
+    "emotional_arc": "neutral",
+    "narrative_technique": "linear",
+    "tone": "lighthearted",
+    "source_indices": [
+      65,
+      63,
+      11,
+      96,
+      6
+    ]
+  },
+  {
+    "setting": "The story takes place in a cooking class in the present day.",
+    "protagonist": "Alex, a basketball enthusiast who is shorter than his neighbor.",
+    "conflict_type": "person_vs_nature",
+    "theme": "kindness, empathy",
+    "emotional_arc": "bittersweet",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      80,
+      20,
+      87,
+      54,
+      76
+    ]
+  },
+  {
+    "setting": "A modern-day coffee shop over several days.",
+    "protagonist": "Rex, the family dog who is loved by his owners.",
+    "conflict_type": "person_vs_self",
+    "theme": "hope and perseverance",
+    "emotional_arc": "lighthearted",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      48,
+      76,
+      59,
+      67,
+      32
+    ]
+  },
+  {
+    "setting": "The story takes place during the day in the ocean while Joe is scuba diving.",
+    "protagonist": "Randy, a person hurriedly washing dishes.",
+    "conflict_type": "person_vs_self",
+    "theme": "temptation and choice",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "lighthearted",
+    "source_indices": [
+      87,
+      92,
+      14,
+      68,
+      96
+    ]
+  },
+  {
+    "setting": "A contemporary grocery store during the day.",
+    "protagonist": "Bri, a person who is hesitant about wine but open to new experiences.",
+    "conflict_type": "person_vs_self",
+    "theme": "recklessness and consequence",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "dramatic",
+    "source_indices": [
+      82,
+      43,
+      14,
+      37,
+      55
+    ]
+  },
+  {
+    "setting": "The story takes place in a classroom during a school day.",
+    "protagonist": "Randy, a person hurriedly washing dishes.",
+    "conflict_type": "person_vs_self",
+    "theme": "growth and perseverance",
+    "emotional_arc": "negative_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      0,
+      92,
+      33,
+      64,
+      97
+    ]
+  },
+  {
+    "setting": "The story takes place in Tony's backyard during the holiday season.",
+    "protagonist": "Ella, a reluctant cooking student who struggles with cooking.",
+    "conflict_type": "person_vs_self",
+    "theme": "perseverance",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "lighthearted",
+    "source_indices": [
+      13,
+      80,
+      38,
+      81,
+      64
+    ]
+  },
+  {
+    "setting": "The story takes place outdoors during the day, likely in a natural environment where rock collecting is possible.",
+    "protagonist": "Kevin, a freelance writer passionate about arcade games.",
+    "conflict_type": "person_vs_self",
+    "theme": "acceptance, competition",
+    "emotional_arc": "negative_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      19,
+      47,
+      97,
+      20,
+      69
+    ]
+  },
+  {
+    "setting": "The story takes place in a classroom during a school day.",
+    "protagonist": "Rex, the family dog who is loved by his owners.",
+    "conflict_type": "person_vs_self",
+    "theme": "risk and consequence",
+    "emotional_arc": "comedic",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      0,
+      76,
+      41,
+      62,
+      2
+    ]
+  },
+  {
+    "setting": "The story takes place in Sarah and Tom's house during a game of hide and seek, specifically focusing on the basement.",
+    "protagonist": "Charlie, a three-year-old child who is upset when his toy is broken.",
+    "conflict_type": "person_vs_self",
+    "theme": "recognition, kindness",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "lighthearted",
+    "source_indices": [
+      39,
+      30,
+      7,
+      72,
+      10
+    ]
+  },
+  {
+    "setting": "The story takes place at a skatepark during the daytime.",
+    "protagonist": "Anna, a curious and observant individual fascinated by nature.",
+    "conflict_type": "person_vs_self",
+    "theme": "temptation and choice",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "melancholic",
+    "source_indices": [
+      62,
+      8,
+      97,
+      68,
+      98
+    ]
+  },
+  {
+    "setting": "A bank during the daytime in the present.",
+    "protagonist": "Julie, a woman who visits the beach and experiences the consequences of sunbathing without protection.",
+    "conflict_type": "person_vs_self",
+    "theme": "regret, preparation",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      84,
+      60,
+      70,
+      21,
+      33
+    ]
+  },
+  {
+    "setting": "The story takes place during lunchtime at an Italian restaurant in the present day.",
+    "protagonist": "Van, a young man starting his college journey.",
+    "conflict_type": "person_vs_self",
+    "theme": "community service",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "lighthearted",
+    "source_indices": [
+      54,
+      27,
+      69,
+      96,
+      93
+    ]
+  },
+  {
+    "setting": "The story takes place in an office during the protagonist's first day in a new cubicle.",
+    "protagonist": "Sarah, a young girl who is afraid of the basement but determined to find her brother.",
+    "conflict_type": "person_vs_self",
+    "theme": "perseverance",
+    "emotional_arc": "bittersweet",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      91,
+      39,
+      51,
+      85,
+      83
+    ]
+  },
+  {
+    "setting": "The story takes place in a modern workplace over a period of several weeks or months.",
+    "protagonist": "Tom, a lighthearted and impulsive individual seeking a bit of fun.",
+    "conflict_type": "person_vs_none",
+    "theme": "consequences of addiction",
+    "emotional_arc": "negative_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      66,
+      57,
+      15,
+      31,
+      28
+    ]
+  },
+  {
+    "setting": "The story takes place in Shannon's home over the course of several days.",
+    "protagonist": "Anna, a woman who cherishes memories of her parents through music.",
+    "conflict_type": "person_vs_self",
+    "theme": "innocence and misunderstanding",
+    "emotional_arc": "negative_resolution",
+    "narrative_technique": "linear",
+    "tone": "melancholic",
+    "source_indices": [
+      2,
+      75,
+      70,
+      29,
+      28
+    ]
+  },
+  {
+    "setting": "The story takes place in Don's home and an aquarium store in the present day.",
+    "protagonist": "Ella, a reluctant cooking student who struggles with cooking.",
+    "conflict_type": "person_vs_self",
+    "theme": "innocence and misunderstanding",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      90,
+      80,
+      7,
+      29,
+      8
+    ]
+  },
+  {
+    "setting": "A high school football field and Rob's home, during his first high school game.",
+    "protagonist": "Bob, a persuasive and zealous speaker.",
+    "conflict_type": "person_vs_person",
+    "theme": "unexpected adversity",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      9,
+      65,
+      30,
+      35,
+      85
+    ]
+  },
+  {
+    "setting": "The story takes place outdoors during a friendly race between two friends, likely in the present day.",
+    "protagonist": "Ron and Hermione, two old friends reconnecting after a long separation.",
+    "conflict_type": "person_vs_self",
+    "theme": "unexpected misfortune",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      69,
+      16,
+      92,
+      73,
+      60
+    ]
+  },
+  {
+    "setting": "The story takes place in Anna's backyard during the present day.",
+    "protagonist": "Hank, a frustrated resident disturbed by his neighbors' frequent parties.",
+    "conflict_type": "person_vs_technology",
+    "theme": "taking chances",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      52,
+      24,
+      12,
+      84,
+      55
+    ]
+  },
+  {
+    "setting": "The story takes place in Anna's backyard during the present day.",
+    "protagonist": "Tommy, a young boy eager to get a puppy.",
+    "conflict_type": "person_vs_person",
+    "theme": "healing and timing",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      52,
+      59,
+      93,
+      6,
+      86
+    ]
+  },
+  {
+    "setting": "The story takes place in the present day, primarily at Barry's home.",
+    "protagonist": "An individual who becomes deeply fascinated by historical tragedies.",
+    "conflict_type": "person_vs_self",
+    "theme": "desire for acceptance",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      12,
+      7,
+      51,
+      93,
+      43
+    ]
+  },
+  {
+    "setting": "A modern residential neighborhood during a morning at 10 AM.",
+    "protagonist": "Lucy, a curious and eager child experiencing new treats with her grandmother.",
+    "conflict_type": "person_vs_fate",
+    "theme": "self-discipline",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      24,
+      68,
+      57,
+      17,
+      54
+    ]
+  },
+  {
+    "setting": "The story takes place at Tommy's school and in the parking lot, during the afternoon after school.",
+    "protagonist": "The main character is the narrator's father, a man known for his heavy drinking habits.",
+    "conflict_type": "person_vs_self",
+    "theme": "unexpected obstacles",
+    "emotional_arc": "bittersweet",
+    "narrative_technique": "linear",
+    "tone": "lighthearted",
+    "source_indices": [
+      59,
+      31,
+      9,
+      56,
+      70
+    ]
+  },
+  {
+    "setting": "The story takes place in a contemporary home environment, shortly before a game.",
+    "protagonist": "Tim, a competitive and energetic individual who initiates a race with his friend.",
+    "conflict_type": "person_vs_self",
+    "theme": "perseverance",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      83,
+      69,
+      1,
+      11,
+      96
+    ]
+  },
+  {
+    "setting": "The story takes place in Anna's backyard during the present day.",
+    "protagonist": "John, a skateboard enthusiast who enjoys challenging himself on ramps.",
+    "conflict_type": "person_vs_self",
+    "theme": "new beginnings",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      52,
+      62,
+      61,
+      27,
+      51
+    ]
+  },
+  {
+    "setting": "A modern-day coffee shop over several days.",
+    "protagonist": "Billy, a student who is anxious about public speaking.",
+    "conflict_type": "person_vs_self",
+    "theme": "overcoming fear",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      48,
+      0,
+      49,
+      33,
+      58
+    ]
+  },
+  {
+    "setting": "The story takes place in the competitive world of online first-person shooter (FPS) gaming, in the present day.",
+    "protagonist": "Allie, a twelve-year-old girl eager to fit in with her peers.",
+    "conflict_type": "person_vs_self",
+    "theme": "taking chances",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "lighthearted",
+    "source_indices": [
+      89,
+      93,
+      71,
+      84,
+      91
+    ]
+  },
+  {
+    "setting": "A modern residential neighborhood during a morning at 10 AM.",
+    "protagonist": "Anthony, a skateboarder who enjoys taking risks.",
+    "conflict_type": "person_vs_self",
+    "theme": "obsession and curiosity",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      24,
+      37,
+      27,
+      7,
+      74
+    ]
+  },
+  {
+    "setting": "The story takes place in the present day, primarily in the narrator's personal space as they engage with books and documentaries.",
+    "protagonist": "A knowledgeable paraeducator who assists in the classroom.",
+    "conflict_type": "person_vs_self",
+    "theme": "healing and timing",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      7,
+      95,
+      40,
+      6,
+      74
+    ]
+  },
+  {
+    "setting": "The story takes place in the present day, likely in Sue's home and adoption agencies.",
+    "protagonist": "Alex, a basketball enthusiast who is shorter than his neighbor.",
+    "conflict_type": "person_vs_self",
+    "theme": "manipulation and fanaticism",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      67,
+      20,
+      7,
+      65,
+      10
+    ]
+  },
+  {
+    "setting": "The story takes place in a suburban neighborhood during an unspecified present time.",
+    "protagonist": "Anna, a curious and observant individual fascinated by nature.",
+    "conflict_type": "person_vs_person",
+    "theme": "forgiveness, kindness",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      76,
+      8,
+      86,
+      30,
+      51
+    ]
+  },
+  {
+    "setting": "The story takes place over several years in the narrator's family home, spanning from the father's youth to his later years.",
+    "protagonist": "John, a diligent and responsible student.",
+    "conflict_type": "person_vs_self",
+    "theme": "freedom vs. safety",
+    "emotional_arc": "neutral",
+    "narrative_technique": "linear",
+    "tone": "lighthearted",
+    "source_indices": [
+      31,
+      74,
+      76,
+      5,
+      79
+    ]
+  },
+  {
+    "setting": "A bank during the daytime in the present.",
+    "protagonist": "John, a diligent and responsible student.",
+    "conflict_type": "person_vs_society",
+    "theme": "self-improvement",
+    "emotional_arc": "bittersweet",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      84,
+      74,
+      72,
+      66,
+      40
+    ]
+  },
+  {
+    "setting": "The story takes place in Tom's apartment and a fast food restaurant, in the present day.",
+    "protagonist": "An office worker who appreciates privacy and comfort in their workspace.",
+    "conflict_type": "person_vs_self",
+    "theme": "forgiveness, kindness",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "melancholic",
+    "source_indices": [
+      85,
+      91,
+      40,
+      30,
+      33
+    ]
+  },
+  {
+    "setting": "The story takes place in Tom's apartment and a fast food restaurant, in the present day.",
+    "protagonist": "Kate, a woman who goes out casually dressed to run a quick errand.",
+    "conflict_type": "person_vs_self",
+    "theme": "miscommunication",
+    "emotional_arc": "bittersweet",
+    "narrative_technique": "linear",
+    "tone": "melancholic",
+    "source_indices": [
+      85,
+      82,
+      38,
+      58,
+      40
+    ]
+  },
+  {
+    "setting": "The story takes place in a school during Susan's final year of teaching.",
+    "protagonist": "Anthony, a young man whose actions inadvertently cause concern for his mother.",
+    "conflict_type": "person_vs_self",
+    "theme": "recognition, kindness",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      1,
+      58,
+      79,
+      72,
+      12
+    ]
+  },
+  {
+    "setting": "The story takes place on a college campus during Van's first day of college.",
+    "protagonist": "A family working together to start and tend a garden.",
+    "conflict_type": "person_vs_self",
+    "theme": "reconnection, nostalgia",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      27,
+      64,
+      33,
+      16,
+      44
+    ]
+  },
+  {
+    "setting": "The story takes place in the contemporary digital world, primarily within online communities and websites.",
+    "protagonist": "Fred, a person relaxing at home watching his favorite TV series.",
+    "conflict_type": "person_vs_person",
+    "theme": "unexpected obstacles",
+    "emotional_arc": "negative_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      47,
+      36,
+      20,
+      56,
+      69
+    ]
+  },
+  {
+    "setting": "The story takes place in Tommy's home during a visit from his cousin, in the present day.",
+    "protagonist": "Jazz, a young person eager to buy a shirt for an upcoming game.",
+    "conflict_type": "person_vs_fate",
+    "theme": "self-discovery",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      78,
+      83,
+      67,
+      1,
+      85
+    ]
+  },
+  {
+    "setting": "A bank during the daytime in the present.",
+    "protagonist": "Tony, a caring but financially struggling individual who owns a pet turkey.",
+    "conflict_type": "person_vs_self",
+    "theme": "overcoming fear",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "melancholic",
+    "source_indices": [
+      84,
+      13,
+      17,
+      33,
+      14
+    ]
+  },
+  {
+    "setting": "The story takes place in a family home and at a formal event, over the course of two days.",
+    "protagonist": "James, an enthusiastic outdoors-man and rock collector.",
+    "conflict_type": "person_vs_person",
+    "theme": "discomfort with technology",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      70,
+      19,
+      34,
+      36,
+      77
+    ]
+  },
+  {
+    "setting": "The story takes place at a wine tasting party in the present day.",
+    "protagonist": "Ethan, a student who feels guilty about not practicing piano.",
+    "conflict_type": "person_vs_nature",
+    "theme": "perseverance",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      43,
+      26,
+      87,
+      81,
+      33
+    ]
+  },
+  {
+    "setting": "The story takes place in the present day, moving between Hal's home and a bank.",
+    "protagonist": "A concerned spouse seeking remedies for his wife's cough.",
+    "conflict_type": "person_vs_self",
+    "theme": "perseverance",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "lighthearted",
+    "source_indices": [
+      32,
+      6,
+      11,
+      81,
+      54
+    ]
+  },
+  {
+    "setting": "The story takes place in a classroom during a school day.",
+    "protagonist": "Fred, a hungry child who has been playing on the beach.",
+    "conflict_type": "person_vs_society",
+    "theme": "reconnection, nostalgia",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      0,
+      42,
+      98,
+      16,
+      81
+    ]
+  },
+  {
+    "setting": "The story takes place at the narrator's home in the present day, after a trip to a costume store.",
+    "protagonist": "Martha, a woman traveling by car to see her mother.",
+    "conflict_type": "person_vs_self",
+    "theme": "responsibility",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      94,
+      56,
+      70,
+      90,
+      54
+    ]
+  },
+  {
+    "setting": "The story takes place in Cabo San Lucas over the course of several vacations.",
+    "protagonist": "Rob, a young football player recently named star quarterback.",
+    "conflict_type": "person_vs_person",
+    "theme": "discovery and reward",
+    "emotional_arc": "negative_resolution",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      14,
+      9,
+      88,
+      19,
+      69
+    ]
+  },
+  {
+    "setting": "The story takes place in John's home over the course of an evening before a school day.",
+    "protagonist": "A father who is playful with his children but must also fulfill professional duties.",
+    "conflict_type": "person_vs_nature",
+    "theme": "perseverance",
+    "emotional_arc": "bittersweet",
+    "narrative_technique": "linear",
+    "tone": "heartwarming",
+    "source_indices": [
+      74,
+      70,
+      18,
+      55,
+      16
+    ]
+  },
+  {
+    "setting": "The story takes place in the mountains during the Christmas season.",
+    "protagonist": "The main character is the narrator's adventurous and mischievous cat.",
+    "conflict_type": "person_vs_self",
+    "theme": "honesty",
+    "emotional_arc": "positive_resolution",
+    "narrative_technique": "linear",
+    "tone": "serious",
+    "source_indices": [
+      46,
+      5,
+      45,
+      26,
+      87
+    ]
+  }
+]

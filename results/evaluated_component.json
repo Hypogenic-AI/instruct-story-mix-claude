@@ -1,0 +1,1852 @@
+[
+  {
+    "text": "John sat upright in his high school classroom, meticulously reviewing his notes while his classmates whispered and scrolled through their phones, unconcerned about the upcoming history exam. During the test, he noticed a subtle error in one question\u2014a date that didn\u2019t align with their textbook\u2014which everyone else overlooked. Despite his fear of drawing attention, John raised his hand and politely pointed out the discrepancy. The teacher paused, reviewed the question, and thanked him, realizing the mistake could have unfairly impacted everyone\u2019s grade. By the end of the day, John\u2019s careful attention had not only helped himself but also earned him newfound respect from both his peers and teachers.",
+    "specification": {
+      "setting": "A modern high school classroom during a typical school day.",
+      "protagonist": "John, a diligent and responsible student.",
+      "conflict_type": "person_vs_society",
+      "theme": "attention to detail",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        95,
+        74,
+        54,
+        51,
+        46
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 0,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Tom slouched in the pew, half-listening as the speaker launched into a passionate tale about volunteering at soup kitchens. His friends beside him snickered quietly, sharing memes on their phones under the guise of taking notes. Tom tried to focus, but his mind wandered, debating whether he'd ever actually sign up for Saturday service like he'd promised last month. The applause jolted him back, and he wondered aloud if good intentions counted for anything. As they filed out into the sunshine, Tom grinned, deciding maybe next time he'd bring soup instead of sarcasm.",
+    "specification": {
+      "setting": "The story takes place in an unspecified location during a lecture or sermon.",
+      "protagonist": "Tom, a young man out socializing with friends.",
+      "conflict_type": "person_vs_self",
+      "theme": "community service",
+      "emotional_arc": "neutral",
+      "narrative_technique": "linear",
+      "tone": "lighthearted",
+      "source_indices": [
+        65,
+        63,
+        11,
+        96,
+        6
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 1,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Alex, who always felt small beside his tall neighbor Greg, struggled to reach the highest shelf for the vanilla extract during their first cooking class together. Greg noticed, grinned, and wordlessly passed Alex the bottle, but the real test came when a swarm of bees invaded through an open window, scattering students in panic. Remembering his coach's advice to face fears with kindness, Alex coaxed the bees out gently, using sweet-scented batter as bait. Everyone applauded, but Alex's heart ached when Greg whispered, \"I wish I could be brave like you.\" As the class returned to their stations, Alex realized that true stature wasn't measured in inches, but in empathy shown when nature tests us.",
+    "specification": {
+      "setting": "The story takes place in a cooking class in the present day.",
+      "protagonist": "Alex, a basketball enthusiast who is shorter than his neighbor.",
+      "conflict_type": "person_vs_nature",
+      "theme": "kindness, empathy",
+      "emotional_arc": "bittersweet",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        80,
+        20,
+        87,
+        54,
+        76
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 2,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Each morning, Rex pressed his nose against the coffee shop window, tail wagging as his family grabbed their coffee and hurried off to work, leaving him outside with a hopeful glance. At first, he felt a pang of loneliness and wondered if he'd ever be more than a loyal bystander to their busy world. Day after day, he stayed, his patience unwavering, watching laughter and warmth bloom within the shop. One rainy afternoon, as the family lingered inside, the barista opened the door and welcomed Rex in, earning him a special bed under the counter and a treat. With each wag of his tail, Rex realized his hope had brought him into the heart of their daily rituals, truly belonging at last.",
+    "specification": {
+      "setting": "A modern-day coffee shop over several days.",
+      "protagonist": "Rex, the family dog who is loved by his owners.",
+      "conflict_type": "person_vs_self",
+      "theme": "hope and perseverance",
+      "emotional_arc": "lighthearted",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        48,
+        76,
+        59,
+        67,
+        32
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 3,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 4,
+      "character_adherence": 5,
+      "conflict_adherence": 4,
+      "theme_adherence": 5,
+      "arc_adherence": 4,
+      "tone_adherence": 3,
+      "overall_adherence": 4
+    }
+  },
+  {
+    "text": "As Joe drifted serenely among the fish, Randy scrubbed dishes in his kitchen above, peering longingly out the window at the sparkling waves. The urge to abandon his sudsy chore and join Joe\u2019s adventure nearly overwhelmed him, and he splashed water everywhere, imagining the cool ocean instead of his warm sink. He sighed, contemplating the mountain of dirty plates beside him and the thrill waiting just offshore. Finally, Randy grinned, rolled up his sleeves, and attacked the dishes with renewed vigor, deciding he\u2019d earn his dive by finishing the task. By the time the last plate gleamed, Randy danced out the door, feeling lighter than the bubbles Joe swam through below.",
+    "specification": {
+      "setting": "The story takes place during the day in the ocean while Joe is scuba diving.",
+      "protagonist": "Randy, a person hurriedly washing dishes.",
+      "conflict_type": "person_vs_self",
+      "theme": "temptation and choice",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "lighthearted",
+      "source_indices": [
+        87,
+        92,
+        14,
+        68,
+        96
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 4,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 3,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 4
+    }
+  },
+  {
+    "text": "Bri lingered in front of the glowing wine displays, her fingers tracing trembling circles on the cool glass, torn between the comfort of soda and the allure of something bold. She recalled stories of wild nights and regretted mornings, her mother's warnings echoing in her ears, yet curiosity prickled beneath her skin. With a reckless, defiant breath, she chose the crimson bottle with the most extravagant label, feeling danger and freedom knotted together in her chest. At home, the first sip was tart and strange, and her heart stuttered\u2014then steadied, surprised by her own resilience. Smiling at her reflection, Bri realized the real consequence was discovering she could trust herself to taste the unknown.",
+    "specification": {
+      "setting": "A contemporary grocery store during the day.",
+      "protagonist": "Bri, a person who is hesitant about wine but open to new experiences.",
+      "conflict_type": "person_vs_self",
+      "theme": "recklessness and consequence",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "dramatic",
+      "source_indices": [
+        82,
+        43,
+        14,
+        37,
+        55
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 5,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 4,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Randy stood at the back sink in the classroom, wrists aching as he hurriedly scrubbed paint-smeared cups while his classmates laughed over their finished art projects. He berated himself for volunteering, feeling clumsy and out of place as soapy water splashed onto his sleeves. Despite his frustration, he forced himself to finish each dish, determined not to give up halfway through. As he stacked the final cup, pride flickered briefly before being overshadowed by the lonely silence around him. Randy realized that growth sometimes meant facing difficult moments alone, and wishing it felt better didn\u2019t make the lesson any easier.",
+    "specification": {
+      "setting": "The story takes place in a classroom during a school day.",
+      "protagonist": "Randy, a person hurriedly washing dishes.",
+      "conflict_type": "person_vs_self",
+      "theme": "growth and perseverance",
+      "emotional_arc": "negative_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        0,
+        92,
+        33,
+        64,
+        97
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 6,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 4,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Ella stood in Tony's backyard, eyeing the portable stove like it might explode, as twinkling holiday lights blinked encouragement from the fence. Despite her infamous burnt cookies, she gamely ladled batter for her first-ever pancakes, hands trembling more from nerves than the December chill. As she flipped, the pancake landed on the grass with a soft splat, and her cheeks matched the Santa mugs on the table. But laughter bubbled from her lips, and she tried again, this time producing a golden-brown circle worthy of applause. With every bite, Ella realized that perseverance tasted almost as sweet as syrup.",
+    "specification": {
+      "setting": "The story takes place in Tony's backyard during the holiday season.",
+      "protagonist": "Ella, a reluctant cooking student who struggles with cooking.",
+      "conflict_type": "person_vs_self",
+      "theme": "perseverance",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "lighthearted",
+      "source_indices": [
+        13,
+        80,
+        38,
+        81,
+        64
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 7,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Kevin crouched beside a glimmering creek, sorting stones by color as sunlight flickered through the trees, his notebook unopened at his side. He remembered the leaderboard at his favorite arcade, where his initials never claimed the top spot, and the familiar ache of coming close but never winning. With each smooth pebble he picked up, he measured his worth against invisible competitors\u2014other collectors, other writers, old rivals he\u2019d never met. The rocks offered no comfort, only silent testament to the futility of perfecting a collection. As the water rushed by, Kevin let the stones tumble from his hands, unable to shake the sense that he would always fall short, no matter how hard he tried.",
+    "specification": {
+      "setting": "The story takes place outdoors during the day, likely in a natural environment where rock collecting is possible.",
+      "protagonist": "Kevin, a freelance writer passionate about arcade games.",
+      "conflict_type": "person_vs_self",
+      "theme": "acceptance, competition",
+      "emotional_arc": "negative_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        19,
+        47,
+        97,
+        20,
+        69
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 8,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Rex, the family dog, squeezed through the school doors, determined to surprise his boy during math class. As he tiptoed past desks, the scent of peanut butter sandwiches warred with his sense of mission. Pausing, Rex wrestled with his urge to snatch a snack or keep searching for his favorite human. Just as his resolve wavered, a sandwich plopped to the floor, and he lunged\u2014earning a round of giggles from the students. In the end, Rex landed in his boy\u2019s lap, tail thumping, realizing some risks come with delicious rewards and even bigger smiles.",
+    "specification": {
+      "setting": "The story takes place in a classroom during a school day.",
+      "protagonist": "Rex, the family dog who is loved by his owners.",
+      "conflict_type": "person_vs_self",
+      "theme": "risk and consequence",
+      "emotional_arc": "comedic",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        0,
+        76,
+        41,
+        62,
+        2
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 9,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Charlie clutched his broken toy truck in the dim basement, tears prickling as laughter echoed upstairs from Sarah and Tom. He wanted to hide, but his sadness felt heavier than any game. Remembering Sarah\u2019s words\u2014\u201cKindness starts with you, Charlie\u201d\u2014he took a shaky breath and wiped his eyes. When Tom peeked down the stairs and found him, Charlie managed a small smile and bravely held out the truck, asking, \u201cCan you help me fix it?\u201d Together, their laughter soon filled the basement, Charlie\u2019s heart warming with newfound hope and kindness.",
+    "specification": {
+      "setting": "The story takes place in Sarah and Tom's house during a game of hide and seek, specifically focusing on the basement.",
+      "protagonist": "Charlie, a three-year-old child who is upset when his toy is broken.",
+      "conflict_type": "person_vs_self",
+      "theme": "recognition, kindness",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "lighthearted",
+      "source_indices": [
+        39,
+        30,
+        7,
+        72,
+        10
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 10,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Anna sat on the edge of the skatepark, watching sunlight flicker through distant tree branches while the metallic clang of skateboards echoed around her. She longed to try a daring trick, to feel the rush her friends always bragged about, yet her eyes kept straying to a pair of sparrows building a nest above the half-pipe. As her friends called her over, Anna\u2019s heart fluttered with both excitement and anxiety\u2014the temptation to impress them nearly overwhelming her curiosity. But after a quiet moment, she made her choice and wandered toward the birds, content to marvel at their patience and grace. Though a bittersweet ache lingered, Anna smiled, knowing she\u2019d honored what truly fascinated her.",
+    "specification": {
+      "setting": "The story takes place at a skatepark during the daytime.",
+      "protagonist": "Anna, a curious and observant individual fascinated by nature.",
+      "conflict_type": "person_vs_self",
+      "theme": "temptation and choice",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "melancholic",
+      "source_indices": [
+        62,
+        8,
+        97,
+        68,
+        98
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 11,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Julie winced as she waited in line at the bank, the sunburn on her shoulders prickling each time her shirt brushed against her skin. She remembered yesterday\u2019s carefree afternoon at the beach, the laughter, and how she\u2019d shrugged off her mother\u2019s reminder to pack sunscreen. Now, every impatient sigh behind her in line echoed her own regret for not taking better care of herself. As she fumbled for her ID, a kind teller noticed her discomfort and offered soothing aloe from a drawer, sharing a story of her own beach mishap. Smiling gratefully, Julie promised herself to always be prepared\u2014grateful for both the lesson and the unexpected kindness she found in a mundane place.",
+    "specification": {
+      "setting": "A bank during the daytime in the present.",
+      "protagonist": "Julie, a woman who visits the beach and experiences the consequences of sunbathing without protection.",
+      "conflict_type": "person_vs_self",
+      "theme": "regret, preparation",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        84,
+        60,
+        70,
+        21,
+        33
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 12,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Van twirled spaghetti on his fork at the bustling Italian restaurant, nervously rereading the flyer about the campus volunteer fair. Unsure if he had the time or confidence to help others, he let his gaze wander to a nearby table where volunteers in matching shirts laughed over pizza. Their easy camaraderie made him long for connection, and he realized maybe volunteering wasn\u2019t just about giving\u2014it was also about belonging. Smiling, Van stood up and approached them, introducing himself with a hopeful, \u201cIs this seat taken?\u201d By the time dessert arrived, he already felt like part of something bigger than himself.",
+    "specification": {
+      "setting": "The story takes place during lunchtime at an Italian restaurant in the present day.",
+      "protagonist": "Van, a young man starting his college journey.",
+      "conflict_type": "person_vs_self",
+      "theme": "community service",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "lighthearted",
+      "source_indices": [
+        54,
+        27,
+        69,
+        96,
+        93
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 13,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Sarah sat stiffly in her new cubicle, the hum of office lights masking her trembling resolve as she remembered the promise to find her brother, lost somewhere in the building\u2019s shadowy basement. Fear coiled in her stomach each time she glanced at the door marked \"STAIRS,\" but her determination pressed harder than the dread. At lunch, her hands shook as she typed out a message to her brother, the screen reflecting her uncertain courage. By day's end, she finally rose, each step toward the basement a battle against the whispering what-ifs in her mind. When she reached the bottom and found only his forgotten scarf, relief and sadness tangled inside her\u2014she had faced the darkness, but he was still gone.",
+    "specification": {
+      "setting": "The story takes place in an office during the protagonist's first day in a new cubicle.",
+      "protagonist": "Sarah, a young girl who is afraid of the basement but determined to find her brother.",
+      "conflict_type": "person_vs_self",
+      "theme": "perseverance",
+      "emotional_arc": "bittersweet",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        91,
+        39,
+        51,
+        85,
+        83
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 14,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 4,
+      "character_adherence": 4,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Tom started bringing in boxes of donuts every Friday, delighting his coworkers and earning laughter as he tried each new flavor before anyone else. As weeks passed, his playful \"taste tests\" turned into daily rituals\u2014one, then two, then three donuts before noon. The office cheered him on at first, but soon, Tom found himself sluggish and unable to focus, missing the spark that made his jokes land. He tried to stop, but the sweet comfort called to him even as he watched his energy and health decline. Eventually, with a heavy heart, Tom sat alone in the break room, realizing that seeking a little fun had quietly stolen the joy he meant to share.",
+    "specification": {
+      "setting": "The story takes place in a modern workplace over a period of several weeks or months.",
+      "protagonist": "Tom, a lighthearted and impulsive individual seeking a bit of fun.",
+      "conflict_type": "person_vs_none",
+      "theme": "consequences of addiction",
+      "emotional_arc": "negative_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        66,
+        57,
+        15,
+        31,
+        28
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 15,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 4,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Each morning in Shannon's sunlit living room, Anna played her parents' favorite vinyl records, letting the melodies swirl around her like echoes of their laughter. As the days passed, she clung to each note, believing that if she cherished the music enough, she could keep their memory pure and untouched. But memories, she learned, are fragile things, easily bruised by the sharp edges of longing and regret. One evening, she discovered a letter hidden in an old album sleeve, revealing secrets her parents had kept from her, shattering her innocent reverence. With trembling hands, Anna placed the record back on the shelf, understanding at last that the music would never sound the same again.",
+    "specification": {
+      "setting": "The story takes place in Shannon's home over the course of several days.",
+      "protagonist": "Anna, a woman who cherishes memories of her parents through music.",
+      "conflict_type": "person_vs_self",
+      "theme": "innocence and misunderstanding",
+      "emotional_arc": "negative_resolution",
+      "narrative_technique": "linear",
+      "tone": "melancholic",
+      "source_indices": [
+        2,
+        75,
+        70,
+        29,
+        28
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 16,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Ella nervously hovered over Don\u2019s stove, her latest attempt at fish stew bubbling with far too many floating carrots. After Don tasted the dish and coughed politely, Ella\u2019s cheeks burned with embarrassment, convinced she\u2019d never learn\u2014until Don suggested a trip to the aquarium store for \u201cinspiration.\u201d Wandering between sparkling tanks, Ella misunderstood his advice and excitedly pointed out a bright, darting guppy, thinking it might be the missing ingredient to her recipe. Don chuckled, gently explaining that inspiration meant watching the fish\u2019s grace, not eating them, and Ella laughed, her kitchen anxieties dissolving in the glow of neon tetras. By the time they left, Ella felt lighter, realizing that sometimes, misunderstanding innocence could be the sweetest part of learning.",
+    "specification": {
+      "setting": "The story takes place in Don's home and an aquarium store in the present day.",
+      "protagonist": "Ella, a reluctant cooking student who struggles with cooking.",
+      "conflict_type": "person_vs_self",
+      "theme": "innocence and misunderstanding",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        90,
+        80,
+        7,
+        29,
+        8
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 17,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "As Bob stood at the fifty-yard line, rallying his nervous teammates with an impassioned speech under the glaring Friday night lights, Rob\u2014his best friend and the star quarterback\u2014suddenly tripped and sprained his ankle during warm-ups. The team's hope faltered, but Bob, undeterred, persuaded everyone that Rob needed them now more than ever, igniting a newfound determination in the group. Against the odds, the team played with unity and heart, fighting fiercely until the final whistle. After the victorious game, the entire team carried Rob to his home, where Bob delivered another rousing speech about overcoming adversity together. Smiles and laughter filled the air, and Rob, grateful for Bob\u2019s unwavering support, knew the real victory was the strength of their friendship.",
+    "specification": {
+      "setting": "A high school football field and Rob's home, during his first high school game.",
+      "protagonist": "Bob, a persuasive and zealous speaker.",
+      "conflict_type": "person_vs_person",
+      "theme": "unexpected adversity",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        9,
+        65,
+        30,
+        35,
+        85
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 18,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 3,
+      "language_quality": 4,
+      "overall_quality": 3
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 4,
+      "conflict_adherence": 4,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Under a cloudy afternoon sky, Ron and Hermione stood at the edge of the park, hearts racing as they prepared to relive the friendly competitions of their youth. As the signal to start echoed, Ron surged ahead, determined to prove he had changed since their last race years ago. Suddenly, his foot caught on a hidden root, sending him sprawling painfully onto the grass, pride bruised more than his knees. For a moment, disappointment threatened to overwhelm him, but Hermione extended her hand with a gentle smile, helping him up and laughing softly. Together, they finished the race side by side, rediscovering the warmth of friendship that neither time nor mishap could erase.",
+    "specification": {
+      "setting": "The story takes place outdoors during a friendly race between two friends, likely in the present day.",
+      "protagonist": "Ron and Hermione, two old friends reconnecting after a long separation.",
+      "conflict_type": "person_vs_self",
+      "theme": "unexpected misfortune",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        69,
+        16,
+        92,
+        73,
+        60
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 19,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 4,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 4,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Hank scowled from his patio as Anna's backyard speakers thumped yet another party anthem, drowning out his favorite podcast. Tired of feeling powerless, he researched Bluetooth signal jammers and hesitated, finger hovering over the \u201cBuy Now\u201d button. Instead, he walked next door and, voice nervously cracking, asked if he could help DJ for the night. Anna beamed, handed him the aux cord, and soon Hank\u2019s playlist had the whole party dancing. By midnight, he realized sometimes the best way to quiet the noise is to join in and change the tune.",
+    "specification": {
+      "setting": "The story takes place in Anna's backyard during the present day.",
+      "protagonist": "Hank, a frustrated resident disturbed by his neighbors' frequent parties.",
+      "conflict_type": "person_vs_technology",
+      "theme": "taking chances",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        52,
+        24,
+        12,
+        84,
+        55
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 20,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 4,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Tommy sat on Anna's sun-warmed porch steps, pleading once more for a puppy, his voice trembling with hope. Anna, still grieving her old dog, shook her head gently, saying, \u201cSome wounds need more time, Tommy.\u201d Frustration welled in Tommy\u2019s chest, but he saw the sadness in her eyes and grew quiet, the afternoon sunlight catching the tears she tried to hide. Days later, Anna surprised Tommy by taking his hand and leading him to a shelter, her smile tentative but real. Together, they chose a trembling puppy, both finding comfort in the promise of healing\u2014one slow, joyful moment at a time.",
+    "specification": {
+      "setting": "The story takes place in Anna's backyard during the present day.",
+      "protagonist": "Tommy, a young boy eager to get a puppy.",
+      "conflict_type": "person_vs_person",
+      "theme": "healing and timing",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        52,
+        59,
+        93,
+        6,
+        86
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 21,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 4,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Alone in his dimly lit room, Barry pored over documentaries about disasters and wars, his fascination with historical tragedies growing into an obsession that left friends puzzled and distant. He feared their judgment but couldn\u2019t shake his hunger to understand the pain and resilience of those from the past. One evening, Barry confided in his sister, unsure if she would accept this unusual passion. To his relief, she listened without judgment, even suggesting they host a history night for friends to share and discuss. As laughter filled his home, Barry realized he could belong without hiding what made him different.",
+    "specification": {
+      "setting": "The story takes place in the present day, primarily at Barry's home.",
+      "protagonist": "An individual who becomes deeply fascinated by historical tragedies.",
+      "conflict_type": "person_vs_self",
+      "theme": "desire for acceptance",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        12,
+        7,
+        51,
+        93,
+        43
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 22,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Lucy skipped beside her grandmother down the quiet sidewalk, the scent of fresh pastries drifting from the bakery bag swinging in her grandmother\u2019s hand. As they reached the garden bench, her grandmother unveiled a box of colorful \u00e9clairs and smiled, \u201cJust one, Lucy, so you can enjoy it fully.\u201d Temptation tugged at Lucy as the glossy sweets glistened beneath the sun, and she longed to eat them all, her hands twitching with excitement. Remembering her grandmother\u2019s words, Lucy chose a single \u00e9clair and savored each bite slowly, feeling proud of her self-control. When her grandmother hugged her, Lucy realized the happiness of discipline tasted even sweeter than the treats.",
+    "specification": {
+      "setting": "A modern residential neighborhood during a morning at 10 AM.",
+      "protagonist": "Lucy, a curious and eager child experiencing new treats with her grandmother.",
+      "conflict_type": "person_vs_fate",
+      "theme": "self-discipline",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        24,
+        68,
+        57,
+        17,
+        54
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 23,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 4,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 4,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "After school let out, I watched Dad fumble with his car keys in the parking lot, his movements slow and clumsy under the slanting afternoon sun. He laughed off dropping them twice, blaming his \"big hands\" as Mrs. Waller passed with a knowing smile. Inside the car, he sighed and promised, for the hundredth time, that tomorrow he'd be better\u2014just as Tommy's soccer ball rolled under our wheels, blocking our exit. We both groaned, but his eyes softened as he stepped out, returned the ball, and ruffled Tommy's hair with unsteady affection. As we drove away, I realized some obstacles can be dodged, while others\u2014like hope and habit\u2014ride quietly home with you.",
+    "specification": {
+      "setting": "The story takes place at Tommy's school and in the parking lot, during the afternoon after school.",
+      "protagonist": "The main character is the narrator's father, a man known for his heavy drinking habits.",
+      "conflict_type": "person_vs_self",
+      "theme": "unexpected obstacles",
+      "emotional_arc": "bittersweet",
+      "narrative_technique": "linear",
+      "tone": "lighthearted",
+      "source_indices": [
+        59,
+        31,
+        9,
+        56,
+        70
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 24,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 4,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Tim laced his sneakers in the living room, determined to beat his best friend to the backyard fence before the game started. As he glanced at the clock, self-doubt crept in\u2014his last attempt ended in defeat, and his legs still ached. Clenching his fists, he steadied his breath, reminding himself that giving up now would haunt him more than any loss. With a nod to his friend, he sprinted forward, pushing past the ache and fear with every step. Crossing the finish line, Tim grinned, not just at his victory, but at the relentless spirit that had carried him there.",
+    "specification": {
+      "setting": "The story takes place in a contemporary home environment, shortly before a game.",
+      "protagonist": "Tim, a competitive and energetic individual who initiates a race with his friend.",
+      "conflict_type": "person_vs_self",
+      "theme": "perseverance",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        83,
+        69,
+        1,
+        11,
+        96
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 25,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 4,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "John stood at the edge of Anna's newly built backyard ramp, his hands trembling as memories of last year's fall haunted him. The sun glinted off his helmet, and he drew a deep breath, forcing himself to banish the doubt that threatened to anchor his feet. Determined to break free from his fear, he pushed off, feeling the familiar rush and then the smooth, exhilarating curve beneath his wheels. Midway through the ramp, his confidence surged and, for the first time since his accident, he managed a perfect kickflip. Landing cleanly, John let out a shaky laugh, realizing he'd just given himself permission to start again.",
+    "specification": {
+      "setting": "The story takes place in Anna's backyard during the present day.",
+      "protagonist": "John, a skateboard enthusiast who enjoys challenging himself on ramps.",
+      "conflict_type": "person_vs_self",
+      "theme": "new beginnings",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        52,
+        62,
+        61,
+        27,
+        51
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 26,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Each morning, Billy nursed his coffee in the bustling caf\u00e9, rehearsing speeches under his breath as anxiety twisted tight in his chest. He watched confident strangers laugh and order lattes, wishing he could speak so freely. By the third day, he forced himself to ask the barista about her favorite drink, his voice trembling but steady. Encouraged by her warm smile, Billy returned daily, starting small conversations until he felt a little braver. The following week, when his name was called for his class presentation, he remembered those tiny victories\u2014and spoke with unexpected confidence.",
+    "specification": {
+      "setting": "A modern-day coffee shop over several days.",
+      "protagonist": "Billy, a student who is anxious about public speaking.",
+      "conflict_type": "person_vs_self",
+      "theme": "overcoming fear",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        48,
+        0,
+        49,
+        33,
+        58
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 27,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Allie hesitated before clicking \u201cJoin Match,\u201d her palms slick with nerves as she wondered if she\u2019d embarrass herself in front of the older, more experienced players. Remembering her brother\u2019s advice to just have fun, she took a deep breath and dove into the chaos, her avatar darting between explosions and shouts over the headset. At first, her aim was shaky and her reflexes slow, but she laughed off her early defeats and kept playing, learning from each mistake. By the final round, she landed a clutch shot that won the game for her team, her teammates cheering her name. Allie grinned at the screen, proud she\u2019d taken the chance, and realized fitting in started with believing in herself.",
+    "specification": {
+      "setting": "The story takes place in the competitive world of online first-person shooter (FPS) gaming, in the present day.",
+      "protagonist": "Allie, a twelve-year-old girl eager to fit in with her peers.",
+      "conflict_type": "person_vs_self",
+      "theme": "taking chances",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "lighthearted",
+      "source_indices": [
+        89,
+        93,
+        71,
+        84,
+        91
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 28,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "At 10 AM, Anthony eyed the steepest driveway in his quiet neighborhood, his skateboard trembling beneath impatient sneakers while neighbors sipped coffee behind curtained windows. He\u2019d watched online videos all night, obsessed with conquering bigger risks, his curiosity gnawing at reason as he replayed possible outcomes in his mind. Heart pounding, he pushed off, wind slicing his doubts as the world blurred\u2014until a sudden wobble threw him sprawling, palms scraped and ego bruised. Lying on cool concrete, Anthony gazed up at the cloudless sky, the ache in his body dwarfed by relief and revelation. Grinning, he rose, realizing curiosity didn\u2019t demand recklessness, but rather the courage to learn, try again, and keep chasing the thrill with wisdom.",
+    "specification": {
+      "setting": "A modern residential neighborhood during a morning at 10 AM.",
+      "protagonist": "Anthony, a skateboarder who enjoys taking risks.",
+      "conflict_type": "person_vs_self",
+      "theme": "obsession and curiosity",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        24,
+        37,
+        27,
+        7,
+        74
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 29,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Curled up with a pile of books and a streaming queue of documentaries, I questioned if my gentle encouragement in the classroom really mattered when the wounds from my own past still ached. Each evening, surrounded by stories of resilience and recovery, I found myself absorbing lessons meant for someone else. One rainy night, a student\u2019s thank-you note\u2014crayon-bright, earnest\u2014slipped from my tote, whispering that sometimes healing isn\u2019t about perfection, but presence. I realized that by helping others, I was unknowingly helping myself inch forward, breath by breath. Smiling through silent tears, I understood at last that healing takes its own time, and that's perfectly enough.",
+    "specification": {
+      "setting": "The story takes place in the present day, primarily in the narrator's personal space as they engage with books and documentaries.",
+      "protagonist": "A knowledgeable paraeducator who assists in the classroom.",
+      "conflict_type": "person_vs_self",
+      "theme": "healing and timing",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        7,
+        95,
+        40,
+        6,
+        74
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 30,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Alex, a passionate basketball fan who was always a few inches shorter than his neighbor Sue, found himself obsessively rehearsing clever ways to convince her to join his team for the local tournament. His fixation grew so intense that he began subtly leaving basketball magazines and motivational notes in her mailbox, hoping to spark her enthusiasm through gentle manipulation. One afternoon, as Alex nervously practiced another speech in his living room, Sue knocked on his door, asking for help with her adoption paperwork instead of basketball drills. Realizing how his fanaticism had overshadowed their genuine friendship, Alex put aside his schemes and spent the evening helping her, laughing and sharing stories. By nightfall, Alex felt lighter, grateful for the warmth of real connection over any fleeting victory on the court.",
+    "specification": {
+      "setting": "The story takes place in the present day, likely in Sue's home and adoption agencies.",
+      "protagonist": "Alex, a basketball enthusiast who is shorter than his neighbor.",
+      "conflict_type": "person_vs_self",
+      "theme": "manipulation and fanaticism",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        67,
+        20,
+        7,
+        65,
+        10
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 31,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 4,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Anna wandered the quiet suburban sidewalks, pausing to watch a robin tug a worm from the dewy grass, when she noticed her neighbor, Mrs. Carter, scowling as she tried to untangle her dog\u2019s leash from a rose bush. Remembering how Mrs. Carter once snapped at her for picking dandelions, Anna hesitated, but curiosity and compassion won out. She approached with a gentle smile and, together, they carefully freed the leash without damaging a single petal. Mrs. Carter\u2019s frown softened, and she surprised Anna by thanking her warmly, admitting she\u2019d been having a rough week. As they parted, Anna felt lighter, knowing a small act of kindness had healed an old misunderstanding and grown something new between them.",
+    "specification": {
+      "setting": "The story takes place in a suburban neighborhood during an unspecified present time.",
+      "protagonist": "Anna, a curious and observant individual fascinated by nature.",
+      "conflict_type": "person_vs_person",
+      "theme": "forgiveness, kindness",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        76,
+        8,
+        86,
+        30,
+        51
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 32,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "As a child, John watched his father patch leaky windows and scold the wind for finding its way in, the house a fortress against every imagined danger. Years passed, and John\u2019s report cards lined the fridge, each A a careful brick in the wall of safety his parents built around him. In high school, he longed to sneak out with friends, but the faint echo of his father\u2019s voice\u2014\u201cBetter safe than sorry\u201d\u2014always beckoned him home before dusk. At college, freedom crackled in the air, but John found comfort in locking his dorm room each night, a habit he couldn\u2019t quite shake. Now, older and holding his own set of house keys, he opens every window wide but still checks the locks twice before bed, just in case.",
+    "specification": {
+      "setting": "The story takes place over several years in the narrator's family home, spanning from the father's youth to his later years.",
+      "protagonist": "John, a diligent and responsible student.",
+      "conflict_type": "person_vs_self",
+      "theme": "freedom vs. safety",
+      "emotional_arc": "neutral",
+      "narrative_technique": "linear",
+      "tone": "lighthearted",
+      "source_indices": [
+        31,
+        74,
+        76,
+        5,
+        79
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 33,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 4,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "John waited in line at the bank, clutching his worn backpack and a check for his part-time tutoring job, surrounded by adults discussing mortgages and investments. He felt invisible among the polished shoes and pressed suits, acutely aware of how far he still had to go to reach his dreams. As he finally reached the teller, she smiled kindly and congratulated him on saving, her words sparking a small flame of pride inside him. Walking out into the sunlight, John realized the world would never make it easy for people like him, but each step forward was a victory. He smiled, bittersweet, knowing the road ahead was long but believing in his own steady progress.",
+    "specification": {
+      "setting": "A bank during the daytime in the present.",
+      "protagonist": "John, a diligent and responsible student.",
+      "conflict_type": "person_vs_society",
+      "theme": "self-improvement",
+      "emotional_arc": "bittersweet",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        84,
+        74,
+        72,
+        66,
+        40
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 34,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Tom sat in his dim apartment, replaying the harsh words he'd blurted at a coworker who\u2019d rearranged his beloved desk, his heart heavy with guilt. Unable to focus, he escaped to a nearby fast food restaurant, the bustle a strange comfort as he nursed a greasy burger. Watching strangers laugh and share fries, Tom envied their ease and warmth, wishing he could forgive himself for his outburst. With a shaky breath, he typed a message apologizing for his behavior and offering to buy lunch as a peace offering. As he pressed send, a gentle relief washed over him, kindness blooming where shame once lived.",
+    "specification": {
+      "setting": "The story takes place in Tom's apartment and a fast food restaurant, in the present day.",
+      "protagonist": "An office worker who appreciates privacy and comfort in their workspace.",
+      "conflict_type": "person_vs_self",
+      "theme": "forgiveness, kindness",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "melancholic",
+      "source_indices": [
+        85,
+        91,
+        40,
+        30,
+        33
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 35,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Kate tugged a hoodie over her pajamas, slipped out of Tom's apartment, and walked to the fast food place, needing a break after last night\u2019s argument. In line, she rehearsed apologies, words tumbling in her mind but dissolving against her tongue like snowflakes on asphalt. Her phone buzzed\u2014a text from Tom, asking if she was coming back, and she replied, \"Soon,\" though she wasn't sure she meant it. She brought home a paper bag of fries, silence spilling from the crinkled edges as she placed it on the table. Tom smiled, but the distance between them felt wider, filled with unspoken things neither could quite name.",
+    "specification": {
+      "setting": "The story takes place in Tom's apartment and a fast food restaurant, in the present day.",
+      "protagonist": "Kate, a woman who goes out casually dressed to run a quick errand.",
+      "conflict_type": "person_vs_self",
+      "theme": "miscommunication",
+      "emotional_arc": "bittersweet",
+      "narrative_technique": "linear",
+      "tone": "melancholic",
+      "source_indices": [
+        85,
+        82,
+        38,
+        58,
+        40
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 36,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Anthony shuffled nervously outside Susan\u2019s classroom, clutching a bouquet of sunflowers, uncertain if his gesture would embarrass her on her final day. His mother, watching from the hallway, worried her quiet son might falter under the attention or feel out of place among the other, more boisterous students. As Anthony entered, he hesitated, battling self-doubt before stepping forward and offering the flowers with a heartfelt, \"Thank you for believing in me.\" Susan\u2019s eyes brimmed with tears as the class erupted in applause, recognizing Anthony\u2019s courage and kindness. His mother\u2019s concern melted into pride, her son\u2019s small act shining brighter than she\u2019d ever imagined.",
+    "specification": {
+      "setting": "The story takes place in a school during Susan's final year of teaching.",
+      "protagonist": "Anthony, a young man whose actions inadvertently cause concern for his mother.",
+      "conflict_type": "person_vs_self",
+      "theme": "recognition, kindness",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        1,
+        58,
+        79,
+        72,
+        12
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 37,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Van\u2019s hands trembled as he pressed seeds into the unfamiliar earth behind the dorms, his parents kneeling beside him with quiet, practiced motions. The city\u2019s noise and the swirl of students left him longing for the quiet backyard of his childhood, where sunflowers brushed his shoulders and tomatoes grew fat under his mother\u2019s care. Doubt gnawed at him\u2014could he coax new life from this urban soil, or would the old warmth slip away forever? As the sun dipped, his father clapped soil from his hands and smiled, and Van noticed the tender shoots already eager to rise. In that moment, Van felt the ache in his chest ease, hope rooting itself gently where nostalgia had settled.",
+    "specification": {
+      "setting": "The story takes place on a college campus during Van's first day of college.",
+      "protagonist": "A family working together to start and tend a garden.",
+      "conflict_type": "person_vs_self",
+      "theme": "reconnection, nostalgia",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        27,
+        64,
+        33,
+        16,
+        44
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 38,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 4,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Fred lounged on his couch, streaming his favorite series, while chatting with fellow fans in a vibrant online forum. Suddenly, an anonymous user began spoiling major plot twists, tainting each episode before Fred could watch them. He pleaded with the moderators, but the persistent troll evaded every ban, growing bolder with each reveal. Frustrated and powerless, Fred found his excitement for the show and the community steadily eroding. In the end, he logged off, abandoning both the series and the friendships he'd built online.",
+    "specification": {
+      "setting": "The story takes place in the contemporary digital world, primarily within online communities and websites.",
+      "protagonist": "Fred, a person relaxing at home watching his favorite TV series.",
+      "conflict_type": "person_vs_person",
+      "theme": "unexpected obstacles",
+      "emotional_arc": "negative_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        47,
+        36,
+        20,
+        56,
+        69
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 39,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 3,
+      "language_quality": 4,
+      "overall_quality": 3
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Jazz sat on Tommy\u2019s faded couch, nervously checking her phone for updates about the sold-out team shirt she desperately wanted for the game. Despite her cousin\u2019s attempts to distract her with jokes and old video games, Jazz couldn\u2019t shake the feeling that fate always left her behind, unseen and unlucky. When the alert finally pinged, saying the last shirt was gone, she felt her hope vanish, and her reflection in the darkened window seemed smaller than ever. But as Tommy gently placed his own treasured jersey in her lap, Jazz realized that self-worth wasn\u2019t tied to a new shirt or lucky chance, but to the love and support right beside her. With gratitude warming her chest, Jazz smiled, feeling ready for the game and for whatever fate brought next.",
+    "specification": {
+      "setting": "The story takes place in Tommy's home during a visit from his cousin, in the present day.",
+      "protagonist": "Jazz, a young person eager to buy a shirt for an upcoming game.",
+      "conflict_type": "person_vs_fate",
+      "theme": "self-discovery",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        78,
+        83,
+        67,
+        1,
+        85
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 40,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Tony clutched his threadbare wallet as he waited in line at the bank, anxiety blooming in his chest as he imagined the teller\u2019s pity when he requested another extension on his overdraft. Outside, his pet turkey, Marbles, pecked nervously at the window, a reminder of the small joys Tony still possessed despite his mounting debts. He rehearsed what to say, heart pounding, but every word seemed to stick in his throat, fear whispering that he\u2019d never crawl out of this financial pit. Yet as his turn arrived, Tony took a shaky breath, remembered Marbles\u2019 unwavering trust, and found the courage to ask for help, voice trembling but determined. The teller\u2019s kind smile warmed him, and for the first time in months, Tony left the bank with hope fluttering softly in his chest.",
+    "specification": {
+      "setting": "A bank during the daytime in the present.",
+      "protagonist": "Tony, a caring but financially struggling individual who owns a pet turkey.",
+      "conflict_type": "person_vs_self",
+      "theme": "overcoming fear",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "melancholic",
+      "source_indices": [
+        84,
+        13,
+        17,
+        33,
+        14
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 41,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "At home, James rummaged through his rock collection, grumbling as his tech-savvy sister insisted he install a rock identification app on his phone before the family\u2019s formal anniversary dinner. The next evening, dressed stiffly in a suit and fiddling awkwardly with his unfamiliar phone, he felt out of place while everyone around him chatted about the latest gadgets. His sister caught him frowning at the glowing screen and, with a smile, gently guided him through the app, showing him how it could recognize and catalog his favorite stones. To James\u2019s surprise, he soon found himself sharing fascinating facts about minerals with curious cousins, the app making it fun and easy. By the end of the night, James realized technology could connect him to others\u2014and his beloved rocks\u2014even in a room full of polished shoes and smartphones.",
+    "specification": {
+      "setting": "The story takes place in a family home and at a formal event, over the course of two days.",
+      "protagonist": "James, an enthusiastic outdoors-man and rock collector.",
+      "conflict_type": "person_vs_person",
+      "theme": "discomfort with technology",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        70,
+        19,
+        34,
+        36,
+        77
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 42,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Ethan lingered by the table draped with crystal glasses, swirling Merlot and watching rain lash the vineyard outside, guilt gnawing at him for skipping piano practice to attend. Thunder rolled, mirroring the unease in his chest as he remembered his upcoming recital and the hours lost to distraction. The storm knocked out the lights, plunging the room into darkness, and nervous laughter fluttered around him. Determined not to squander another moment, Ethan found the grand piano in the corner, its keys cool beneath his trembling fingers. Playing for the hushed crowd by candlelight, he felt the music surge through him, resilience blooming where guilt had been.",
+    "specification": {
+      "setting": "The story takes place at a wine tasting party in the present day.",
+      "protagonist": "Ethan, a student who feels guilty about not practicing piano.",
+      "conflict_type": "person_vs_nature",
+      "theme": "perseverance",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        43,
+        26,
+        87,
+        81,
+        33
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 43,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 4,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Hal paced his kitchen, clutching a mug of herbal tea, debating if it was ridiculous to withdraw cash just to buy every cough remedy in town. Reassuring himself that love justified even the most peculiar errands, he zipped up his jacket and drove to the bank, rehearsing explanations for his unusual withdrawal. At the counter, he sheepishly admitted, \u201cMy wife has the world's most stubborn cough\u2014I need to be prepared for anything.\u201d The teller grinned, slipped him a handful of cough drop samples from her drawer, and wished him luck with a wink. Returning home, Hal presented his wife with both the money and the surprise samples, earning a round of laughter and a grateful, slightly less raspy, \u201cThank you.\u201d",
+    "specification": {
+      "setting": "The story takes place in the present day, moving between Hal's home and a bank.",
+      "protagonist": "A concerned spouse seeking remedies for his wife's cough.",
+      "conflict_type": "person_vs_self",
+      "theme": "perseverance",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "lighthearted",
+      "source_indices": [
+        32,
+        6,
+        11,
+        81,
+        54
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 44,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 4,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Fred sat in the back of the classroom, sand still clinging to his ankles, his stomach growling louder than the lecture on colonial history. Around him, classmates whispered about their packed lunches, the crinkle of wrappers making him ache for the taste of his grandma\u2019s warm empanadas after long days chasing waves. When his teacher noticed his distant gaze and asked if he was alright, embarrassment flushed Fred's cheeks\u2014he didn\u2019t want to be \"that kid\" in need. At lunch, however, a classmate quietly slid half a sandwich across their shared desk, the simple gesture drawing Fred back from lonely nostalgia to the warmth of connection. Gratefully, Fred smiled, feeling the classroom\u2014once so foreign\u2014become a place where he belonged again.",
+    "specification": {
+      "setting": "The story takes place in a classroom during a school day.",
+      "protagonist": "Fred, a hungry child who has been playing on the beach.",
+      "conflict_type": "person_vs_society",
+      "theme": "reconnection, nostalgia",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        0,
+        42,
+        98,
+        16,
+        81
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 45,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 4,
+      "conflict_adherence": 4,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Back home after picking up her mother's favorite masquerade mask from the costume store, Martha sat in her driveway, the weight of obligation heavy on her shoulders. She ran her fingers over the glittering gold trim, remembering all the times she\u2019d postponed her visits with practical excuses. Guilt gnawed at her, for she knew her mother\u2019s memory was fading, their shared moments thinning like autumn leaves. Taking a deep breath, Martha resolved to treasure their time together, not as a duty but a privilege. With newfound purpose, she stepped from her car, the mask in hand and hope in her heart.",
+    "specification": {
+      "setting": "The story takes place at the narrator's home in the present day, after a trip to a costume store.",
+      "protagonist": "Martha, a woman traveling by car to see her mother.",
+      "conflict_type": "person_vs_self",
+      "theme": "responsibility",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        94,
+        56,
+        70,
+        90,
+        54
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 46,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "Each year, Rob returned to Cabo San Lucas, escaping the pressure of being the newly crowned star quarterback back home. On the golden beaches, he met Javier, a local surfer whose easy laughter and quiet confidence made Rob question what real victory meant. Over time, friendly competitions turned fierce as Rob\u2019s need to prove himself soured their camaraderie. One sunset, after an argument on the sand, Rob watched Javier walk away, realizing too late that his obsession with winning had cost him a rare friendship. The empty triumph stung deeper than any loss on the field, teaching Rob that some rewards are found not in conquest, but in connection.",
+    "specification": {
+      "setting": "The story takes place in Cabo San Lucas over the course of several vacations.",
+      "protagonist": "Rob, a young football player recently named star quarterback.",
+      "conflict_type": "person_vs_person",
+      "theme": "discovery and reward",
+      "emotional_arc": "negative_resolution",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        14,
+        9,
+        88,
+        19,
+        69
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 47,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 4,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "As rain pelted the windows of John's home, the father turned the living room into a pirate ship, laughter echoing as he dodged imaginary sea monsters with his children. The storm outside grew fiercer, thunder rattling the walls, and he hugged them close, promising safety and adventure until bedtime. When the little ones finally drifted to sleep, he tiptoed to his desk, power flickering, deadlines looming like distant waves. Through exhaustion and the roar of the storm, he persevered, fingers typing steadily as midnight crept in. As dawn approached, he watched the first light break through the clouds, knowing he would soon wake his children for school, both grateful and weary.",
+    "specification": {
+      "setting": "The story takes place in John's home over the course of an evening before a school day.",
+      "protagonist": "A father who is playful with his children but must also fulfill professional duties.",
+      "conflict_type": "person_vs_nature",
+      "theme": "perseverance",
+      "emotional_arc": "bittersweet",
+      "narrative_technique": "linear",
+      "tone": "heartwarming",
+      "source_indices": [
+        74,
+        70,
+        18,
+        55,
+        16
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 48,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 5,
+      "conflict_adherence": 4,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 5,
+      "overall_adherence": 5
+    }
+  },
+  {
+    "text": "In our cabin high in the snow-laden mountains, my cat Nova darted out one Christmas Eve, leaving torn wrapping paper and broken ornaments behind. I watched her disappear into the moonlit drifts, guilt gnawing at me for blaming her when it had actually been my clumsy hand that toppled the tree. Hours passed before I found her curled beneath a pine, her green eyes reflecting my silent confession. As I scooped her up, warmth blossomed in my chest, knowing I\u2019d been honest with myself at last. That night, Nova and I shared a peaceful Christmas by the fire, both forgiven and at ease.",
+    "specification": {
+      "setting": "The story takes place in the mountains during the Christmas season.",
+      "protagonist": "The main character is the narrator's adventurous and mischievous cat.",
+      "conflict_type": "person_vs_self",
+      "theme": "honesty",
+      "emotional_arc": "positive_resolution",
+      "narrative_technique": "linear",
+      "tone": "serious",
+      "source_indices": [
+        46,
+        5,
+        45,
+        26,
+        87
+      ]
+    },
+    "condition": "component_controlled",
+    "index": 49,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 4
+    },
+    "controllability_scores": {
+      "setting_adherence": 5,
+      "character_adherence": 4,
+      "conflict_adherence": 5,
+      "theme_adherence": 5,
+      "arc_adherence": 5,
+      "tone_adherence": 4,
+      "overall_adherence": 5
+    }
+  }
+]

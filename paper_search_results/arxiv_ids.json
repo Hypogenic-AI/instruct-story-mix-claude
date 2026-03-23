@@ -1,0 +1,37 @@
+{
+  "fan2019_strategies_structuring": {
+    "arxiv_id": "1902.01109",
+    "title": "Strategies for Structuring Story Generation",
+    "pdf_url": "https://arxiv.org/pdf/1902.01109v2"
+  },
+  "xu2020_megatron_cntrl": {
+    "arxiv_id": "2010.00840",
+    "title": "MEGATRON-CNTRL: Controllable Story Generation with External Knowledge Using Large-Scale Language Models",
+    "pdf_url": "https://arxiv.org/pdf/2010.00840v1"
+  },
+  "fan2019_story_realization": {
+    "arxiv_id": "1909.03480",
+    "title": "Story Realization: Expanding Plot Events into Sentences",
+    "pdf_url": "https://arxiv.org/pdf/1909.03480v2"
+  },
+  "yang2022_re3": {
+    "arxiv_id": "2210.06774",
+    "title": "Re3: Generating Longer Stories With Recursive Reprompting and Revision",
+    "pdf_url": "https://arxiv.org/pdf/2210.06774v3"
+  },
+  "chakrabarty2023_art_artifice": {
+    "arxiv_id": "2309.14556",
+    "title": "Art or Artifice? Large Language Models and the False Promise of Creativity",
+    "pdf_url": "https://arxiv.org/pdf/2309.14556v3"
+  },
+  "xie2024_weaver": {
+    "arxiv_id": "2401.17268",
+    "title": "Weaver: Foundation Models for Creative Writing",
+    "pdf_url": "https://arxiv.org/pdf/2401.17268v1"
+  },
+  "wang2024_collective_critics": {
+    "arxiv_id": "2410.02428",
+    "title": "Collective Critics for Creative Story Generation",
+    "pdf_url": "https://arxiv.org/pdf/2410.02428v1"
+  }
+}

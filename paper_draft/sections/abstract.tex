@@ -1,0 +1,8 @@
+Large language models produce notoriously formulaic creative writing, defaulting to predictable arcs and flat prose.
+We investigate whether the \skillmix paradigm---decomposing tasks into discrete skills and generating synthetic data from novel skill combinations---transfers from instruction-following to creative story generation.
+We introduce \methodname, a pipeline that extracts structured narrative components (setting, character, conflict type, theme, emotional arc, tone) from existing stories and generates new stories conditioned on novel component combinations.
+Using \gptfour on 100 \rocstories, we extract a component taxonomy and generate 50 stories per condition across three settings: component-controlled, title-only baseline, and prompted baseline.
+Component-controlled generation achieves near-perfect specification adherence (4.96/5.0) but incurs a statistically significant quality penalty: overall quality drops by 0.40 points ($d{=}{-}0.80$, $p{=}0.002$) compared to unconstrained baselines, with the largest degradation in language quality ($d{=}{-}0.83$) and creativity ($d{=}{-}0.46$).
+Diversity metrics show modest gains (26\% larger vocabulary), but the hypothesized quality ``arbitrage''---that explicit structural control would yield better stories despite LLMs' writing limitations---is not supported.
+We identify a fundamental \emph{constraint-quality tradeoff}: models allocate generation capacity to satisfying specifications at the expense of expressive prose.
+Our results suggest that realizing the full potential of component-based story generation requires a two-stage approach---structural specification followed by unconstrained refinement---rather than single-pass constrained generation.

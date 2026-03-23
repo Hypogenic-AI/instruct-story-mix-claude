@@ -1,0 +1,29 @@
+{
+  "component_controlled": {
+    "n_stories": 50,
+    "unique_trigram_ratio": 0.9876132371972638,
+    "unique_word_ratio": 0.4131421310582683,
+    "mean_per_story_unique_word_ratio": 0.786458785720318,
+    "mean_story_length": 110.18,
+    "mean_inter_story_trigram_overlap": 0.0005952861275718989,
+    "vocab_size": 2276
+  },
+  "baseline_title": {
+    "n_stories": 50,
+    "unique_trigram_ratio": 0.9795486600846263,
+    "unique_word_ratio": 0.4150206706476803,
+    "mean_per_story_unique_word_ratio": 0.8037090476296009,
+    "mean_story_length": 87.08,
+    "mean_inter_story_trigram_overlap": 0.0008409086144520912,
+    "vocab_size": 1807
+  },
+  "baseline_prompted": {
+    "n_stories": 50,
+    "unique_trigram_ratio": 0.9875204582651391,
+    "unique_word_ratio": 0.433841218925421,
+    "mean_per_story_unique_word_ratio": 0.7940816995725787,
+    "mean_story_length": 99.76,
+    "mean_inter_story_trigram_overlap": 0.000632921442991905,
+    "vocab_size": 2164
+  }
+}

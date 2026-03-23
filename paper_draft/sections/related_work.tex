@@ -1,0 +1,35 @@
+\section{Related Work}
+\label{sec:related}
+
+\para{Plan-and-write story generation.}
+The idea of separating narrative planning from prose generation dates to early neural storytelling systems.
+\citet{yao2019planandwrite} introduced a two-stage framework that extracts keyword storylines via RAKE and conditions generation on these plans, achieving significant coherence improvements on \rocstories.
+\citet{fan2019strategies} extended this to longer narratives using SRL-based action sequences and entity-anonymized intermediate representations.
+PlotMachines~\cite{rashkin2020plotmachines} added dynamic state tracking over outline elements, while \citet{goldfarb2020aristotelian} introduced Aristotelian rescoring classifiers for principled plot quality control.
+These works establish that decomposing generation into planning and writing stages improves coherence, but they rely on shallow structural representations (keywords, SRL predicates) rather than rich narrative components.
+
+\para{Hierarchical and multi-agent decomposition.}
+Recent work uses deeper decompositions with LLM-based planning.
+DOC~\cite{yang2023doc} generates hierarchical outline trees with three levels of plot events, character state tracking, and FUDGE-based adherence control, achieving large coherence and relevance gains over prior systems.
+Agents' Room~\cite{huot2024agentsroom} takes decomposition further by assigning specialized agents to distinct narrative dimensions (conflict, character, setting, plot) and writing stages (exposition through resolution), with a shared scratchpad for coordination.
+DSR~\cite{dsr2025} decomposes screenwriting into narrative creation and format conversion, introducing ``Narrative Directives'' as chain-of-thought reasoning over pacing, exposition, and character arcs.
+These systems consistently outperform end-to-end generation, but each uses ad-hoc decompositions tied to their specific pipelines.
+Unlike these approaches, we treat story components as a \emph{composable vocabulary} and systematically evaluate the effect of combinatorial recombination.
+
+\para{Synthetic data for creative writing.}
+Several methods generate synthetic training data for narrative tasks.
+Weaver~\cite{xie2024weaver} uses instruction backtranslation---collecting human-written text and using GPT-4 to generate corresponding instructions---to create 500K instruction-response pairs for creative writing.
+DSR~\cite{dsr2025} employs a hybrid approach combining reverse compression of inputs with forward distillation of outputs, showing that reverse synthesis alone creates input-output misalignment.
+Agents' Room~\cite{huot2024agentsroom} uses teacher-student backtranslation from Gemini Ultra to Gemini Flash.
+Our work is closest in spirit to these approaches but uses a different mechanism: we extract structured components and recombine them, analogous to how \skillmix creates novel skill combinations for instruction-following data.
+
+\para{Skill-based synthetic data generation.}
+\citet{allenzhu2024instructskillmix} introduced the \skillmix paradigm for general instruction-following: enumerate skills, create combinatorial mixtures, generate synthetic training data, and fine-tune models on this data.
+This approach significantly improved instruction-following capabilities across diverse tasks.
+We test whether this paradigm transfers to the harder domain of creative writing, where ``skills'' correspond to narrative components and quality depends on subjective aesthetic judgments rather than objective correctness.
+
+\para{LLM creative writing limitations.}
+\citet{chakrabarty2023art} documented that LLM-generated stories are less diverse and more formulaic than human-written ones, with limited vocabulary variation and predictable narrative patterns.
+CRITICS~\cite{bae2024critics} addresses this through multi-critic iterative refinement, using persona-assigned LLM critics to evaluate and improve creativity dimensions.
+Re3~\cite{yang2022re3} uses recursive reprompting and revision for long story generation.
+Our work connects to this literature by testing whether structural decomposition---an orthogonal strategy to iterative refinement---can mitigate the formulaic ceiling.

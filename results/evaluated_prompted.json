@@ -1,0 +1,802 @@
+[
+  {
+    "text": "Mrs. Lin tapped her pen against the desk, scanning the room as sunlight flickered across the rows of students hunched over their papers. In the back, Jamie doodled intricate gears inside the margins, every cog meticulously shaded, while the problem on the board\u2014\"Calculate the force needed to move the box\"\u2014waited patiently for an answer. Elena\u2019s curly hair was tied up with a red ribbon that matched her notebook, and she chewed on the end of her pencil, eyes darting between formulas and the clock\u2019s ticking hand. A sudden breeze carried the scent of rain and the soft rustle of paper wings as a tiny origami crane landed on Mrs. Lin\u2019s desk. She smiled, knowing exactly whose careful fingers had folded it, and called on Jamie to show the class how attention to detail could move more than just boxes.",
+    "specification": {
+      "setting": "A modern high school classroom during a typical school day.",
+      "theme": "attention to detail"
+    },
+    "condition": "baseline_prompted",
+    "index": 0,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 5,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "The speaker\u2019s voice echoed against the high ceiling, weaving stories of kindness like a tapestry above the crowded pews. He spoke of a boy who mended torn coats for strangers in winter, and a woman who planted sunflowers along crumbling sidewalks. As the tale unfolded, hands loosened from crossed arms, and eyes lifted from the dull gray of the floor. Near the end, an old man shuffled to the aisle, set a battered thermos on the table, and whispered, \u201cCoffee for anyone who\u2019s cold.\u201d The room, warmed by quiet laughter, realized that sometimes, service begins with the smallest gesture.",
+    "specification": {
+      "setting": "The story takes place in an unspecified location during a lecture or sermon.",
+      "theme": "community service"
+    },
+    "condition": "baseline_prompted",
+    "index": 1,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "As the scent of simmering tomatoes filled the air, Maria noticed the new student, Samir, fumbling nervously with a chef\u2019s knife. Without hesitation, she slid over and gently demonstrated how to hold it, her voice soft so he wouldn\u2019t feel embarrassed. When his sauce bubbled over, she quickly grabbed a towel, whispering, \"It happens to all of us.\" By the end of the class, Samir\u2019s laughter mingled with the sizzle of garlic, his confidence growing with every stir. Maria smiled, knowing a spoonful of kindness could flavor more than just soup.",
+    "specification": {
+      "setting": "The story takes place in a cooking class in the present day.",
+      "theme": "kindness, empathy"
+    },
+    "condition": "baseline_prompted",
+    "index": 2,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Every morning, Mara sat by the window in the coffee shop, scribbling job applications between sips of burnt espresso and stolen glances at the help-wanted board. On Thursday, a smiling barista slipped her an extra croissant, whispering, \"For luck,\" as rain drummed softly against the glass. By Friday, her r\u00e9sum\u00e9 was battered and her dreams threadbare, yet she still returned, fueled by stubborn resolve and caffeine. On Saturday, the manager approached, waving a familiar r\u00e9sum\u00e9 with a grin: \"We'd like you to join our team.\" Mara\u2019s hands trembled as she accepted, hope rising with the sun outside.",
+    "specification": {
+      "setting": "A modern-day coffee shop over several days.",
+      "theme": "hope and perseverance"
+    },
+    "condition": "baseline_prompted",
+    "index": 3,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Joe hovered above the ocean floor, mesmerized by a glittering golden coin half-buried in the sand, its shimmer promising wealth and secrets. As he reached for it, a curious octopus darted forward, wrapping a tentative tentacle around his wrist, its unblinking eyes seeming to warn him. The water pulsed with anticipation, and Joe hesitated, torn between the allure of discovery and the wisdom in the creature's silent plea. With a sigh of bubbles, he unclasped the coin and let it fall, watching as the octopus gently covered it with a swirl of sand. Rising towards the sunlight, Joe felt the weight of the ocean's mysteries and the freedom of having chosen restraint.",
+    "specification": {
+      "setting": "The story takes place during the day in the ocean while Joe is scuba diving.",
+      "theme": "temptation and choice"
+    },
+    "condition": "baseline_prompted",
+    "index": 4,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Tyler, rushing on rollerblades through the grocery aisles, knocked over a pyramid of oranges with a triumphant laugh. Shoppers gasped as citrus bounced in all directions, some rolling under carts, others squishing beneath hurried feet. The manager\u2019s stern glare was punctuated by Tyler\u2019s sudden loss of balance, sending him sprawling into a display of glass pasta sauce jars. Red sauce splattered across the floor, painting Tyler\u2019s jeans and dignity alike. As he hobbled out, banned for life, he realized chaos was thrilling\u2014until it demanded clean-up.",
+    "specification": {
+      "setting": "A contemporary grocery store during the day.",
+      "theme": "recklessness and consequence"
+    },
+    "condition": "baseline_prompted",
+    "index": 5,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Ava stared at the impossible math problem on the board as her classmates scribbled answers with confidence. Her pencil hovered, her mind whirring through every lesson, determined not to give up this time. The silence felt heavy, but she pressed on, erasing and rewriting until a solution glimmered on her page. When Mrs. Lee called for answers, Ava raised her hand, voice trembling but resolute. The teacher\u2019s smile, and the nod of approval, felt like sunlight breaking through a storm.",
+    "specification": {
+      "setting": "The story takes place in a classroom during a school day.",
+      "theme": "growth and perseverance"
+    },
+    "condition": "baseline_prompted",
+    "index": 6,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Snowflakes swirled around Tony as he wrestled with the tangled string of holiday lights, his breath billowing in determined puffs. The wind snatched the end from his mittened fingers, scattering bulbs across the frozen lawn. Undeterred, Tony gathered each twinkling bulb, his hands growing numb but his determination unwavering. At last, the lights blazed to life, casting a warm, defiant glow against the winter dusk. Smiling, Tony admired his handiwork, knowing the effort made the celebration shine even brighter.",
+    "specification": {
+      "setting": "The story takes place in Tony's backyard during the holiday season.",
+      "theme": "perseverance"
+    },
+    "condition": "baseline_prompted",
+    "index": 7,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Sunlight dappled the riverbank as Mara and Jules sifted through smooth stones, each hoping to find the most dazzling one. Mara\u2019s fingers closed around a heart-shaped agate, its colors swirling like a secret, while Jules unearthed a jagged, glittering geode. They compared treasures, laughter mingling with the rush of water, but neither could convince the other that their find was best. With a silent nod, they swapped stones, acceptance softening the edge of their rivalry. Sitting side by side, they admired their new keepsakes, competition transformed into quiet companionship.",
+    "specification": {
+      "setting": "The story takes place outdoors during the day, likely in a natural environment where rock collecting is possible.",
+      "theme": "acceptance, competition"
+    },
+    "condition": "baseline_prompted",
+    "index": 8,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "During the math test, Jamie glanced nervously at the clock, then at the tiny slip of paper hidden in his sleeve. He knew the answer to question seven, but his mind buzzed with the temptation of certainty. Heart pounding, he unfolded the paper, just as Mrs. Roberts\u2019s sharp gaze caught his movement from across the room. The principal\u2019s office felt colder than the classroom as Jamie realized the cost of his gamble. Next time, he thought, he\u2019d trust his own answers\u2014whatever the risk.",
+    "specification": {
+      "setting": "The story takes place in a classroom during a school day.",
+      "theme": "risk and consequence"
+    },
+    "condition": "baseline_prompted",
+    "index": 9,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Sarah tiptoed down the creaky stairs, heart thumping as she searched for Tom in the dusty basement shadows. Behind the old laundry basket, she finally spotted his sneakers peeking out, but instead of shouting, she knelt beside him and whispered, \"Found you.\" Tom looked up, eyes wide and worried, and confessed softly, \"I just needed a quiet minute.\" Sarah nodded, recognizing that hide and seek was more than a game today. She squeezed his hand, and together they sat in the hush, letting kindness fill the silence.",
+    "specification": {
+      "setting": "The story takes place in Sarah and Tom's house during a game of hide and seek, specifically focusing on the basement.",
+      "theme": "recognition, kindness"
+    },
+    "condition": "baseline_prompted",
+    "index": 10,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Sunlight shimmered off the smooth ramps as Maya eyed the forbidden, off-limits bowl, its fresh concrete marked by a bold red sign. Her friends dared her with grins and whispers, their voices tempting her to break the rule just this once. Heart pounding, she gripped her board, imagining the thrill of a perfect, secret run. But as she stepped forward, a little boy nearby pointed at the sign, wide-eyed, reminding her of rules and consequences. With a reluctant smile, Maya turned away, choosing the open ramp\u2014and the pride of making her own decision.",
+    "specification": {
+      "setting": "The story takes place at a skatepark during the daytime.",
+      "theme": "temptation and choice"
+    },
+    "condition": "baseline_prompted",
+    "index": 11,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "As sunlight streamed through the bank\u2019s glass doors, Marcus adjusted his tie and fingered the cold steel in his coat pocket, every step forward echoing with months of meticulous planning. He recognized the teller's kind eyes from his weekly visits, and suddenly, regret hit him like a rogue wave, drowning out the rehearsed script in his mind. The briefcase in his hand now felt impossibly heavy, full not of tools but of the consequences he was about to unleash. He turned on his heel, pushing past startled customers, each hurried stride away from the counter an unspoken apology. Outside under the unforgiving daylight, Marcus let the briefcase fall to the pavement, the future inside it ticking loudly, unclaimed.",
+    "specification": {
+      "setting": "A bank during the daytime in the present.",
+      "theme": "regret, preparation"
+    },
+    "condition": "baseline_prompted",
+    "index": 12,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "At a bustling Italian restaurant, Maria watched as her regulars filled the tables, sharing laughter and stories over steaming plates of pasta. Today, she reserved the corner table for the local youth group, who spent their mornings cleaning up the neighborhood park. As the volunteers trickled in, still dusty but beaming, Maria surprised them with complimentary lasagna and homemade cannoli. The aroma of garlic and fresh basil mingled with gratitude, turning lunch into a celebration of kindness. Inspired, other diners began to donate meals and offer their own time, and soon the restaurant felt less like a business and more like the heart of the community.",
+    "specification": {
+      "setting": "The story takes place during lunchtime at an Italian restaurant in the present day.",
+      "theme": "community service"
+    },
+    "condition": "baseline_prompted",
+    "index": 13,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "On her first day in the cramped cubicle, Maya stared at her flickering monitor, nerves tangling with the hum of the printer. Every time she typed, her neighbor\u2019s voice boomed over the partition, drowning out her thoughts and resolve. The coffee was bitter, the emails relentless, and a paper jam left ink streaked across her palms. Still, Maya straightened her stack of reports, fixed her posture, and forced a determined smile as she dialed her first client. By evening, as the office emptied, her screen displayed a single word: \"Congratulations,\" proof that perseverance had already begun to bloom.",
+    "specification": {
+      "setting": "The story takes place in an office during the protagonist's first day in a new cubicle.",
+      "theme": "perseverance"
+    },
+    "condition": "baseline_prompted",
+    "index": 14,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "At first, Maya\u2019s constant phone-checking at her desk seemed harmless, just another habit in a buzzing office. Gradually, missed deadlines and forgotten meetings piled up, her colleagues\u2019 patience fraying like cheap printer paper. Her supervisor invited her in for a \u201cquick chat\u201d that stretched into an hour, the word \u201cperformance\u201d echoing behind closed glass. Weeks later, her desk stood empty, a solitary mug proclaiming \u201c#1 Coder\u201d left behind. The team barely spoke of her now, but every time a phone buzzed, someone flinched.",
+    "specification": {
+      "setting": "The story takes place in a modern workplace over a period of several weeks or months.",
+      "theme": "consequences of addiction"
+    },
+    "condition": "baseline_prompted",
+    "index": 15,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Shannon noticed her favorite mug missing one morning and assumed her little brother had taken it for his secret tea parties with the neighbor\u2019s cat. For days, she left gentle notes on his pillow\u2014promises of forgiveness, invitations to share herbal tea, and even a sketch of the mug with hearts all around it. Her brother, bewildered but delighted by the sudden affection, began leaving her origami cats in return. On the fourth day, Shannon found the mug nestled behind the flour jar, dusted with a paw print and a soft wisp of fur. She laughed, realizing the cat had solved the mystery, and her brother had never even touched the mug.",
+    "specification": {
+      "setting": "The story takes place in Shannon's home over the course of several days.",
+      "theme": "innocence and misunderstanding"
+    },
+    "condition": "baseline_prompted",
+    "index": 16,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 5,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Don\u2019s daughter, Mia, watched the goldfish swim circles in their bowl, convinced they needed friends to be happy. At the aquarium store, she begged Don to buy all the colorful fish she saw, her wide eyes pleading innocence. Don, misunderstanding her urgency, thought something was wrong with their old goldfish and bought a medicine instead. Back home, Mia wept as Don treated the water, realizing her wish for new friends had somehow become a cure for an imaginary illness. That night, the goldfish swam alone, while Don quietly wondered where he had gone wrong.",
+    "specification": {
+      "setting": "The story takes place in Don's home and an aquarium store in the present day.",
+      "theme": "innocence and misunderstanding"
+    },
+    "condition": "baseline_prompted",
+    "index": 17,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Rob gripped his helmet, heart pounding, as rain hammered the high school field before his first game. When his cleat split on the slick turf during the opening play, he crashed hard, pain jolting through his ankle. The coach\u2019s disappointed look stung almost more than the injury itself. Hours later, Rob limped into his darkened home, only to find his little sister wearing his spare jersey, a makeshift sign reading \"Team Rob\" in her hands. Her unexpected cheer echoed louder than the roaring crowd, lifting him above defeat.",
+    "specification": {
+      "setting": "A high school football field and Rob's home, during his first high school game.",
+      "theme": "unexpected adversity"
+    },
+    "condition": "baseline_prompted",
+    "index": 18,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Lila and Marcus lined up at the cracked sidewalk\u2019s edge, laughter dancing between them as they prepared to sprint to the distant elm tree. At the starting shout, their sneakers slapped the pavement, and adrenaline threaded through their veins. Suddenly, a hidden pothole snagged Marcus\u2019s foot, sending him sprawling with an undignified yelp. Lila skidded to a halt, worry eclipsing victory, and rushed back to help, brushing leaves from his scraped knee. As they limped toward the finish line together, the race\u2019s outcome was forgotten, replaced by a new story forged in shared misfortune.",
+    "specification": {
+      "setting": "The story takes place outdoors during a friendly race between two friends, likely in the present day.",
+      "theme": "unexpected misfortune"
+    },
+    "condition": "baseline_prompted",
+    "index": 19,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Anna stood at the edge of her backyard, toes curled in the cool grass, eyeing the rickety treehouse she\u2019d avoided since she was eight. Memories of splintered wood and a scraped knee flickered in her mind, but today the sunlight danced through the branches, casting golden coins on the weathered ladder. Clutching her grandmother\u2019s old sketchbook, she took a trembling breath and climbed, heart pounding with each creak. At the top, the world opened wide, and Anna let herself draw the sky for the first time in years. Sometimes, she realized, the biggest adventure waited just beyond your own back door.",
+    "specification": {
+      "setting": "The story takes place in Anna's backyard during the present day.",
+      "theme": "taking chances"
+    },
+    "condition": "baseline_prompted",
+    "index": 20,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Anna knelt in her backyard, hands buried in the cool earth as warm sunlight filtered through the oak leaves above. The garden had been neglected for months, tangled with weeds and memories too heavy to face. As she pressed a tiny seed into the soil, a gentle breeze swept past, carrying the scent of rain and hope. Each day, she returned, watering and waiting, unsure if anything would ever grow. One morning, a single green shoot broke through the ground, and Anna realized healing happened not all at once, but in small, patient moments.",
+    "specification": {
+      "setting": "The story takes place in Anna's backyard during the present day.",
+      "theme": "healing and timing"
+    },
+    "condition": "baseline_prompted",
+    "index": 21,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Every evening, Barry rehearsed his jokes in front of his living room mirror, imagining a crowd\u2019s approving laughter instead of his own anxious reflection. He posted carefully crafted puns online, hoping for likes, but only received a handful from distant relatives and a bot. One night, his neighbor Mrs. Kline knocked, asking for help with her TV, and Barry, nervous but eager, offered a joke about remote controls. She laughed\u2014not politely, but genuinely\u2014and told him he had brightened her whole day. That night, Barry grinned at his mirror, feeling, for the first time, that maybe he belonged right where he was.",
+    "specification": {
+      "setting": "The story takes place in the present day, primarily at Barry's home.",
+      "theme": "desire for acceptance"
+    },
+    "condition": "baseline_prompted",
+    "index": 22,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 4,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "At 10 AM sharp, Nora jogged past rows of manicured lawns, her breath visible in the cool morning air. The aroma of fresh pastries wafted from a neighbor\u2019s open kitchen window, tempting her to stray from her strict routine. She smiled and quickened her pace, earbuds playing her favorite song as a reward for making it this far. Passing the bakery without stopping felt like a small victory, her resolve growing with each step. At the end of the block, she paused, savoring the quiet pride that lingered longer than any sweet treat ever could.",
+    "specification": {
+      "setting": "A modern residential neighborhood during a morning at 10 AM.",
+      "theme": "self-discipline"
+    },
+    "condition": "baseline_prompted",
+    "index": 23,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Tommy raced out of the classroom, eager to show his mom the blue ribbon he\u2019d won in art class. As he hurried down the hallway, a janitor\u2019s cart blocked his path, forcing him to detour through the music room, where a tuba rehearsal nearly swallowed him whole with sound. Finally bursting into the parking lot, Tommy spotted his mom\u2019s car\u2014just as the wind snatched the ribbon from his grip. He chased it between bumpers and tires, ducking as a soccer ball careened past him from a nearby practice. Grinning, he finally caught the ribbon beneath a minivan, realizing his journey was almost as memorable as his victory.",
+    "specification": {
+      "setting": "The story takes place at Tommy's school and in the parking lot, during the afternoon after school.",
+      "theme": "unexpected obstacles"
+    },
+    "condition": "baseline_prompted",
+    "index": 24,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Sweat beaded on Maya\u2019s brow as she tied her sneakers by the front door, her injured ankle throbbing with every movement. Her little brother watched silently from the hallway, clutching her lucky headband, unsure whether to hand it over or urge her to rest. The clock above the kitchen ticked loudly, each second daring her to give up, to surrender to the pain and disappointment. But Maya looked at her brother, smiled with determination, and slipped the headband onto her ponytail. \u201cLet\u2019s go,\u201d she whispered, limping out the door, a quiet promise echoing in her heart: not today\u2014I won\u2019t let anything stop me.",
+    "specification": {
+      "setting": "The story takes place in a contemporary home environment, shortly before a game.",
+      "theme": "perseverance"
+    },
+    "condition": "baseline_prompted",
+    "index": 25,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Anna knelt in the damp earth of her backyard, coaxing stubborn roots from last year\u2019s withered garden. As she pressed tiny tomato seeds into the soil, warm sunlight spilled across her hands, promising that something vibrant could always grow again. Her daughter giggled nearby, releasing a flurry of soap bubbles that floated like fragile dreams above the grass. The air, thick with the scent of promise and spring, seemed to whisper that the past would not define them. With each hopeful seed, Anna planted her faith in tomorrow.",
+    "specification": {
+      "setting": "The story takes place in Anna's backyard during the present day.",
+      "theme": "new beginnings"
+    },
+    "condition": "baseline_prompted",
+    "index": 26,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Every morning, Leila watched the open mic sign taunt her from behind her latte, her guitar case leaning untouched against her chair. For days, she rehearsed lines in her notebook, fingers trembling each time the barista called out, \u201cAnyone for the stage?\u201d On Thursday, she found her seat already occupied by a smiling stranger strumming familiar chords\u2014a silent dare. Heart pounding, Leila stepped forward, borrowed courage from the music, and sang her song clear and strong into the warm, caffeinated air. When the applause came, it was softer than her fears had imagined, but brighter than she\u2019d ever dreamed.",
+    "specification": {
+      "setting": "A modern-day coffee shop over several days.",
+      "theme": "overcoming fear"
+    },
+    "condition": "baseline_prompted",
+    "index": 27,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Jax\u2019s palms sweated as the timer counted down, his team begging him not to rush the final round. He remembered all the times he\u2019d played it safe and lost anyway, watching the victory screen flash for someone else. Ignoring the frantic voices in his headset, he sprinted through the smoke, trusting his instincts over the strategies he\u2019d memorized. A lucky flick and a desperate spray later, the enemy team collapsed, and his screen erupted in congratulations. For the first time, Jax grinned at his reflection, realizing sometimes the boldest moves win the game.",
+    "specification": {
+      "setting": "The story takes place in the competitive world of online first-person shooter (FPS) gaming, in the present day.",
+      "theme": "taking chances"
+    },
+    "condition": "baseline_prompted",
+    "index": 28,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Every morning at precisely 10 AM, Mrs. Dorsey stood behind her curtain, notebook in hand, tallying the comings and goings of her neighbors with obsessive precision. Today, she noticed Mr. Klein\u2019s trash bin was placed three inches farther from the curb than usual, and she scribbled a frantic note. Curiosity gnawed at her\u2014what secret upheaval could such a minor detail signify? Unable to resist, she slipped outside, tiptoed across her lawn, and peered into the bin, heart pounding. Inside, among the crumpled receipts and coffee grounds, lay a single, bloodstained glove.",
+    "specification": {
+      "setting": "A modern residential neighborhood during a morning at 10 AM.",
+      "theme": "obsession and curiosity"
+    },
+    "condition": "baseline_prompted",
+    "index": 29,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Sunlight poured over my cluttered desk as I leafed through a memoir on recovery, its author\u2019s voice mingling with the gentle hum of a documentary playing in the background. Each page and scene offered fragments of hope, weaving themselves quietly into the spaces where pain once sat heavy. I realized healing wasn\u2019t a destination or a checklist, but a rhythm I learned to trust\u2014sometimes slow, sometimes silent. My bookshelf became an altar, holding the stories that waited patiently for me to be ready. One morning, as coffee steamed beside a fresh chapter, I understood that perhaps timing isn\u2019t something you control, but something you learn to welcome.",
+    "specification": {
+      "setting": "The story takes place in the present day, primarily in the narrator's personal space as they engage with books and documentaries.",
+      "theme": "healing and timing"
+    },
+    "condition": "baseline_prompted",
+    "index": 30,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Sue meticulously decorated the spare room with pastel stars and a crib, her smile unwavering whenever the adoption agency's caseworkers visited. She spun tales of bedtime prayers and piano lessons, omitting the stacks of conspiracy pamphlets hidden beneath her bed. The agency marveled at her devotion, moved by her zealous promise to \"raise a child with the truth.\" When baby Lily finally arrived, Sue whispered to her each night about the shadows controlling the world, vowing to protect her from unseen enemies. As the mobile gently turned overhead, Lily's first word was \"trust,\" but Sue never noticed she had stopped smiling.",
+    "specification": {
+      "setting": "The story takes place in the present day, likely in Sue's home and adoption agencies.",
+      "theme": "manipulation and fanaticism"
+    },
+    "condition": "baseline_prompted",
+    "index": 31,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 5,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "When Mrs. Patel\u2019s garden gnome vanished, she suspected the new boy next door, whose nervous glances made him seem guilty. Instead of anger, she baked him cookies and invited him over, her kindness softening his guarded eyes. He stammered an apology and produced the gnome, confessing it was a dare to impress kids at school. Mrs. Patel forgave him with a gentle smile, making him promise only to impress others by being himself. That spring, her garden bloomed brighter, tended by two pairs of hands, old and new.",
+    "specification": {
+      "setting": "The story takes place in a suburban neighborhood during an unspecified present time.",
+      "theme": "forgiveness, kindness"
+    },
+    "condition": "baseline_prompted",
+    "index": 32,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "As a boy, my father scaled the garden wall every summer, chasing the wildness beyond our hedges, while his mother watched anxiously from the kitchen window. Years later, he built higher fences around our home, promising my siblings and me the comfort of safety. We watched through locked gates as the world spun madly on, our hearts both reassured and restless. My father\u2019s hair turned silver as he peered outside, wondering what dangers had truly been kept at bay. On the morning we found the garden gate swinging open, only the wind was brave enough to cross the threshold.",
+    "specification": {
+      "setting": "The story takes place over several years in the narrator's family home, spanning from the father's youth to his later years.",
+      "theme": "freedom vs. safety"
+    },
+    "condition": "baseline_prompted",
+    "index": 33,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 5,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "As sunlight streamed through the tall glass windows, Maria stood in line at the bank, clutching a worn notebook filled with dreams and debts. She watched the polished banker behind the counter greet each customer with confident ease, reminding her of how nervous she once felt about money. Today, instead of shame, she carried action\u2014her questions written down, her budget balanced, her resolve sturdy. When her turn arrived, Maria smiled, asked for guidance, and felt a spark of pride as she took her first steps toward financial freedom. By the time she left, the notebook in her hand felt lighter, and so did her heart.",
+    "specification": {
+      "setting": "A bank during the daytime in the present.",
+      "theme": "self-improvement"
+    },
+    "condition": "baseline_prompted",
+    "index": 34,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Tom sat alone in his apartment, clutching the phone, replaying the harsh words he'd thrown at his brother that morning. Regret gnawed at him until he finally texted, \"Meet me at Lou's Burgers?\" Under the harsh fluorescent lights of the restaurant, Tom slid a milkshake across the table and whispered, \"I'm sorry.\" His brother smiled softly, breaking fries in half, and replied, \"Let's not let anger win.\" They sat together, laughter slowly blooming, forgiveness and kindness quietly mending what had been broken.",
+    "specification": {
+      "setting": "The story takes place in Tom's apartment and a fast food restaurant, in the present day.",
+      "theme": "forgiveness, kindness"
+    },
+    "condition": "baseline_prompted",
+    "index": 35,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Tom texted Jess, \"Meet at my place for burgers?\" and set the table with ketchup and fries, humming expectantly. Jess, meanwhile, misunderstood the message and waited for Tom at the corner fast food joint, scanning every face that entered. Tom grew anxious as the fries cooled, glancing at his phone and seeing only silence. Jess, tired of waiting, finally called, her voice muffled by the background sizzle of deep fryers. They laughed at their mix-up, vowing next time to say exactly what they meant, and met halfway for ice cream instead.",
+    "specification": {
+      "setting": "The story takes place in Tom's apartment and a fast food restaurant, in the present day.",
+      "theme": "miscommunication"
+    },
+    "condition": "baseline_prompted",
+    "index": 36,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "On her final day, Susan arranged the chairs in a circle, her hands trembling with a bittersweet mix of relief and loss. As the last bell rang, the hallway echoed with the clatter of sneakers and laughter, but in her classroom, her students waited quietly, each holding a paper heart inscribed with a memory of her kindness. One by one, they shared how she\u2019d stayed after school to listen, noticed their efforts, and believed in them when no one else did. Tears blurred her vision as they presented her with a scrapbook, each page a testament to moments she thought had gone unnoticed. For the first time in her long career, Susan realized her greatest lessons had been taught not from the blackboard, but from the warmth she\u2019d given away every single day.",
+    "specification": {
+      "setting": "The story takes place in a school during Susan's final year of teaching.",
+      "theme": "recognition, kindness"
+    },
+    "condition": "baseline_prompted",
+    "index": 37,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Van wandered through the bustling campus, the brick pathways and green lawns stirring hazy memories of childhood games played here with his cousin, Mia. As he passed the old oak tree by the library, he spotted a familiar figure sketching quietly beneath its branches\u2014Mia, her hair now streaked with purple, just as it was that summer they last met. Their eyes met, and laughter bubbled up, bridging years and distance in a single, breathless moment. They swapped stories, both new and old, tracing the paths their lives had taken since those sunlit days. The campus no longer felt foreign; with Mia by his side, it felt like coming home.",
+    "specification": {
+      "setting": "The story takes place on a college campus during Van's first day of college.",
+      "theme": "reconnection, nostalgia"
+    },
+    "condition": "baseline_prompted",
+    "index": 38,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Eli\u2019s viral art thread flourished overnight, his quirky robots gaining thousands of eager followers across platforms\u2014until the main image host crashed unexpectedly, erasing every picture. He scrambled to re-upload, but the new domain\u2019s strict content filters flagged his robots\u2019 expressive faces as \u201cpotentially offensive.\u201d Desperate, Eli reached out to his loyal community, who responded by flooding the site with enthusiastic appeals and clever robot memes. The moderators relented, restoring his thread with a featured spotlight and a playful warning: \u201cRobots welcome, as long as they\u2019re friendly.\u201d Buoyed by the united effort, Eli realized the real magic was not in the images, but in the loyal network that refused to let his creations vanish.",
+    "specification": {
+      "setting": "The story takes place in the contemporary digital world, primarily within online communities and websites.",
+      "theme": "unexpected obstacles"
+    },
+    "condition": "baseline_prompted",
+    "index": 39,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 5,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Tommy watched his cousin Alex trace fingers along the old family photos, pausing at one with a crooked grin and messy hair. \u201cThat\u2019s you,\u201d Alex said, grinning, and Tommy laughed, suddenly unsure why he\u2019d always tried to hide that wild part of himself. As they swapped childhood stories over spilled popcorn, Tommy realized Alex saw his quirks not as flaws, but as treasures. The house felt different\u2014warmer, like a place where he could finally breathe. That night, Tommy tucked the photo under his pillow, promising himself not to hide away anymore.",
+    "specification": {
+      "setting": "The story takes place in Tommy's home during a visit from his cousin, in the present day.",
+      "theme": "self-discovery"
+    },
+    "condition": "baseline_prompted",
+    "index": 40,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "The brass doors of the bank gleamed as Olivia hesitated on the marble steps, her heart thudding louder than the city traffic behind her. She\u2019d practiced the words a hundred times: \u201cI\u2019d like to open my own account,\u201d but they tangled on her tongue every time she pictured the stern clerks and imposing counters. Inside, sunlight danced on the polished floor, and she clutched her crumpled paperwork like a shield. The teller smiled, gentle and patient, and as Olivia spoke, her voice grew steady, the bank suddenly feeling less like a fortress and more like the beginning of something new. By the time she left, papers in hand, her fear had faded, replaced by the quiet thrill of independence.",
+    "specification": {
+      "setting": "A bank during the daytime in the present.",
+      "theme": "overcoming fear"
+    },
+    "condition": "baseline_prompted",
+    "index": 41,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "On the morning before her daughter's wedding, Linda fumbled with the digital photo frame in the living room, its screen flickering between awkwardly-cropped images she hadn\u2019t meant to display. Later that evening, surrounded by the elegant blur of sequins and champagne, her phone buzzed relentlessly in her tiny clutch\u2014notifications from relatives livestreaming the event from thousands of miles away. She longed for the simplicity of printed photographs and whispered conversations, but each polite smile she gave masked her confusion over whether to look at the lens or the screen. When the night ended, her granddaughter handed her a tablet so she could \u201csee the group photos,\u201d but Linda\u2019s fingers trembled, leaving smudges instead of swipes. In the quiet after everyone left, she finally found solace in the hush of her kitchen, the only screen-free sanctuary left in her world.",
+    "specification": {
+      "setting": "The story takes place in a family home and at a formal event, over the course of two days.",
+      "theme": "discomfort with technology"
+    },
+    "condition": "baseline_prompted",
+    "index": 42,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Swirling her glass, Carla ignored the laughter at her stained blouse and focused instead on decoding the wine\u2019s elusive notes. The sommelier, noticing her determination, offered a gentle nudge: \u201cWhat do you taste?\u201d She closed her eyes, blocking out the chatter, and let the flavors bloom\u2014blackberry, cedar, a hint of stubborn hope. When she finally spoke, her answer surprised even the sommelier, who nodded in approval. Carla smiled, her confidence restored, knowing she\u2019d uncorked more than just a bottle tonight.",
+    "specification": {
+      "setting": "The story takes place at a wine tasting party in the present day.",
+      "theme": "perseverance"
+    },
+    "condition": "baseline_prompted",
+    "index": 43,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Hal stared at his battered laptop, recalculating the numbers on his spreadsheet as the scent of burnt coffee filled his tiny kitchen. With a deep breath and trembling hands, he gathered his paperwork and pushed through the revolving doors of the bank, determined to convince the manager for one final loan extension. The rejection stung, but Hal refused to let it anchor his dreams; he spent the night rewriting his business proposal, refining every word. The following morning, he returned to the bank with unwavering resolve and a hopeful smile, his heart pounding as he handed over the new proposal. This time, the manager\u2019s nod came slowly, but it came\u2014proof that sometimes, perseverance is the most valuable currency of all.",
+    "specification": {
+      "setting": "The story takes place in the present day, moving between Hal's home and a bank.",
+      "theme": "perseverance"
+    },
+    "condition": "baseline_prompted",
+    "index": 44,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "As the rain tapped softly on the classroom windows, Mrs. Carter handed out a box of old yearbooks for a history project, their faded covers stirring forgotten memories. Jamie\u2019s fingers trembled as she flipped through the pages and spotted a photo of her and Lily, arms slung over each other, grinning wide before their falling out last spring. Across the room, Lily caught Jamie\u2019s gaze, the air thick with unspoken apologies and the ache of nostalgia. With a tentative smile, Jamie slid the yearbook across her desk, letting their shared laughter from the past bridge the silence between them. The bell rang, but they lingered, the promise of reconnection glowing softly in their eyes.",
+    "specification": {
+      "setting": "The story takes place in a classroom during a school day.",
+      "theme": "reconnection, nostalgia"
+    },
+    "condition": "baseline_prompted",
+    "index": 45,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Back from the costume store, I tossed the superhero cape onto my bed, feeling its shiny fabric glimmer with the promise of escape. My little brother barreled into my room, his eyes wide, clutching the math homework he\u2019d begged me to help him with for days. I stared at the cape, thinking how easy it would be to wear it and vanish into a world where my only problem was picking a superpower. Instead, I sat beside him, the cape untouched, and explained fractions until understanding dawned on his face. As he hugged me, I realized true heroes earn their titles without ever needing a disguise.",
+    "specification": {
+      "setting": "The story takes place at the narrator's home in the present day, after a trip to a costume store.",
+      "theme": "responsibility"
+    },
+    "condition": "baseline_prompted",
+    "index": 46,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 5,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Each year, Maribel returned to Cabo San Lucas, tracing the same coastline where the desert met the sea, searching for a rumored cove hidden by tides. On her third visit, a local fisherman finally revealed the path at dawn, when golden light glinted off agate stones only visible at low tide. Following the narrow trail, she stumbled upon a cave where sunlight danced, illuminating walls etched with centuries-old stories of travelers and dreamers. Kneeling, Maribel discovered a small silver locket buried in the sand, inside of which was a faded photograph\u2014her own grandmother as a child, grinning on the very same shore. In that moment, Maribel realized the greatest treasures were not found, but remembered.",
+    "specification": {
+      "setting": "The story takes place in Cabo San Lucas over the course of several vacations.",
+      "theme": "discovery and reward"
+    },
+    "condition": "baseline_prompted",
+    "index": 47,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 4,
+      "character_quality": 4,
+      "language_quality": 5,
+      "overall_quality": 5
+    }
+  },
+  {
+    "text": "Rain battered John\u2019s window as he hunched over his math homework, pencil tapping a stubborn rhythm against the paper. Tired and frustrated, he stared at the same equation for what felt like hours, the clock ticking steadily toward midnight. His eyelids drooped, but his determination flickered stronger; he refused to let the numbers win. At last, the solution clicked, blooming in his mind like a brilliant spark in the stormy night. Smiling with relief, John slid his finished work into his backpack, already imagining tomorrow\u2019s proud moment in class.",
+    "specification": {
+      "setting": "The story takes place in John's home over the course of an evening before a school day.",
+      "theme": "perseverance"
+    },
+    "condition": "baseline_prompted",
+    "index": 48,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  },
+  {
+    "text": "Snowflakes drifted past the cabin window as Lila stared at the unopened envelope in her trembling hands. She had promised her brother she\u2019d bring only joy for Christmas, hiding the letter about the lost family land. But the mountains outside reminded her of their childhood, sledding down slopes with wild, honest laughter echoing through the pines. Heart pounding, she handed him the letter, confessing everything, and braced herself for disappointment. Instead, he smiled gently, pulling her into a hug, whispering, \u201cThe truth matters more than any mountain or memory.\u201d",
+    "specification": {
+      "setting": "The story takes place in the mountains during the Christmas season.",
+      "theme": "honesty"
+    },
+    "condition": "baseline_prompted",
+    "index": 49,
+    "quality_scores": {
+      "coherence": 5,
+      "creativity": 3,
+      "character_quality": 4,
+      "language_quality": 4,
+      "overall_quality": 4
+    }
+  }
+]

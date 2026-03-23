@@ -1,0 +1,867 @@
+You are an academic paper writer. Generate a complete NEURIPS style paper
+based on the experiment results provided.
+
+════════════════════════════════════════════════════════════════════════════════
+                         IMPORTANT: BEFORE YOU START
+════════════════════════════════════════════════════════════════════════════════
+
+Before writing any content, you MUST complete these steps:
+
+1. READ THE SKILL: Review the paper-writer skill at .claude/skills/paper-writer/SKILL.md
+2. READ THE STYLE GUIDE: Study templates/paper_writing/lab_style_guide.md carefully
+3. REVIEW EXAMPLES: Browse paper_examples/ for formatting and language patterns:
+   - Look at sections/1.introduction.tex for language style
+   - Look at tables/*.tex for table formatting
+   - Look at commands/*.tex for macro usage
+4. VERIFY COMMAND TEMPLATES: Command templates (math.tex, general.tex, macros.tex) are pre-copied to paper_draft/commands/
+
+CRITICAL: Reference example papers for FORMATTING and LANGUAGE STYLE only.
+Do NOT copy content, phrasing, or narrative structure from the example papers.
+The examples are in a different research domain - focus only on presentation style.
+
+════════════════════════════════════════════════════════════════════════════════
+                            EXPERIMENT REPORT
+════════════════════════════════════════════════════════════════════════════════
+
+# Instruct-StoryMix: Can Story Decomposition Enable Better Controllable Generation?
+
+## 1. Executive Summary
+
+We tested whether the Instruct-SkillMix paradigm—decomposing tasks into skills, creating combinatorial synthetic data, and using it to improve model capability—transfers to creative story generation. Using GPT-4.1, we extracted structured components (setting, character, conflict type, theme, emotional arc, tone) from 100 ROCStories, then generated 50 new stories from novel component combinations and compared them against two baselines (title-only and prompted generation).
+
+**Key finding**: Component-controlled generation achieves near-perfect specification adherence (4.96/5.0) but suffers a statistically significant quality penalty: overall quality drops by 0.40 points (d=-0.80, p=0.002) compared to title-only baselines, with the largest penalties in language quality (d=-0.83) and creativity (d=-0.46). Diversity metrics show modest improvements (larger vocabulary, lower inter-story overlap), but the &#34;arbitrage&#34; hypothesis—that explicit control would yield better stories despite LLMs&#39; writing limitations—is **not supported**. The constraint-quality tradeoff appears fundamental: the model allocates its generation &#34;bandwidth&#34; to following specifications at the expense of expressive, creative writing.
+
+**Practical implication**: The SkillMix approach works beautifully for *controllability* but not for *quality*. To realize the full potential, a two-stage approach is needed: component specification for structure, followed by unconstrained refinement for quality—echoing the decomposition findings from DSR and Agents&#39; Room.
+
+## 2. Goal
+
+### Research Question
+Can LLMs decompose stories into discrete components, generate stories from novel component combinations, and improve controllability and quality compared to end-to-end generation?
+
+### Hypotheses
+- **H1**: LLMs can reliably extract structured story components from existing stories.
+- **H2**: Novel component combinations produce more diverse stories than end-to-end generation.
+- **H3**: Component-specified generation achieves higher plan adherence (controllability).
+- **H4**: Component-controlled generation produces higher-quality stories than end-to-end generation (the &#34;arbitrage&#34; hypothesis).
+
+### Why This Matters
+LLMs are notoriously formulaic storytellers (Chakrabarty et al. 2023). If decomposition enables explicit control over narrative dimensions, it could unlock more diverse, author-directed creative writing. The Instruct-SkillMix framework (Allenzhu et al. 2024) showed this works for general instruction-following; we test whether it transfers to the harder domain of creative writing.
+
+### Gap in Existing Work
+While decomposition-based story generation (DOC, Agents&#39; Room, DSR) consistently outperforms end-to-end approaches, no work has applied the SkillMix paradigm of systematic component enumeration → combinatorial synthesis → evaluation. Each existing system uses ad-hoc decompositions; none treat story components as a first-class composable vocabulary.
+
+## 3. Data Construction
+
+### Dataset Description
+- **Source**: ROCStories (Mostafazadeh et al., 2016), via HuggingFace `mintujupally/ROCStories`
+- **Size**: 78,528 training stories; we sampled 100 for component extraction
+- **Characteristics**: 5-sentence commonsense stories, ~43 words average, simple narrative structures
+- **Known limitations**: Stories are short and structurally simple; may not generalize to longer fiction
+
+### Example Samples
+
+**Source Story (ROCStories)**:
+&gt; &#34;The boy went to a video arcade. He played his favorite machine. His games didn&#39;t go very well. He told the owner about his experience. The owner explained that he had made the game settings harder.&#34;
+
+**Extracted Components**:
+| Component | Value |
+|-----------|-------|
+| Setting | A video arcade, during a typical day |
+| Protagonist | A boy, a regular arcade-goer |
+| Conflict | person_vs_technology |
+| Theme | unexpected adversity |
+| Emotional arc | neutral |
+| Tone | lighthearted |
+
+**Component-Controlled Generated Story** (using mixed components):
+&gt; &#34;John sat upright in his high school classroom, meticulously reviewing his notes while his classmates whispered and scrolled through their phones... Despite his fear of drawing attention, John raised his hand and politely pointed out the discrepancy...&#34;
+
+### Data Quality
+- 100/100 stories successfully decomposed (100% extraction rate)
+- All JSON outputs valid and well-formed
+- No missing values in any component field
+
+### Preprocessing
+1. Random sample of 100 stories (seed=42) from ROCStories train split
+2. Component extraction via GPT-4.1 (temperature=0.2, structured JSON output)
+3. Novel combinations created by sampling components from 5 different source stories per combination
+
+## 4. Experiment Description
+
+### Methodology
+
+#### High-Level Approach
+Inspired by Instruct-SkillMix, we treat story components as composable &#34;skills.&#34; We: (1) extract a taxonomy of components from existing stories, (2) create novel specifications by mixing components from different sources, (3) generate stories conditioned on these specifications, and (4) compare quality, controllability, and diversity against unconditioned baselines.
+
+#### Why This Method?
+The SkillMix paradigm was chosen because it provides a systematic framework for testing compositional generalization in creative tasks. Alternatives (e.g., Agents&#39; Room multi-agent, DOC hierarchical outlines) are more complex and would confound the core question of whether component decomposition itself enables the &#34;arbitrage.&#34;
+
+### Implementation Details
+
+#### Tools and Libraries
+- Python 3.12
+- OpenAI API v2.29.0 (GPT-4.1)
+- NumPy 2.4.3, SciPy 1.17.1
+- Matplotlib 3.10+, Seaborn 0.13.2
+- HuggingFace Datasets
+
+#### Model
+- **GPT-4.1** for all tasks (extraction, generation, evaluation)
+- Temperature: 0.2 (extraction), 0.8 (generation), 0.1 (evaluation)
+
+#### Experimental Conditions
+| Condition | Input | N |
+|-----------|-------|---|
+| Component-controlled | Full 7-component specification | 50 |
+| Baseline (title-only) | Theme only | 50 |
+| Baseline (prompted) | Theme + setting | 50 |
+| Supplementary: Coherent specs | All components from same source story | 25 |
+| Supplementary: Mixed specs | Components from different source stories | 25 |
+
+#### Hyperparameters
+| Parameter | Value | Selection Method |
+|-----------|-------|------------------|
+| N stories extracted | 100 | Budget constraint |
+| N stories generated | 50 per condition | Statistical power |
+| Generation temperature | 0.8 | Standard for creative tasks |
+| Eval temperature | 0.1 | Minimize judge variance |
+| Random seed | 42 | Convention |
+
+### Evaluation Metrics
+
+**Quality (GPT-4.1-as-judge, 1-5 scale)**:
+- Coherence, Creativity, Character Quality, Language Quality, Overall Quality
+
+**Controllability (GPT-4.1-as-judge, 1-5 scale)**:
+- Per-component adherence (setting, character, conflict, theme, arc, tone) + overall
+
+**Diversity (automatic)**:
+- Unique trigram ratio, vocabulary size, inter-story trigram overlap
+
+**Statistical tests**: Wilcoxon signed-rank (paired, non-parametric), Cohen&#39;s d effect sizes, Bonferroni correction
+
+### Raw Results
+
+#### Main Experiment: Quality Scores
+
+| Dimension | Component-Controlled | Baseline (Title) | Baseline (Prompted) |
+|-----------|---------------------|-------------------|---------------------|
+| Coherence | 5.00 ± 0.00 | 5.00 ± 0.00 | 5.00 ± 0.00 |
+| Creativity | 3.72 ± 0.45 | **3.94 ± 0.51** | 3.92 ± 0.52 |
+| Character Quality | 4.30 ± 0.54 | 4.20 ± 0.45 | 4.34 ± 0.47 |
+| Language Quality | 4.38 ± 0.49 | **4.76 ± 0.43** | **4.66 ± 0.47** |
+| Overall Quality | 4.26 ± 0.52 | **4.66 ± 0.47** | **4.58 ± 0.49** |
+
+Bold = significantly better (p &lt; 0.05, Wilcoxon signed-rank)
+
+#### Controllability Scores (Component-Controlled Only)
+
+| Component | Adherence (1-5) |
+|-----------|----------------|
+| Setting | 4.88 ± 0.38 |
+| Character | 4.90 ± 0.30 |
+| Conflict | 4.82 ± 0.38 |
+| Theme | 5.00 ± 0.00 |
+| Arc | 4.98 ± 0.14 |
+| Tone | 4.76 ± 0.47 |
+| **Overall** | **4.96 ± 0.20** |
+
+#### Diversity Metrics
+
+| Metric | Component-Controlled | Baseline (Title) | Baseline (Prompted) |
+|--------|---------------------|-------------------|---------------------|
+| Unique trigram ratio | **0.988** | 0.980 | 0.988 |
+| Vocabulary size | **2,276** | 1,807 | 2,164 |
+| Inter-story overlap | **0.0006** | 0.0008 | 0.0006 |
+| Mean story length | 110 words | 87 words | 100 words |
+
+#### Statistical Tests (Component vs Title Baseline)
+
+| Dimension | Cohen&#39;s d | p-value | Interpretation |
+|-----------|----------|---------|----------------|
+| Coherence | 0.00 | n/a | No difference (ceiling) |
+| Creativity | -0.46 | 0.028* | Small-medium penalty |
+| Character Quality | +0.20 | 0.369 | No significant difference |
+| Language Quality | **-0.83** | **0.001*** | Large penalty |
+| Overall Quality | **-0.80** | **0.002*** | Large penalty |
+
+\* p &lt; 0.05, \*\* p &lt; 0.01, \*\*\* p &lt; 0.001
+
+#### Supplementary: Coherent vs Mixed Component Specifications
+
+| Dimension | Coherent Specs (n=25) | Mixed Specs (n=25) |
+|-----------|----------------------|-------------------|
+| Coherence | 5.00 ± 0.00 | 4.96 ± 0.20 |
+| Creativity | 3.56 ± 0.50 | 3.76 ± 0.43 |
+| Character Quality | 4.40 ± 0.49 | 4.48 ± 0.57 |
+| Language Quality | 4.60 ± 0.49 | 4.64 ± 0.56 |
+| Overall Quality | 4.44 ± 0.50 | 4.52 ± 0.57 |
+
+#### Visualizations
+
+- `results/plots/quality_comparison.png` — Box plots of quality scores across conditions
+- `results/plots/controllability.png` — Bar chart of per-component adherence
+- `results/plots/diversity_metrics.png` — Diversity comparison across conditions
+- `results/plots/effect_sizes.png` — Forest plot of effect sizes with significance
+
+### Component Taxonomy (Extracted from 100 ROCStories)
+
+| Component | Distribution |
+|-----------|-------------|
+| **Conflict type** | person_vs_self (54%), person_vs_nature (17%), person_vs_person (13%), person_vs_society (9%), person_vs_fate (4%), person_vs_technology (2%) |
+| **Emotional arc** | positive_resolution (53%), negative_resolution (22%), bittersweet (17%), neutral (6%), comedic (1%) |
+| **Tone** | heartwarming (35%), serious (27%), lighthearted (21%), melancholic (11%), dramatic (3%), suspenseful (2%) |
+| **Narrative technique** | linear (100%) — limitation of short ROCStories |
+
+## 5. Result Analysis
+
+### Key Findings
+
+1. **H1 SUPPORTED — Reliable component extraction**: GPT-4.1 extracted structured components from 100% of stories with valid JSON output. The taxonomy reveals meaningful distributions (e.g., person_vs_self is the dominant conflict at 54%, positive_resolution the dominant arc at 53%).
+
+2. **H2 PARTIALLY SUPPORTED — Modest diversity improvement**: Component-controlled stories show a larger vocabulary (2,276 vs 1,807 words) and slightly higher unique trigram ratio (0.988 vs 0.980). However, the differences are small and may be partially explained by the longer average length of component-controlled stories (110 vs 87 words).
+
+3. **H3 STRONGLY SUPPORTED — Excellent controllability**: Near-perfect specification adherence (4.96/5.0 overall). Every component dimension scored above 4.76/5.0. The model reliably follows detailed multi-dimensional specifications.
+
+4. **H4 REFUTED — No quality arbitrage**: Component-controlled stories scored significantly *lower* on language quality (d=-0.83, p=0.001), creativity (d=-0.46, p=0.028), and overall quality (d=-0.80, p=0.002) compared to title-only baselines. The &#34;arbitrage&#34; hypothesis is not supported.
+
+### The Constraint-Quality Tradeoff
+
+The central finding is a **constraint-quality tradeoff**: as more structural constraints are imposed, the model follows them faithfully but produces less creative, less linguistically polished output.
+
+Qualitative examination reveals why:
+- **Baseline stories** use vivid imagery, sensory language, and unexpected turns (e.g., &#34;She inhaled, leapt, and for a glorious moment soared above the world, wind screaming victory in her ears&#34;)
+- **Component-controlled stories** read more like competent plot summaries, hitting all specification points but with flatter prose (e.g., &#34;Against the odds, the team rallied... Bob&#39;s heartfelt words echoed through the stadium&#34;)
+
+The model appears to allocate its generation &#34;bandwidth&#34; between two competing objectives: (1) satisfying constraints and (2) producing expressive writing. More constraints leave less room for creative expression.
+
+### Supplementary Finding: Mixing Doesn&#39;t Hurt
+
+The supplementary experiment comparing coherent specs (all components from one source) vs mixed specs (components from different sources) found **no quality difference** (overall: 4.44 vs 4.52). Mixed specs actually scored slightly higher on creativity (3.76 vs 3.56), suggesting that unusual component combinations may stimulate more original generation. The quality penalty comes from the *number* of constraints, not from component incoherence.
+
+### Surprises and Insights
+
+1. **Coherence is trivially easy**: All conditions achieved perfect or near-perfect coherence (5.0/5.0). For 5-sentence stories, GPT-4.1 never produces incoherent narratives regardless of constraint level.
+
+2. **Narrative technique bottleneck**: 100% of extracted stories were classified as &#34;linear&#34; narrative technique. ROCStories are too short and simple to exhibit flashbacks, frame narratives, or in medias res. This limits one dimension of the taxonomy.
+
+3. **Length effect**: Component-controlled stories are ~26% longer (110 vs 87 words), likely because the model needs more words to satisfy all specified elements. This may partially inflate the diversity metrics.
+
+4. **The judge ceiling**: GPT-4.1-as-judge gave very high scores across all conditions (rarely below 3/5), suggesting it may be too generous. A more discriminating evaluation (human judges, or a custom rubric) might reveal larger or different patterns.
+
+### Limitations
+
+1. **Same model for generation and evaluation**: GPT-4.1 generates and judges the stories, creating potential self-preference bias. However, this bias would favor all conditions equally.
+
+2. **Short stories only**: ROCStories (5 sentences) may not reveal benefits that emerge at longer scales where planning and control become more important (DOC, Agents&#39; Room show larger gains on longer stories).
+
+3. **No fine-tuning**: We tested zero-shot component-controlled generation. The SkillMix paradigm&#39;s full potential requires *training* on synthetic component data, which we did not test due to scope constraints.
+
+4. **Single model**: All experiments use GPT-4.1. Results may differ with other models, especially smaller models where controllability is harder.
+
+5. **Automatic evaluation only**: No human evaluation was conducted. GPT-4.1-as-judge has moderate correlation with human judgments (ρ ≈ 0.4-0.6 per literature).
+
+6. **Limited taxonomy**: The narrative_technique dimension collapsed to a single value, reducing the effective component space.
+
+## 6. Conclusions
+
+### Summary
+
+The Instruct-SkillMix approach transfers to story generation for **controllability** but not for **quality**. LLMs can reliably decompose stories into structured components and generate new stories that faithfully follow novel component combinations. However, component-controlled generation produces significantly lower-quality stories than unconstrained generation—a constraint-quality tradeoff where specification adherence competes with creative expression.
+
+### Implications
+
+**For the &#34;arbitrage&#34; hypothesis**: The arbitrage does not exist at the single-generation level. Models that are bad at writing stories become *worse* when given more structural constraints to satisfy simultaneously. However, the arbitrage may exist in a *two-stage* pipeline: use component specifications for structure, then apply unconstrained refinement for quality (as in DSR&#39;s hybrid synthesis approach).
+
+**For synthetic data generation**: The component taxonomy and combinatorial synthesis pipeline is viable for creating diverse training data. The extracted components form a meaningful vocabulary with natural distributions. This could be valuable for training smaller models via distillation, even if the teacher model&#39;s constrained outputs need refinement.
+
+**For creative writing tools**: Component specification is highly effective for *steering* generation (4.96/5.0 adherence). This has immediate practical value for interactive writing tools where authors want to control narrative elements while the model handles prose.
+
+### Confidence in Findings
+- **High confidence** in the controllability finding (near-ceiling scores, clear mechanism)
+- **Medium confidence** in the quality penalty finding (consistent across comparisons, but single judge model)
+- **Low confidence** in the diversity finding (small differences, confounded by length)
+
+## 7. Next Steps
+
+### Immediate Follow-ups
+1. **Two-stage pipeline**: Generate with component specs, then refine with &#34;make this more creative and expressive&#34; post-processing. Test whether this recovers quality while maintaining controllability.
+2. **Longer stories**: Repeat on WritingPrompts (300K stories, longer narratives) where controllability benefits should be larger.
+3. **Fine-tuning experiment**: Use the component-controlled synthetic data to fine-tune a smaller model (e.g., LLaMA-8B) and measure whether it develops better controllability than baseline instruction tuning.
+
+### Alternative Approaches
+- **Fewer, more impactful components**: Test whether 2-3 components (e.g., theme + conflict only) achieve a better quality-controllability balance.
+- **Hierarchical generation**: Use components for outline, then unconstrained prose generation.
+- **Constitutional DPO**: Use Weaver&#39;s approach to create preference data from component-controlled vs baseline pairs.
+
+### Open Questions
+1. Does the constraint-quality tradeoff diminish at larger model scales?
+2. Would training on component-controlled data transfer controllability to unconstrained generation?
+3. Is there a &#34;sweet spot&#34; number of components that maximizes the quality-controllability product?
+4. Do human evaluators agree with the GPT-4.1 judge&#39;s relative rankings?
+
+## References
+
+1. Allen-Zhu, Z. et al. (2024). &#34;Instruct-SkillMix: Skill-Mixture Data for General Instruction Following.&#34; arXiv:2408.14774
+2. Yao, L. et al. (2019). &#34;Plan-And-Write: Towards Better Automatic Storytelling.&#34; AAAI.
+3. Yang, K. et al. (2023). &#34;DOC: Improving Long Story Coherence With Detailed Outline Control.&#34; ACL.
+4. Xie, X. et al. (2024). &#34;Weaver: Foundation Models for Creative Writing.&#34; arXiv:2401.17268
+5. Huot, F. et al. (2024). &#34;Agents&#39; Room: Narrative Generation through Multi-step Collaboration.&#34; ICLR 2025.
+6. DSR (2025). &#34;Beyond Direct Generation: A Decomposed Approach to Screenwriting.&#34; arXiv:2510.23163
+7. Chakrabarty, T. et al. (2023). &#34;Art or Artifice? Large Language Models and the False Promise of Creativity.&#34; arXiv:2309.14556
+8. Mostafazadeh, N. et al. (2016). &#34;A Corpus and Cloze Evaluation for Deeper Understanding of Commonsense Stories.&#34; NAACL.
+
+---
+
+*Experiment conducted 2026-03-23. Model: GPT-4.1. Total API calls: ~550. Seed: 42.*
+
+
+════════════════════════════════════════════════════════════════════════════════
+                            RESEARCH PLAN
+════════════════════════════════════════════════════════════════════════════════
+
+# Instruct-StoryMix: Research Plan
+
+## Motivation &amp; Novelty Assessment
+
+### Why This Research Matters
+LLMs are notoriously formulaic storytellers—they default to predictable arcs, flat characters, and repetitive language (Chakrabarty et al. 2023). If we can decompose stories into discrete, controllable components (like Instruct-SkillMix does for instruction-following skills), we could generate synthetic training data that teaches models to explicitly control each narrative dimension, potentially breaking through the &#34;formulaic ceiling.&#34;
+
+### Gap in Existing Work
+The literature review reveals that while decomposition-based story generation (DOC, Agents&#39; Room, DSR) consistently outperforms end-to-end approaches, **no work applies the SkillMix paradigm**—systematically enumerating story components as &#34;skills,&#34; creating combinatorial synthetic data from novel component mixtures, and measuring whether this improves controllability. Each existing system uses ad-hoc decompositions; none treat components as a first-class composable vocabulary.
+
+### Our Novel Contribution
+We test whether the Instruct-SkillMix &#34;skill decomposition → combinatorial synthesis → evaluation&#34; pipeline transfers to creative writing. Specifically: (1) Can LLMs reliably extract a rich taxonomy of story components? (2) Does generating stories from novel component combinations produce more diverse/controlled output than end-to-end generation? (3) Is there &#34;arbitrage&#34;—can a model that&#39;s bad at holistic story writing still produce better stories when given explicit component specifications?
+
+### Experiment Justification
+- **Experiment 1 (Component Extraction)**: Tests whether LLMs can reliably decompose stories into structured components—prerequisite for the entire pipeline.
+- **Experiment 2 (Taxonomy Construction)**: Validates that extracted components form a coherent, reusable vocabulary—analogous to SkillMix&#39;s skill inventory.
+- **Experiment 3 (Combinatorial Generation)**: Core test—generates stories from novel component combinations and compares to baselines on quality, diversity, and controllability.
+- **Experiment 4 (Controllability Assessment)**: Directly measures whether component-specified generation produces stories that actually follow the specifications.
+
+## Research Question
+Can LLMs decompose stories into discrete components, and does generating stories from novel combinations of these components improve controllability and diversity compared to end-to-end generation?
+
+## Hypothesis Decomposition
+- **H1**: LLMs can extract structured story components (characters, plot structure, setting, theme, narrative technique, conflict type, emotional arc) from existing stories with high inter-rater agreement.
+- **H2**: Novel combinations of extracted components produce more diverse stories than end-to-end generation.
+- **H3**: Component-specified generation achieves higher plan adherence (controllability) than unconstrained generation.
+- **H4**: Despite LLMs being &#34;bad&#34; at stories, component-controlled generation produces higher-quality stories than end-to-end generation (the &#34;arbitrage&#34; hypothesis).
+
+## Proposed Methodology
+
+### Approach
+Use ROCStories (short, 5-sentence stories) as the base corpus. Extract components via GPT-4.1, build a taxonomy, then generate new stories by mixing components from different source stories. Compare against end-to-end baselines using GPT-4.1-as-judge evaluation.
+
+### Experimental Steps
+1. **Sample 100 ROCStories** for component extraction
+2. **Extract components** from each story using GPT-4.1 with structured output (JSON)
+3. **Build taxonomy**: Cluster and categorize extracted components
+4. **Create 50 novel component specifications** by mixing components from different stories
+5. **Generate stories** from specifications (component-controlled condition)
+6. **Generate baseline stories** from titles only (end-to-end condition)
+7. **Evaluate** all stories using GPT-4.1-as-judge on 5 dimensions
+8. **Statistical analysis** comparing conditions
+
+### Baselines
+1. **End-to-end (title only)**: Generate story from just the title
+2. **End-to-end (title + prompt)**: Generate story from title + brief writing prompt
+3. **Component-controlled**: Generate story from full component specification
+
+### Evaluation Metrics
+1. **Coherence** (1-5): Logical consistency, connected events
+2. **Creativity** (1-5): Originality, avoiding clichés
+3. **Controllability** (1-5): How well story follows the component specification
+4. **Character quality** (1-5): Believable, developed characters
+5. **Overall quality** (1-5): Holistic judgment
+6. **Diversity**: Unique trigram ratio, vocabulary diversity across generated stories
+
+### Statistical Analysis Plan
+- Paired t-tests / Wilcoxon signed-rank for quality comparisons
+- Cohen&#39;s d for effect sizes
+- Bootstrap confidence intervals (1000 resamples)
+- α = 0.05 with Bonferroni correction for multiple comparisons
+
+## Expected Outcomes
+- H1 supported: Components extracted consistently (inter-extraction agreement &gt; 0.7)
+- H2 supported: Component-mixed stories show higher lexical diversity than baselines
+- H3 supported: Component-controlled stories achieve higher plan adherence scores
+- H4 partially supported: Quality improvement exists but may be modest; the &#34;arbitrage&#34; may be real but limited
+
+## Timeline
+- Phase 1-2: Setup + Data prep (15 min)
+- Phase 3: Component extraction + taxonomy (30 min, ~100 API calls)
+- Phase 4: Story generation (30 min, ~200 API calls)
+- Phase 5: Evaluation (30 min, ~250 API calls)
+- Phase 6: Analysis + Documentation (30 min)
+
+## Potential Challenges
+- API rate limits → use exponential backoff
+- Component extraction inconsistency → validate with repeated extraction
+- GPT-4.1-as-judge bias → compare with diversity metrics as independent signal
+- Short stories (ROCStories) may limit component richness → document as limitation
+
+## Success Criteria
+- Clear evidence for or against each hypothesis
+- Statistically significant results with appropriate effect sizes
+- Reproducible pipeline with documented prompts and code
+- Honest reporting regardless of whether results support the hypothesis
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          LITERATURE REVIEW
+════════════════════════════════════════════════════════════════════════════════
+
+# Literature Review: Instruct-StoryMix
+
+## Research Area Overview
+
+This review covers the literature on **controllable story generation**, **story decomposition**, and **synthetic data generation for narrative tasks** — the three pillars of the Instruct-StoryMix hypothesis: that LLMs can decompose stories into components, generate synthetic data from these components, and improve controllability in story generation.
+
+The field has evolved from early neural story generation (event-based, 2017-2019) through plan-and-write paradigms (2018-2020) to modern LLM-based multi-agent and decomposition frameworks (2023-2025). A consistent finding is that **decomposing generation into planning + writing stages significantly outperforms end-to-end generation** across coherence, relevance, and controllability metrics.
+
+---
+
+## Key Papers
+
+### 1. Plan-And-Write: Towards Better Automatic Storytelling
+- **Authors:** Yao, Peng, Weischedel, Knight, Zhao &amp; Yan
+- **Year:** 2019 (AAAI) | arXiv: 1811.05701
+- **Key Contribution:** Foundational two-stage decomposition: Title → Storyline (keyword sequence via RAKE) → Story sentences. Establishes that automatically extracted story components can train controllable generation models.
+- **Methodology:** Static schema (full plan before writing) and Dynamic schema (interleaved). RAKE keyword extraction creates storylines without human annotation. BiGRU/BiLSTM encoder-decoders.
+- **Datasets:** ROCStories (98K five-sentence stories)
+- **Results:** Static schema preferred by humans on coherence (49.5% vs 28.3%) and overall quality (50.1% vs 30.1%). Planning reduces inter-story repetition significantly.
+- **Code:** https://bitbucket.org/VioletPeng/language-model (currently 404)
+- **Relevance:** Direct template for automatic story decomposition into components. RAKE-based extraction is a prototype for synthetic data pipelines.
+
+### 2. DOC: Improving Long Story Coherence With Detailed Outline Control
+- **Authors:** Yang, Klein, Peng, Tian
+- **Year:** 2023 (ACL) | arXiv: 2212.10077
+- **Key Contribution:** Most complete story component taxonomy: premise, settings, characters (with temporal state), hierarchical plot events (3 levels), summaries. Uses FUDGE controller for outline adherence.
+- **Methodology:** Breadth-first outline expansion, event candidate filtering/reranking, character detection + coreference, temporal character development. All via LLM prompting (InstructGPT3).
+- **Datasets:** WritingPrompts (for controller training), synthetic stories for ordering model
+- **Results:** +22.5pp coherence, +28.2pp relevance over Re3 baseline. Interactive: 80% user preference on intent/control/quality.
+- **Code:** https://github.com/yangkevin2/doc-story-generation
+- **Relevance:** Blueprint for what story components need to be extracted and tracked. Shows LLM prompting can perform all decomposition steps.
+
+### 3. Beyond Direct Generation: A Decomposed Approach to Screenwriting (DSR)
+- **Authors:** Alibaba Group + Peking University
+- **Year:** 2025 | arXiv: 2510.23163
+- **Key Contribution:** Proves empirically that decomposing creative generation into functionally distinct sub-tasks (narrative creation vs. format conversion) produces significantly better results than end-to-end. Introduces &#34;Narrative Directives&#34; (Chain-of-Thought over pacing, exposition, character arcs).
+- **Methodology:** Stage 1: Outline → CoT analysis → Novel prose (SFT). Stage 2: Novel → Screenplay (inference-only with GPT-4). Hybrid data synthesis: reverse-compress inputs + extract directives + forward-distill outputs.
+- **Datasets:** 50K samples from 200+ TV series; 32-scene expert evaluation set
+- **Results:** 82.7% of human-level quality, 75% win rate vs. Claude-Sonnet-4 and Gemini-2.5-Pro. Decomposition gives +2.4 points over end-to-end.
+- **Relevance:** Direct blueprint for synthetic data creation via reverse synthesis + forward distillation. Shows reverse synthesis alone is insufficient (input-output misalignment). Narrative Directives operationalize authorial strategy as trainable components.
+
+### 4. Weaver: Foundation Models for Creative Writing
+- **Authors:** Xie et al. (AIWaves Inc.)
+- **Year:** 2024 | arXiv: 2401.17268
+- **Key Contribution:** Domain-specific LLM for writing via continual pre-training + instruction backtranslation + Constitutional DPO. 500K synthetic instruction-response pairs from high-quality human-written text.
+- **Methodology:** Backtranslation: collect human text → GPT-4 generates instruction with CoT → filter by quality. Constitutional DPO: 200+ expert-written principles generate principled negative examples.
+- **Datasets:** Curated writing corpus (fiction:non-fiction 1:1); 400K filtered SFT pairs; 25K preference pairs
+- **Results:** Weaver Ultra (34B) outperforms GPT-4 on Style and Creativity. 47% productivity improvement over GPT-4 in user study.
+- **Relevance:** Instruction backtranslation is directly applicable to creating story instruction data. Constitutional DPO provides a principled approach to preference data for creative writing.
+
+### 5. Agents&#39; Room: Narrative Generation through Multi-step Collaboration
+- **Authors:** Huot et al. (Google DeepMind)
+- **Year:** 2024 (ICLR 2025) | arXiv: 2410.02603
+- **Key Contribution:** Most structured decomposition into specialized agents: 4 planning agents (Conflict, Character, Setting, Plot) + 5 writing agents (Exposition, Rising Action, Climax, Falling Action, Resolution). Shared scratchpad communication.
+- **Methodology:** Centralized orchestration with deterministic agent ordering following Freytag&#39;s dramatic structure. Backtranslation from stories using Gemini Ultra as teacher. LoRA fine-tuning of Gemini 1.5 Flash agents.
+- **Datasets:** Tell Me a Story (230 high-quality workshop stories, avg 1498 tokens)
+- **Results:** AR plan+write (FT) most preferred by humans. Fine-tuned agents outperform zero-shot. Decomposition via separate agents &gt; decomposition within single model.
+- **Code:** https://github.com/google-deepmind/tell_me_a_story
+- **Relevance:** Definitive evidence that multi-agent decomposition outperforms single-model approaches. Backtranslation from stories to structured components is the exact pipeline needed for synthetic data generation.
+
+### 6. Strategies for Structuring Story Generation
+- **Authors:** Fan, Lewis, Dauphin
+- **Year:** 2019 | arXiv: 1902.01109
+- **Key Contribution:** Coarse-to-fine three-stage pipeline: SRL action sequences → entity-anonymized narrative → surface realization with name generation.
+- **Datasets:** WritingPrompts (300K stories)
+- **Relevance:** Demonstrates NLP tool-based story decomposition (SRL, NER, coreference) as foundation for structured synthetic data.
+
+### 7. Outline to Story (O2S / FIST)
+- **Authors:** Fang et al.
+- **Year:** 2021 | arXiv: 2101.00822
+- **Key Contribution:** Simple but effective outline-conditioned generation via interleaved special tokens in GPT-2 fine-tuning. No architecture changes needed.
+- **Datasets:** WritingPrompts (303K), WikiPlots (113K)
+- **Relevance:** Shows RAKE keyword outlines can be automatically extracted and used as control signals. Supports partial/incomplete outlines for flexible control.
+
+### 8. PlotMachines: Outline-Conditioned Generation with Dynamic Plot State Tracking
+- **Authors:** Rashkin, Celikyilmaz, Choi, Gao
+- **Year:** 2020 (EMNLP) | arXiv: 2004.14967
+- **Key Contribution:** Dynamic memory tracking which outline elements have been used, with discourse-position labels for narrative structure.
+- **Datasets:** WikiPlots, WritingPrompts, NYTimes
+- **Code:** https://github.com/hrashkin/plotmachines
+- **Relevance:** Formalizes outline-conditioned generation with explicit state tracking—key for ensuring controllability.
+
+### 9. Content Planning with Aristotelian Rescoring
+- **Authors:** Goldfarb-Tarrant, Chakrabarty, Weischedel, Peng
+- **Year:** 2020 | arXiv: 2009.09870
+- **Key Contribution:** SRL-based plot generation with Aristotelian rescoring classifiers (event arrangement, character tracking, relevance, diction) for principled plot quality control.
+- **Datasets:** WritingPrompts
+- **Relevance:** Principled structural constraints on plot quality via learned classifiers.
+
+### 10. Collective Critics for Creative Story Generation (CRITICS)
+- **Authors:** Bae, Kim
+- **Year:** 2024 (EMNLP) | arXiv: 2410.02428
+- **Key Contribution:** Multi-critic iterative refinement at both plan and text levels, with persona-assigned LLM critics evaluating creativity dimensions.
+- **Relevance:** Control mechanism for steering creativity via iterative critique—complementary to decomposition approaches.
+
+### 11. Re3: Generating Longer Stories with Recursive Reprompting and Revision
+- **Authors:** Yang et al.
+- **Year:** 2022 (EMNLP) | arXiv: 2210.06774
+- **Key Contribution:** Recursive reprompting with plan, draft, and revision stages for long story generation.
+- **Relevance:** Predecessor to DOC; establishes the plan-draft-revise paradigm for long-form generation.
+
+---
+
+## Common Methodologies
+
+### Story Decomposition Approaches
+1. **Keyword/Outline extraction** (RAKE): Used in Plan-And-Write, O2S, PlotMachines. Automatic, no annotation needed.
+2. **SRL-based action sequences**: Used in Fan et al. 2019, Goldfarb-Tarrant 2020. More structured but heavier.
+3. **Hierarchical outline trees**: DOC generates multi-depth outline trees. Most detailed but complex.
+4. **Narrative component agents**: Agents&#39; Room assigns separate agents per story dimension.
+5. **Reverse synthesis from finished text**: DSR, Weaver, Agents&#39; Room all reverse-engineer structured components from complete stories.
+
+### Synthetic Data Generation Methods
+1. **Instruction backtranslation**: Weaver (GPT-4 generates instruction from human text)
+2. **Reverse compression + forward distillation**: DSR (reverse inputs, extract directives, forward synthesize)
+3. **Teacher-student backtranslation**: Agents&#39; Room (Gemini Ultra → Gemini Flash)
+4. **Automatic extraction**: Plan-And-Write, O2S (RAKE keywords from stories)
+
+### Control Mechanisms
+1. **Plan-conditioned generation**: All plan-and-write approaches
+2. **FUDGE token-level control**: DOC (auxiliary classifier steers generation)
+3. **Aristotelian rescoring**: Goldfarb-Tarrant (learned classifiers rerank candidates)
+4. **Dynamic plot state tracking**: PlotMachines (memory over outline coverage)
+5. **Multi-agent specialization**: Agents&#39; Room (each agent handles one aspect)
+
+---
+
+## Standard Baselines
+- **End-to-end LLM generation** (no planning): GPT-3/4, LLaMA, etc.
+- **Rolling context window**: Generate text with only recent context (ROLLING-OPT in DOC)
+- **Re3**: Recursive reprompting with plan + revision (DOC&#39;s predecessor)
+- **Conditional language model**: Standard fine-tuned LM with prompt conditioning
+
+---
+
+## Evaluation Metrics
+
+### Automatic Metrics
+- **Inter/Intra-story repetition**: Trigram repetition rates (Plan-And-Write)
+- **BLEU scores**: Standard but noted as inappropriate for open-ended creative generation
+- **ROUGE-L, BERTScore**: Reference-based; ROUGE rewards similarity to gold stories
+- **Unique word ratio**: Vocabulary diversity
+- **Prompt overlap**: How much story copies from prompt
+
+### Human Evaluation (Consensus Dimensions)
+- **Coherence/Plot**: Logical consistency, connected events
+- **Relevance/Fidelity**: Adherence to prompt/outline/plan
+- **Creativity/Interestingness**: Engagement, originality, avoiding clichés
+- **Character Development**: Believable, well-developed characters
+- **Language Use**: Varied, rich language; literary devices
+- **Overall preference**: Holistic quality judgment
+
+### LLM-as-Judge
+- GPT-4 judge (Weaver, Agents&#39; Room): Moderate correlation with human preferences (ρ = 0.41-0.62)
+- Professional evaluator panels: DSR uses 20+ professional screenwriters (12-point scale)
+
+---
+
+## Datasets in the Literature
+
+| Dataset | Size | Domain | Used By | Notes |
+|---------|------|--------|---------|-------|
+| **WritingPrompts** | 303K | Reddit stories | Fan 2019, DOC, O2S, PlotMachines, Aristotelian | Most widely used; prompt→story pairs |
+| **ROCStories** | 98K | 5-sentence commonsense | Plan-And-Write | Short, structured stories with titles |
+| **WikiPlots** | 113K-135K | Wikipedia movie plots | O2S, PlotMachines | Plot summaries; structured metadata |
+| **Tell Me a Story** | 230 | Workshop fiction | Agents&#39; Room | Highest quality; detailed prompts |
+| **NYTimes** | 240K | News articles | PlotMachines | Requires LDC license |
+
+---
+
+## Gaps and Opportunities
+
+1. **No unified decomposition-to-synthetic-data pipeline**: Each paper creates its own ad-hoc extraction method. A systematic framework for decomposing stories into reusable components and generating synthetic training data is missing.
+
+2. **Limited component vocabulary**: Most work uses only keywords/outlines. Richer components (character arcs, emotional trajectories, setting transitions, narrative pacing) are identified but rarely used as explicit training signals.
+
+3. **Reverse synthesis quality**: DSR shows reverse-only synthesis creates input-output misalignment. The hybrid approach (reverse + forward) is better but not widely adopted.
+
+4. **Evaluation gap**: Human evaluation is expensive and inconsistent. LLM-as-judge shows moderate but imperfect correlation with humans, especially for creativity.
+
+5. **Scale vs. quality tradeoff**: Large datasets (WritingPrompts) have variable quality; high-quality datasets (Tell Me a Story) are tiny. Synthetic data generation could bridge this gap.
+
+6. **LLM story writing limitations**: Multiple papers (Art or Artifice, Echoes in AI) document that LLMs produce less diverse, more formulaic stories than humans. Controllability may help by enabling explicit specification of diverse story elements.
+
+---
+
+## Recommendations for Our Experiment
+
+### Recommended Datasets
+1. **WritingPrompts** (primary): Largest story corpus with prompts; widely used as benchmark
+2. **ROCStories** (secondary): Short, structured stories ideal for component extraction experiments
+3. **WikiPlots** (supplementary): Movie plots with rich metadata; good for genre-conditioned experiments
+4. **Tell Me a Story** (evaluation): High-quality gold standard for human evaluation
+
+### Recommended Baselines
+1. End-to-end LLM generation (GPT-4/Claude/LLaMA)
+2. DOC outline-controlled generation
+3. Simple plan-and-write (RAKE keywords → generation)
+4. Agents&#39; Room multi-agent approach
+
+### Recommended Metrics
+1. **Human evaluation**: Coherence, creativity, character development, overall preference (pairwise)
+2. **Controllability**: Outline/plan adherence rate (detailed-relevance metric from DOC)
+3. **Diversity**: Inter/intra-story repetition, unique word ratio
+4. **LLM-as-judge**: GPT-4 scoring on style, relevance, creativity (as validation)
+
+### Methodological Considerations
+- **Hybrid synthesis** (DSR approach) is strongly recommended over pure reverse or pure forward synthesis for creating training data
+- **Instruction backtranslation** (Weaver approach) is the most scalable method for creating instruction-response pairs from existing stories
+- **Component granularity matters**: Start with coarse components (outline, characters, setting) before attempting fine-grained decomposition
+- **Multi-agent decomposition** (Agents&#39; Room) empirically outperforms single-model decomposition, even with identical information
+- **Constitutional principles** (Weaver) provide a principled way to create preference data for creative writing tasks
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          PAPER REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+Generate a complete academic paper with the following structure:
+
+1. TITLE
+   - Clear, specific, informative
+   - Should convey main finding or contribution
+
+2. AUTHOR
+   - Use this exact author line in the \author{} block: Ari Holtzman and NeuriCo
+
+3. ABSTRACT (150-250 words)
+   - Problem statement
+   - Approach
+   - Key results
+   - Significance
+
+4. INTRODUCTION
+   - Research problem and motivation
+   - Gap in existing work
+   - Our contribution (be specific)
+   - Paper organization
+
+5. RELATED WORK
+   - Organized by theme/approach
+   - Position our work relative to prior work
+   - Cite papers from literature review
+
+6. METHODOLOGY
+   - Clear description of approach
+   - Experimental setup
+   - Datasets used
+   - Evaluation metrics
+   - Baselines
+
+7. RESULTS
+   - Present results with tables and figures
+   - Statistical analysis
+   - Comparison to baselines
+   - Ablation studies (if applicable)
+
+8. DISCUSSION
+   - Interpretation of results
+   - Limitations
+   - Broader implications
+
+9. CONCLUSION
+   - Summary of contributions
+   - Key findings
+   - Future work
+
+10. REFERENCES
+   - BibTeX format
+   - All cited papers
+
+════════════════════════════════════════════════════════════════════════════════
+                          OUTPUT FORMAT
+════════════════════════════════════════════════════════════════════════════════
+
+Create a MODULAR LaTeX project with the following directory structure:
+
+paper_draft/
+├── main.tex              # Main file that imports all sections
+├── references.bib        # BibTeX references
+├── sections/
+│   ├── abstract.tex      # Abstract content
+│   ├── introduction.tex  # Introduction section
+│   ├── related_work.tex  # Related work section
+│   ├── methodology.tex   # Methodology section
+│   ├── results.tex       # Results section
+│   ├── discussion.tex    # Discussion section
+│   └── conclusion.tex    # Conclusion section
+├── figures/              # Directory for any generated figures
+├── tables/               # Directory for complex standalone tables
+└── appendix/             # Directory for appendix sections (if needed)
+
+INSTRUCTIONS:
+1. First, create the directory structure above (mkdir -p paper_draft/sections paper_draft/figures paper_draft/tables paper_draft/appendix)
+2. Write main.tex using the EXACT preamble for NEURIPS:
+
+   \documentclass{article}
+   \usepackage[final]{neurips_2025}  % NEURIPS style (neurips_2025.sty is in paper_draft/)
+   \usepackage[hidelinks]{hyperref}  % REQUIRED: clickable links
+   \usepackage{booktabs}  % REQUIRED: professional tables
+   \usepackage{graphicx}
+   \usepackage{amsmath,amssymb}
+
+   % Import command files
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+   % Use this bibliography style:
+   \bibliographystyle{plainnat}
+
+   \author{Ari Holtzman and NeuriCo}
+
+   - Use \input{sections/...} to include each section
+   - Use \bibliography{references} for references
+3. Write each section file with COMPLETE content (no placeholders)
+4. Each section file should include its \section{} command
+5. Write references.bib with all citations in BibTeX format
+6. After writing all files, compile the paper:
+   cd paper_draft && pdflatex -interaction=nonstopmode main.tex && bibtex main && pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex
+
+This modular structure allows humans to easily:
+- Edit individual sections without navigating a large file
+- Track changes per section
+- Reuse sections across different paper versions
+
+════════════════════════════════════════════════════════════════════════════════
+                          QUALITY REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+- Academic tone throughout
+- All claims must be supported by data from the experiment report
+- Proper citations using \cite{} commands
+- Clear figures and tables with proper captions
+- NO placeholder text - every section must have real content
+- The paper MUST compile without errors
+- If compilation fails, debug and fix the LaTeX errors
+
+════════════════════════════════════════════════════════════════════════════════
+                          LAB WRITING STYLE
+════════════════════════════════════════════════════════════════════════════════
+
+Follow these lab-specific conventions to match our paper style:
+
+1. LANGUAGE STYLE:
+   - Use active voice: "We propose", "We examine", "We focus on"
+   - Be direct and confident: "Our main question is...", "We hypothesize that..."
+   - State things clearly and simply - prefer plain language over jargon
+   - Use bold questions as paragraph organizers: {\bf what is X?}
+   - Include specific quantitative claims: "8.97% over baseline"
+   - Avoid fancy wording: "utilize" → "use", "facilitate" → "help"
+
+2. INTRODUCTION STRUCTURE:
+   - Engaging hook (get to the point quickly)
+   - Problem importance
+   - Gap identification
+   - Your approach with method figure reference
+   - Quantitative preview of results
+   - Contribution bullets (3-4 items, action verbs)
+
+3. CONTRIBUTION LISTS:
+   \begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+       \item We propose...
+       \item We conduct...
+       \item We complement...
+   \end{itemize}
+
+4. MODULAR COMMANDS STRUCTURE:
+   Command templates are pre-copied to paper_draft/commands/:
+   - math.tex: Math notation macros
+   - general.tex: Formatting macros
+   - macros.tex: Project-specific term definitions (customize this for your paper)
+
+   In main.tex, include:
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+5. REFERENCE CONVENTIONS:
+   Use reference macros from math.tex:
+   - \figref{fig:name} for "figure 1" (lowercase, in-sentence)
+   - \Figref{fig:name} for "Figure 1" (capitalized, start of sentence)
+   - \secref{sec:name} for "section 2"
+
+6. TEXT FORMATTING:
+   - Use \para{Header text} for bold paragraph headers
+   - Define method/dataset names with \textsc and \xspace:
+     \newcommand{\methodname}{\textsc{MethodName}\xspace}
+
+7. TABLE FORMATTING:
+   - Use booktabs package (no vertical lines)
+   - Use \resizebox{\textwidth}{!}{...} for wide tables
+   - Use @{} to remove padding at table edges
+   - Use \cmidrule(lr){x-y} for sub-headers
+   - Use \textsc{} for dataset/method names in headers
+   - Bold best results with {\bf ...}
+
+8. FIGURE FORMATTING:
+   - Use 0.32\textwidth for 3-column subfigures
+   - Use 0.95\linewidth for full-width figures
+   - Use \input{figures/legend} for shared legends
+   - Write self-contained captions explaining key observations
+
+9. RESULTS PRESENTATION:
+   - Define \increase and \decrease for colored arrows (green up, red down)
+   - Bold best results in tables
+   - Report confidence intervals when available
+
+10. ALGORITHM STYLING:
+    - Use algpseudocode with [noend]
+    - Use \triangleright for comments
+
+11. HYPERLINKS (REQUIRED):
+    - Always use \usepackage[hidelinks]{hyperref} or with colored links
+    - All citations, section refs, figure refs, table refs must be clickable
+    - This is essential for reader navigation
+
+════════════════════════════════════════════════════════════════════════════════
+                          WORKFLOW: REVIEW AND REFLECT
+════════════════════════════════════════════════════════════════════════════════
+
+Before calling finish, you MUST complete these review steps:
+
+1. REVIEW RESOURCES (at the start):
+   - Read .claude/skills/paper-writer/SKILL.md for detailed guidance
+   - Study templates/paper_writing/lab_style_guide.md for style conventions
+   - Browse paper_examples/ for formatting and language patterns
+
+2. SELF-REFLECTION (before finishing):
+   After writing all sections, review your work against these criteria:
+
+   LANGUAGE CHECK:
+   - [ ] Is the writing clear and jargon-free?
+   - [ ] Are claims specific with quantitative support?
+   - [ ] Is active voice used throughout?
+
+   FORMATTING CHECK:
+   - [ ] Does main.tex include \input{commands/math}, \input{commands/general}, \input{commands/macros}?
+   - [ ] Is hyperref package included for clickable references?
+   - [ ] Do tables use booktabs (no vertical lines)?
+   - [ ] Are best results bolded in tables?
+   - [ ] Are figures/tables properly captioned?
+
+   STRUCTURE CHECK:
+   - [ ] Does introduction follow: hook → importance → gap → approach → preview → contributions?
+   - [ ] Are contribution bullets specific with action verbs?
+   - [ ] Does the paper compile without errors?
+
+3. FIX ISSUES:
+   - Address any issues found in the self-reflection
+   - Re-compile and verify the PDF looks correct
+
+Only after completing this review should you consider the paper finished.

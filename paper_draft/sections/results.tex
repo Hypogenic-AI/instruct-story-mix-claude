@@ -1,0 +1,157 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Component Extraction and Taxonomy}
+\label{sec:results_taxonomy}
+
+\gptfour successfully extracted structured components from all 100 sampled stories (100\% extraction rate) with valid JSON output.
+\Tabref{tab:taxonomy} shows the distribution of categorical components.
+The taxonomy reveals meaningful variation: six conflict types, five emotional arcs, and six tones, with clear dominant categories (person-vs-self at 54\%, positive resolution at 53\%, heartwarming at 35\%) and meaningful long-tail variation.
+
+\begin{table}[t]
+    \centering
+    \caption{Component taxonomy extracted from 100 \rocstories. Each row shows the distribution of values for a categorical component. The taxonomy reveals meaningful variation across most dimensions, with the exception of narrative technique, which collapses to a single value due to the short story format.}
+    \begin{tabular}{@{}llr@{}}
+        \toprule
+        \textbf{Component} & \textbf{Value} & \textbf{Frequency} \\
+        \midrule
+        \multirow{6}{*}{Conflict type} & person\_vs\_self & 54\% \\
+        & person\_vs\_nature & 17\% \\
+        & person\_vs\_person & 13\% \\
+        & person\_vs\_society & 9\% \\
+        & person\_vs\_fate & 4\% \\
+        & person\_vs\_technology & 2\% \\
+        \midrule
+        \multirow{5}{*}{Emotional arc} & positive\_resolution & 53\% \\
+        & negative\_resolution & 22\% \\
+        & bittersweet & 17\% \\
+        & neutral & 6\% \\
+        & comedic & 1\% \\
+        \midrule
+        \multirow{6}{*}{Tone} & heartwarming & 35\% \\
+        & serious & 27\% \\
+        & lighthearted & 21\% \\
+        & melancholic & 11\% \\
+        & dramatic & 3\% \\
+        & suspenseful & 2\% \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:taxonomy}
+\end{table}
+
+\subsection{Quality Comparison}
+\label{sec:results_quality}
+
+\Tabref{tab:quality} presents quality scores across the three generation conditions.
+All conditions achieve perfect coherence (5.0/5.0)---for five-sentence stories, \gptfour never produces incoherent narratives regardless of constraint level.
+However, \compcontrolled stories score significantly lower than \titleonly baselines on creativity ($d{=}{-}0.46$, $p{=}0.028$), language quality ($d{=}{-}0.83$, $p{=}0.001$), and overall quality ($d{=}{-}0.80$, $p{=}0.002$).
+Character quality shows no significant difference ($d{=}{+}0.20$, $p{=}0.369$).
+
+\begin{table}[t]
+    \centering
+    \caption{Quality scores (1--5 scale, mean $\pm$ std) across generation conditions. \compcontrolled stories score significantly lower on creativity, language quality, and overall quality compared to both baselines. Best results per dimension in \textbf{bold}. Statistical significance: $^*p{<}0.05$, $^{**}p{<}0.01$ (Wilcoxon signed-rank, Bonferroni-corrected, \compcontrolled vs.\ \titleonly).}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lccccc@{}}
+        \toprule
+        \textbf{Condition} & \textbf{Coherence} & \textbf{Creativity} & \textbf{Character} & \textbf{Language} & \textbf{Overall} \\
+        \midrule
+        \compcontrolled & 5.00 {\scriptsize $\pm$ 0.00} & 3.72 {\scriptsize $\pm$ 0.45} & \textbf{4.30} {\scriptsize $\pm$ 0.54} & 4.38 {\scriptsize $\pm$ 0.49} & 4.26 {\scriptsize $\pm$ 0.52} \\
+        \titleonly & \textbf{5.00} {\scriptsize $\pm$ 0.00} & \textbf{3.94}$^*$ {\scriptsize $\pm$ 0.51} & 4.20 {\scriptsize $\pm$ 0.45} & \textbf{4.76}$^{**}$ {\scriptsize $\pm$ 0.43} & \textbf{4.66}$^{**}$ {\scriptsize $\pm$ 0.47} \\
+        \prompted & \textbf{5.00} {\scriptsize $\pm$ 0.00} & 3.92 {\scriptsize $\pm$ 0.52} & 4.34 {\scriptsize $\pm$ 0.47} & 4.66 {\scriptsize $\pm$ 0.47} & 4.58 {\scriptsize $\pm$ 0.49} \\
+        \bottomrule
+    \end{tabular}
+    }
+    \label{tab:quality}
+\end{table}
+
+\begin{table}[t]
+    \centering
+    \caption{Effect sizes (Cohen's $d$) and significance for \compcontrolled vs.\ \titleonly baseline. Negative values indicate the baseline outperforms \compcontrolled. Language quality and overall quality show large, significant penalties.}
+    \begin{tabular}{@{}lccc@{}}
+        \toprule
+        \textbf{Dimension} & \textbf{Cohen's $d$} & \textbf{$p$-value} & \textbf{Interpretation} \\
+        \midrule
+        Coherence & 0.00 & --- & No difference (ceiling) \\
+        Creativity & $-$0.46 & 0.028$^*$ & Small--medium penalty \\
+        Character quality & $+$0.20 & 0.369 & No significant difference \\
+        Language quality & $\mathbf{-0.83}$ & $\mathbf{0.001}^{**}$ & Large penalty \\
+        Overall quality & $\mathbf{-0.80}$ & $\mathbf{0.002}^{**}$ & Large penalty \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:effects}
+\end{table}
+
+\subsection{Controllability}
+\label{sec:results_control}
+
+\Tabref{tab:controllability} shows per-component adherence scores for the \compcontrolled condition.
+The model achieves near-perfect adherence across all dimensions: theme (5.00/5.0), emotional arc (4.98/5.0), character (4.90/5.0), setting (4.88/5.0), conflict (4.82/5.0), and tone (4.76/5.0).
+The overall adherence score is 4.96/5.0, confirming that \gptfour can reliably follow complex, multi-dimensional narrative specifications.
+
+\begin{table}[t]
+    \centering
+    \caption{Per-component specification adherence for \compcontrolled stories (1--5 scale). The model achieves near-perfect adherence across all narrative dimensions, with overall adherence of 4.96/5.0.}
+    \begin{tabular}{@{}lc@{}}
+        \toprule
+        \textbf{Component} & \textbf{Adherence (mean $\pm$ std)} \\
+        \midrule
+        Setting & 4.88 {\scriptsize $\pm$ 0.38} \\
+        Character & 4.90 {\scriptsize $\pm$ 0.30} \\
+        Conflict type & 4.82 {\scriptsize $\pm$ 0.38} \\
+        Theme & \textbf{5.00} {\scriptsize $\pm$ 0.00} \\
+        Emotional arc & 4.98 {\scriptsize $\pm$ 0.14} \\
+        Tone & 4.76 {\scriptsize $\pm$ 0.47} \\
+        \midrule
+        \textbf{Overall} & \textbf{4.96} {\scriptsize $\pm$ 0.20} \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:controllability}
+\end{table}
+
+\subsection{Diversity}
+\label{sec:results_diversity}
+
+\Tabref{tab:diversity} presents diversity metrics across conditions.
+\compcontrolled stories exhibit a 26\% larger vocabulary (2,276 vs.\ 1,807 words), slightly higher unique trigram ratio (0.988 vs.\ 0.980), and marginally lower inter-story overlap (0.0006 vs.\ 0.0008) compared to \titleonly baselines.
+However, \compcontrolled stories are also 26\% longer on average (110 vs.\ 87 words), which partially confounds these improvements---longer stories mechanically produce more unique trigrams.
+
+\begin{table}[t]
+    \centering
+    \caption{Diversity metrics across generation conditions. \compcontrolled stories show a larger vocabulary and lower inter-story overlap, though these gains are partially confounded by longer average story length. Best results in \textbf{bold}.}
+    \begin{tabular}{@{}lccc@{}}
+        \toprule
+        \textbf{Metric} & \textbf{\compcontrolled} & \textbf{\titleonly} & \textbf{\prompted} \\
+        \midrule
+        Unique trigram ratio & \textbf{0.988} & 0.980 & 0.988 \\
+        Vocabulary size & \textbf{2,276} & 1,807 & 2,164 \\
+        Inter-story overlap & \textbf{0.0006} & 0.0008 & 0.0006 \\
+        Mean story length (words) & 110 & 87 & 100 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:diversity}
+\end{table}
+
+\subsection{Coherent vs.\ Mixed Specifications}
+\label{sec:results_mixing}
+
+Our supplementary experiment compares stories generated from coherent specifications (all components from one source story, $n{=}25$) against mixed specifications (components from different sources, $n{=}25$).
+\Tabref{tab:mixing} shows no significant quality difference between conditions (overall: 4.44 vs.\ 4.52).
+Mixed specifications actually score slightly higher on creativity (3.76 vs.\ 3.56), suggesting that unusual component combinations may stimulate more original generation.
+This finding indicates that the quality penalty in \compcontrolled generation stems from the \emph{number} of constraints, not from potential incoherence between mixed components.
+
+\begin{table}[t]
+    \centering
+    \caption{Quality comparison between coherent specifications (all components from one source) and mixed specifications (components from different sources). No significant differences emerge, suggesting the quality penalty stems from the number of constraints rather than component incoherence.}
+    \begin{tabular}{@{}lcc@{}}
+        \toprule
+        \textbf{Dimension} & \textbf{Coherent ($n{=}25$)} & \textbf{Mixed ($n{=}25$)} \\
+        \midrule
+        Coherence & \textbf{5.00} {\scriptsize $\pm$ 0.00} & 4.96 {\scriptsize $\pm$ 0.20} \\
+        Creativity & 3.56 {\scriptsize $\pm$ 0.50} & \textbf{3.76} {\scriptsize $\pm$ 0.43} \\
+        Character quality & 4.40 {\scriptsize $\pm$ 0.49} & \textbf{4.48} {\scriptsize $\pm$ 0.57} \\
+        Language quality & 4.60 {\scriptsize $\pm$ 0.49} & \textbf{4.64} {\scriptsize $\pm$ 0.56} \\
+        Overall quality & 4.44 {\scriptsize $\pm$ 0.50} & \textbf{4.52} {\scriptsize $\pm$ 0.57} \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:mixing}
+\end{table}

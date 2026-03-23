@@ -1,0 +1,48 @@
+{
+  "coherent": {
+    "coherence": {
+      "mean": 5.0,
+      "std": 0.0
+    },
+    "creativity": {
+      "mean": 3.56,
+      "std": 0.4963869458396342
+    },
+    "character_quality": {
+      "mean": 4.4,
+      "std": 0.4898979485566356
+    },
+    "language_quality": {
+      "mean": 4.6,
+      "std": 0.4898979485566356
+    },
+    "overall_quality": {
+      "mean": 4.44,
+      "std": 0.4963869458396343
+    }
+  },
+  "mixed": {
+    "coherence": {
+      "mean": 4.96,
+      "std": 0.19595917942265428
+    },
+    "creativity": {
+      "mean": 3.76,
+      "std": 0.4270831300812524
+    },
+    "character_quality": {
+      "mean": 4.48,
+      "std": 0.574108003776293
+    },
+    "language_quality": {
+      "mean": 4.64,
+      "std": 0.5571355310873648
+    },
+    "overall_quality": {
+      "mean": 4.52,
+      "std": 0.574108003776293
+    }
+  },
+  "n_coherent": 25,
+  "n_mixed": 25
+}

@@ -1,0 +1,9 @@
+# Ignore large HuggingFace dataset directories (Arrow/Parquet files)
+writingprompts/
+rocstories/
+wikiplots/
+tell_me_a_story/
+
+# Keep sample JSON files and this .gitignore
+!*_sample.json
+!.gitignore

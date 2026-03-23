@@ -1,0 +1,67 @@
+\section{Methodology}
+\label{sec:method}
+
+We adapt the \skillmix paradigm to creative story generation through a three-stage pipeline: component extraction, combinatorial specification, and controlled generation.
+
+\subsection{Component Extraction}
+\label{sec:extraction}
+
+We sample 100 stories from the \rocstories training set~\cite{mostafazadeh2016corpus} (78,528 five-sentence commonsense stories, seed=42) and extract structured components using \gptfour with temperature 0.2 and structured JSON output.
+For each story, we extract six components:
+
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item \textbf{Setting}: location and temporal context
+    \item \textbf{Character}: protagonist description and role
+    \item \textbf{Conflict type}: categorical (person vs.\ self, nature, person, society, fate, or technology)
+    \item \textbf{Theme}: central thematic concern
+    \item \textbf{Emotional arc}: trajectory of emotional tone (positive resolution, negative resolution, bittersweet, neutral, comedic)
+    \item \textbf{Tone}: overall narrative tone (heartwarming, serious, lighthearted, melancholic, dramatic, suspenseful)
+\end{itemize}
+
+All 100 stories were successfully decomposed with valid, well-formed JSON output (100\% extraction rate).
+
+\subsection{Component Taxonomy}
+\label{sec:taxonomy}
+
+The extracted components reveal meaningful distributional patterns (\tabref{tab:taxonomy}).
+Person-vs-self conflicts dominate (54\%), reflecting \rocstories' focus on everyday personal dilemmas.
+Positive resolution is the most common arc (53\%), and heartwarming the most frequent tone (35\%).
+One limitation is that narrative technique was classified as linear for all 100 stories---\rocstories' five-sentence format is too short to exhibit flashbacks, frame narratives, or in medias res structures.
+
+\subsection{Combinatorial Specification}
+\label{sec:combination}
+
+To create novel component specifications, we sample each of the six components from a \emph{different} source story, producing combinations that are unlikely to occur naturally.
+For each of the 50 component-controlled stories, we sample five source stories and draw one component from each (with the sixth drawn from a random additional source).
+This is analogous to the skill-mixing step in \skillmix, where novel combinations of individually observed skills create training examples that test compositional generalization.
+
+\subsection{Story Generation}
+\label{sec:generation}
+
+We generate stories under three conditions using \gptfour with temperature 0.8:
+
+\para{\compcontrolled ($n{=}50$).}
+The model receives a full 7-component specification (setting, character, conflict, theme, arc, tone, plus a title derived from the theme) and must produce a story satisfying all constraints.
+
+\para{\titleonly baseline ($n{=}50$).}
+The model receives only the theme as a title and generates a story freely.
+
+\para{\prompted baseline ($n{=}50$).}
+The model receives the theme and setting, providing minimal structural guidance.
+
+Additionally, we run a supplementary experiment comparing \emph{coherent} specifications (all components from the same source story, $n{=}25$) against \emph{mixed} specifications (components from different sources, $n{=}25$) to isolate the effect of component incoherence.
+
+\subsection{Evaluation}
+\label{sec:evaluation}
+
+\para{Quality assessment.}
+We evaluate all stories using \gptfour as judge (temperature 0.1) on five dimensions, each scored 1--5: coherence, creativity, character quality, language quality, and overall quality.
+
+\para{Controllability assessment.}
+For component-controlled stories, we additionally score adherence to each specified component (setting, character, conflict, theme, arc, tone) and compute an overall adherence score, each on a 1--5 scale.
+
+\para{Diversity metrics.}
+We compute three automatic diversity measures across each condition's story set: unique trigram ratio, vocabulary size, and mean pairwise inter-story trigram overlap.
+
+\para{Statistical analysis.}
+We use Wilcoxon signed-rank tests (paired, non-parametric) with Bonferroni correction for quality comparisons between conditions. We report Cohen's $d$ effect sizes for all pairwise comparisons. Significance threshold is $\alpha = 0.05$ after correction.

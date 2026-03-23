@@ -1,0 +1,10 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We applied the \skillmix paradigm to creative story generation, treating narrative components as composable skills.
+Our \methodname pipeline extracts structured components from existing stories, creates novel specifications through combinatorial mixing, and generates stories conditioned on these multi-dimensional specifications.
+The pipeline achieves near-perfect controllability (4.96/5.0 adherence) but reveals a fundamental constraint-quality tradeoff: component-controlled stories score significantly lower on language quality ($d{=}{-}0.83$) and overall quality ($d{=}{-}0.80$) compared to unconstrained baselines.
+The hypothesized quality arbitrage---that explicit structural control would yield better stories---is not supported for single-pass generation.
+
+Our findings suggest that the value of component-based story generation lies not in direct quality improvement but in two complementary directions: (1) controllability for interactive writing tools, where authors want to steer narrative dimensions while the model handles prose, and (2) synthetic data generation, where the diverse, structurally specified stories can train smaller models via distillation.
+Realizing both controllability and quality likely requires a two-stage approach---structural specification followed by unconstrained refinement---an important direction for future work.
